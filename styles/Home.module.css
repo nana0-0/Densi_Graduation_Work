@@ -432,6 +432,7 @@
     border-radius: 16px 16px 0px 0px;
     position: relative;
     line-height: 2;
+    color: #000;
   }
   
   .qa_button_open::first-letter{
@@ -480,6 +481,7 @@
     border: #103047 2.5px solid;
     line-height: 2;
     position: relative;
+    color: #000;
   }
   
   .qa_button_close::first-letter{

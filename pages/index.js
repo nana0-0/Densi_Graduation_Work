@@ -118,9 +118,9 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles.gameLogo}>
           <Image
-            src="/footer_font.svg"
+            src="/footer_font.png"
             alt="Game Logo"
-            width={250}
+            width={210}
             height={30}
           />
         </div>
