@@ -3,10 +3,38 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Spline from "@splinetool/react-spline";
+import React, { useState } from 'react';
 
 const inter = Inter({ subsets: ["latin"] });
 
+const CollapseQA = (props) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <dl className={!open ? styles.qa_dl_close : styles.qa_dl_open}>
+      <dt>
+        <button
+          onClick={() => setOpen(!open)}
+          className={!open ? styles.qa_button_close : styles.qa_button_open}
+        >
+          Q.　{props.question}
+        </button>
+      </dt>
+      <dd className={!open ? styles.qa_dd_close : styles.qa_dd_open}>
+        {props.answer}
+      </dd>
+    </dl>
+  );
+};
+
 export default function Home() {
+
+  const [qa, setQa] = useState(false);
+  const [qa2, setQa2] = useState(false);
+  const [qa3, setQa3] = useState(false);
+  const [qa4, setQa4] = useState(false);
+  const [qa5, setQa5] = useState(false);
+  const [qa6, setQa6] = useState(false);
+
   return (
     <>
       <Head>
@@ -18,27 +46,107 @@ export default function Home() {
       <div className={styles.spline}>
         <Spline scene="https://prod.spline.design/YnP5BZFjlDgJPj7r/scene.splinecode" />
       </div>
-      <main className={styles.main}>
+      <main>
+        <section className={styles.section_qa}>
+          <h2 className={styles.h2}>Q&A</h2>
+          <p className={styles.qa_p}>発送・送料について</p>
+          <CollapseQA
+            question="発送・送料について"
+            answer={
+              <>
+                商品の発送はヤマト運輸にてお送りいたします。送料は注文本数および地域によって変動いたします。
+                <br />
+                【本州、九州、四国】880円（※12本以上注文の場合は1,080円）
+                <br />
+                【沖縄、離島】1,240円（※12本以上注文の場合は2,000円）
+                <br />
+                【北海道】1,100円（※12本以上注文の場合は1,440円）
+              </>
+            }
+          />
+           <CollapseQA
+            question="注文のキャンセルをしたいです。"
+            answer={
+              <>
+                商品発送前と後で下記の通り対応をさせていただいています。
+                <br />
+                「商品発送前」キャンセル可能です。すぐにお問い合わせください。
+                <br />
+                ※ご連絡いただくタイミングによりましては発送手配進行中のためキャンセルできかねる場合がございます。
+                <br />
+                「商品発送後」誠に申し訳ございませんがキャンセルできかねます。
+              </>
+            }
+          />
+           <CollapseQA
+            question="お支払い方法は何がありますか？"
+            answer="お支払いにはクレジットカード（VISA / MASTER / JCB / AMEX / Diners）、AmazonPay、後払い（Paidy）の ご利用が可能です。"
+          />
+          <CollapseQA
+            question="領収書を送付してもらうことは可能ですか？"
+            answer="納品書、領収書は、すべてオンラインでダウンロードしていただく形式でございます。マイページまたは注文完了メールのリンクよりダウンロードが可能です。"
+          />
+          <CollapseQA
+            question="商品が届きません。"
+            answer={
+              <>
+                到着日を指定しない場合は通常当日～翌営業日に発送、1日～2日程度でのお届けとなります。
+                <br />
+                商品が届かない場合は以下をご確認ください。
+                <br />
+                1. 指定日到着をしている
+                <br />
+                ご注文確定メールを改めてご確認いただけますようお願いします。
+                <br />
+                2. 住所不明
+                <br />
+                建物名、部屋番号未記入、表札の不一致等で配送業者が持ち帰った可能性があります。
+                配送会社へご連絡ください。
+              </>
+            }
+          />
+           <CollapseQA
+            question="受け取れなかった商品はどうなりますか？"
+            answer={
+              <>
+                 配送センターへ返送されます。不在伝票から再配達依頼をしてください。
+              </>
+            }
+          />
+        </section>
+      </main>
+      <footer className={styles.footer}>
+        <div className={styles.gameLogo}>
+          <Image
+            src="/footer_font.svg"
+            alt="Game Logo"
+            width={250}
+            height={30}
+          />
+        </div>
+        <p className={styles.copyright}>
+          <small>
+            COPYRIGHT &copy; 2022 YonayonaRamens. ALL RIGHTS RESERVED.
+          </small>
+        </p>
+      </footer>
+      {/* <main className={styles.main}>
         <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{" "}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
+               <Image
+                src="/footer_img.svg"
+                alt="Game Logo"
                 className={styles.vercelLogo}
-                width={100}
-                height={24}
+                width={150}
+                height={30}
                 priority
               />
+              『宇宙人はダレ？』を購入する
             </a>
           </div>
         </div>
@@ -121,7 +229,7 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </main>
+      </main> */}
     </>
   );
 }

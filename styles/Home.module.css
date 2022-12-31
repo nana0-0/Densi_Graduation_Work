@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: -0.5rem;
 }
 
 .description p {
@@ -280,4 +280,253 @@
 .spline{
   width: 100%;
   height:100vh;
+}
+
+.section_qa{
+  margin: 0 auto;
+  padding-top: 190px;
+  width: 100%;
+  background-color:#fff;
+}
+
+
+/* QA質問 */
+.h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+}
+.qa_p{
+  margin-top: 20px;
+  margin-bottom: 75px;
+  color: #0B0B0B;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.qa_dl_open{
+  margin: 0 auto;
+  display: block;
+  width: 55%;
+  border-radius: 16px;
+  border: 2.5px solid #103047;
+  margin-bottom: 40px;
+}
+
+.qa_button_open{
+  border: none;
+  border-bottom: #103047 2.5px dashed;
+  margin: 0 auto;
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 46px;
+  font-size:15px;
+  font-weight: 700;
+  width: 100%;
+  text-align: start;
+  background-color: #F7F7F7;
+  border-radius: 16px 16px 0px 0px;
+  position: relative;
+}
+
+.qa_button_open::first-letter{
+  font-size:23px;
+}
+
+.qa_button_open::after{
+  content: "";
+  position: absolute;
+  right: 6.5%;
+  padding-left: 54px;
+  background-image: url(/qa_open.svg);
+  background-size: 35%;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 28px;
+    background-position: right center;
+}
+
+.qa_dd_open{
+  padding: 30px 20px;
+  font-size:12px;
+  line-height: 1.8;
+}
+
+.qa_dd_close{
+  display: none;
+}
+
+.qa_button_close{
+  margin: 0 auto;
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 46px;
+  font-size:15px;
+  font-weight: 700;
+  width: 55%;
+  text-align: start;
+  background-color: #F7F7F7;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  border: #103047 2.5px solid;
+}
+
+.qa_button_close::first-letter{
+  font-size:23px;
+}
+
+.qa_button_close::after{
+  content: "";
+  position: absolute;
+  right: 26%;
+  padding-left: 54px;
+  background-image: url(/qa_close.svg);
+  background-size: 35%;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 28px;
+    background-position: right center;
+}
+
+@media (max-width: 700px) {
+  .h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+  }
+  .qa_p{
+    margin-top: 20px;
+    margin-bottom: 75px;
+    color: #0B0B0B;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .qa_dl_open{
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    border-radius: 16px;
+    border: 2.5px solid #103047;
+    margin-bottom: 40px;
+  }
+  
+  .qa_button_open{
+    border: none;
+    border-bottom: #103047 2.5px dashed;
+    margin: 0 auto;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 40px;
+    font-size:14px;
+    font-weight: 700;
+    width: 100%;
+    text-align: start;
+    background-color: #F7F7F7;
+    border-radius: 16px 16px 0px 0px;
+    position: relative;
+    line-height: 2;
+  }
+  
+  .qa_button_open::first-letter{
+    font-size:20px;
+  }
+  
+  .qa_button_open::after{
+    content: "";
+    position: absolute;
+    position: absolute;
+    top: 20px;
+    right: 7%;
+    padding-left: 54px;
+    background-image: url(/qa_open.svg);
+    background-size: 35%;
+      background-repeat: no-repeat;
+      padding-top: 20px;
+      padding-bottom: 28px;
+      background-position: right center;
+  }
+  
+  .qa_dd_open{
+    padding: 30px 20px;
+    font-size:12px;
+    line-height: 1.8;
+  }
+  
+  .qa_dd_close{
+    display: none;
+  }
+  
+  .qa_button_close{
+    margin: 0 auto;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 40px;
+    font-size:14px;
+    font-weight: 700;
+    width: 90%;
+    text-align: start;
+    background-color: #F7F7F7;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    border: #103047 2.5px solid;
+    line-height: 2;
+    position: relative;
+  }
+  
+  .qa_button_close::first-letter{
+    font-size:20px;
+  }
+  
+  .qa_button_close::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 7%;
+    padding-left: 50px;
+    background-image: url(/qa_close.svg);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 28px;
+    background-position: right center;
+  }
+  
+}
+/* ここからfooter */
+.footer{
+  text-align: center;
+  background: #0B0B0B;
+}
+
+.gameLogo{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.copyright::before{
+  content: "";
+  width: 80%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+
+.copyright{
+  color: #fff;
+  font-size:12px;
+  font-weight:100;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
 }
