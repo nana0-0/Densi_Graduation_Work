@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Spline from "@splinetool/react-spline";
 import React, { useState } from "react";
 import { GlitchText } from "./font.js";
+import { getWindowSize}from "./screensize.js";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,12 +29,7 @@ const CollapseQA = (props) => {
 };
 
 export default function Home() {
-  const [qa, setQa] = useState(false);
-  const [qa2, setQa2] = useState(false);
-  const [qa3, setQa3] = useState(false);
-  const [qa4, setQa4] = useState(false);
-  const [qa5, setQa5] = useState(false);
-  const [qa6, setQa6] = useState(false);
+  const { height, width } = getWindowSize();
 
   return (
     <>
@@ -69,14 +65,14 @@ export default function Home() {
             <em className={styles.title_em}>宇宙人</em>
             <GlitchText text="が潜んでいる !?" />
             <br />
-            <GlitchText text="潜んでいる宇宙人を見つけ出して無事に惑星に辿り着けるのか!?" />
+            <GlitchText text="潜んでいる宇宙人を見つけ出して無事に惑星に辿り着けるのか。 !?" />
           </p>
           <Image
           src="/game_menu.png"
           alt="Game Logo"
-          width={662}
-          height={45}
-          style={{marginTop:70}}
+          width={width<700?339:551}
+          height={width<700?23:37}
+          style={width<700?{marginTop:50}:{marginTop:70}}
           />
         </section>
         <section className={styles.section_qa}>
