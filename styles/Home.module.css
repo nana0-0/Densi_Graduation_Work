@@ -289,6 +289,76 @@
   background-color:#fff;
 }
 
+/* ここからオリジナル */
+.section_game{
+  background: #222222;
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.h1{
+  font-size: 40px;
+  background-color: #E0493B;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: 98px;
+}
+
+.title{
+  color: #fff;
+  line-height: 3;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.h1_bkfont{
+  overflow: hidden;
+}
+
+.title_em{
+  font-style: normal;
+  background-color: #00C965;
+  padding: 0px 2px;
+}
+
+@media (max-width: 700px) {
+  .section_game{
+    background: #222222;
+    text-align: center;
+    padding-bottom: 150px;
+  }
+  
+  .h1{
+    font-size: 32px;
+    background-color: #E0493B;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: 98px;
+  }
+  
+  .title{
+    color: #fff;
+    line-height: 3;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  
+  .h1_bkfont{
+    overflow: hidden;
+  }
+  
+  .title_em{
+    font-style: normal;
+    background-color: #00C965;
+    padding: 0px 2px;
+  }  
+}
 
 /* QA質問 */
 .h2 {

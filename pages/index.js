@@ -3,7 +3,8 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Spline from "@splinetool/react-spline";
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { GlitchText } from "./font.js";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,6 @@ const CollapseQA = (props) => {
 };
 
 export default function Home() {
-
   const [qa, setQa] = useState(false);
   const [qa2, setQa2] = useState(false);
   const [qa3, setQa3] = useState(false);
@@ -47,9 +47,46 @@ export default function Home() {
         <Spline scene="https://prod.spline.design/YnP5BZFjlDgJPj7r/scene.splinecode" />
       </div>
       <main>
+        <section className={styles.section_game}>
+          <h1 className={styles.h1}>
+            <GlitchText text="宇宙人はダレ？" />
+          </h1>
+          <Image
+          src="/section_game_bkfont.png"
+          alt="Game Logo"
+          width={1841}
+          height={125}
+          className={styles.h1_bkfont}
+          />
+          <p className={styles.title}>
+            <GlitchText text="ある日、地球は" />
+            <em className={styles.title_em}>宇宙人</em>
+            <GlitchText text="に侵略されてしまう。" />
+            <br />
+            <GlitchText text="ロケットで地球を脱出して惑星まで逃げようとするが　" />
+            <br />
+            <GlitchText text="逃げ込んだロケットの中に" />
+            <em className={styles.title_em}>宇宙人</em>
+            <GlitchText text="が潜んでいる !?" />
+            <br />
+            <GlitchText text="潜んでいる宇宙人を見つけ出して無事に惑星に辿り着けるのか!?" />
+          </p>
+          <Image
+          src="/game_menu.png"
+          alt="Game Logo"
+          width={662}
+          height={45}
+          style={{marginTop:70}}
+          />
+        </section>
         <section className={styles.section_qa}>
-          <h2 className={styles.h2}>Q&A</h2>
-          <p className={styles.qa_p}>発送・送料について</p>
+          <h2 className={styles.h2}>
+            {" "}
+            <GlitchText text="Q&A" />
+          </h2>
+          <p className={styles.qa_p}>
+            <GlitchText text="発送・送料について" />
+          </p>
           <CollapseQA
             question="発送・送料について"
             answer={
@@ -64,7 +101,7 @@ export default function Home() {
               </>
             }
           />
-           <CollapseQA
+          <CollapseQA
             question="注文のキャンセルをしたいです。"
             answer={
               <>
@@ -78,7 +115,7 @@ export default function Home() {
               </>
             }
           />
-           <CollapseQA
+          <CollapseQA
             question="お支払い方法は何がありますか？"
             answer="お支払いにはクレジットカード（VISA / MASTER / JCB / AMEX / Diners）、AmazonPay、後払い（Paidy）の ご利用が可能です。"
           />
@@ -105,11 +142,11 @@ export default function Home() {
               </>
             }
           />
-           <CollapseQA
+          <CollapseQA
             question="受け取れなかった商品はどうなりますか？"
             answer={
               <>
-                 配送センターへ返送されます。不在伝票から再配達依頼をしてください。
+                配送センターへ返送されます。不在伝票から再配達依頼をしてください。
               </>
             }
           />
