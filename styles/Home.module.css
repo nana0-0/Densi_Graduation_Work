@@ -324,6 +324,10 @@
   padding: 0px 2px;
 }
 
+.game_menu{
+  width: 551px;
+}
+
 @media (max-width: 700px) {
   .section_game{
     background: #222222;
