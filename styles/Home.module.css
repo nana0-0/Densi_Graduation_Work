@@ -235,6 +235,9 @@
 
   .qa_button_open::first-letter {
     font-size: 20px;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
 
   .qa_button_open::after {
@@ -280,6 +283,9 @@
     line-height: 2;
     position: relative;
     color: #000;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
 
   .qa_button_close::first-letter {
@@ -384,7 +390,7 @@
   }
 }
 
-.h2 span{
+.h2 span {
   font-family: futura-pt-bold, sans-serif;
   font-weight: 700;
   font-style: normal;
