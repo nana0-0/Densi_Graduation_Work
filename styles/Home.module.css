@@ -130,6 +130,9 @@
 
 .qa_button_open::first-letter {
   font-size: 23px;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .qa_button_open::after {
@@ -174,6 +177,9 @@
 
 .qa_button_close::first-letter {
   font-size: 23px;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .qa_button_close::after {

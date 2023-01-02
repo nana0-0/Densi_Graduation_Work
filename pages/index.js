@@ -161,7 +161,7 @@ export default function Home() {
               className={styles.footer_twitter}
             />
           </a>
-          <a href="#" target="_blank">
+          <a href="https://note.com/yonayonaramens/" target="_blank">
             <Image
               src="/footer_note.png"
               alt="Game Logo"
