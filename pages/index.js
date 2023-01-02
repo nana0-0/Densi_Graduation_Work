@@ -41,7 +41,7 @@ export default function Home() {
         <link rel="stylesheet" href="https://use.typekit.net/mdl4cir.css"></link>
       </Head>
       <div className={styles.spline}>
-        <Spline scene="https://prod.spline.design/YnP5BZFjlDgJPj7r/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/sPpkqagelFpsWtVE/scene.splinecode" />
       </div>
       <main className={styles.main}>
         <section className={styles.section_game}>
