@@ -117,6 +117,7 @@
   padding-top: 28px;
   padding-bottom: 28px;
   padding-left: 46px;
+  padding-right: 40px;
   font-size: 15px;
   font-weight: 700;
   width: 100%;
@@ -159,6 +160,7 @@
   padding-top: 28px;
   padding-bottom: 28px;
   padding-left: 46px;
+  padding-right: 40px;
   font-size: 15px;
   font-weight: 700;
   width: 55%;
@@ -323,7 +325,7 @@
   border-bottom: 10px solid transparent;
   border-left: 10px solid transparent;
   position: absolute;
-  top: 40px;
+  top: 90%;
   right: 45%;
 }
 
