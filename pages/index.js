@@ -157,6 +157,7 @@ export default function Home() {
               alt="Game Logo"
               width={25.08}
               height={20.38}
+              className={styles.footer_twitter}
             />
           </a>
           <a href="#" target="_blank">
@@ -165,6 +166,7 @@ export default function Home() {
               alt="Game Logo"
               width={100.4}
               height={37.1}
+              className={styles.footer_note}
             />
           </a>
         </div>

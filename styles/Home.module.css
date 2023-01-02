@@ -327,6 +327,14 @@
   right: 45%;
 }
 
+.footer_twitter{
+  margin-right: 0px;
+}
+
+.footer_note{
+  margin-left: 10px;
+}
+
 .footer_flex{
   display: flex;
   align-items: center;
