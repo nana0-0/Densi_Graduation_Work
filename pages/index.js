@@ -38,6 +38,7 @@ export default function Home() {
         <meta name="description" content="ボードゲーム『宇宙人はダレ？』遊びで中１ギャップを未然に防ぐ卒業制作プロジェクト。日本電子専門学校 Webデザイン科 卒業・進級制作展2022にて展示します。" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://use.typekit.net/mdl4cir.css"></link>
       </Head>
       <div className={styles.spline}>
         <Spline scene="https://prod.spline.design/YnP5BZFjlDgJPj7r/scene.splinecode" />
