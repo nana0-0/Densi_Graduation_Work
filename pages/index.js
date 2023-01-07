@@ -51,7 +51,7 @@ export default function Home() {
         <meta property="og:title" content="ボードゲーム『宇宙人はダレ？』公式サイト" />
         <meta property="og:description" content="ボードゲーム『宇宙人はダレ？』遊びで中１ギャップを未然に防ぐ卒業制作プロジェクト。日本電子専門学校 Webデザイン科 卒業・進級制作展2022にて展示します。" />
         <meta property="og:site_name" content="宇宙人はダレ？" />
-        <meta property="og:image" content="/thumbnail.jpg" />
+        <meta property="og:image" content="https://utyujinhadare.yonayonaramens.com/thumbnail.jpg" />
       </Head>
       <div className={styles.spline}>
         <Spline scene="https://prod.spline.design/sPpkqagelFpsWtVE/scene.splinecode" />
