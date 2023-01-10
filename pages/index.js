@@ -4,7 +4,7 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Spline from "@splinetool/react-spline";
 import React, { useState } from "react";
-import { GlitchText } from "../components/font.js";
+import { GlitchText } from "../components/font";
 import { getWindowSize } from "../components/screensize.js";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ボードゲーム『宇宙人はダレ？』公式サイト</title>
+        <title>宇宙人はダレ？</title>
         <meta
           name="description"
           content="ボードゲーム『宇宙人はダレ？』遊びで中１ギャップを未然に防ぐ卒業制作プロジェクト。日本電子専門学校 Webデザイン科 卒業・進級制作展2022にて展示します。"
@@ -88,6 +88,21 @@ export default function Home() {
             height={width < 700 ? 25 : 36}
             style={width < 700 ? { marginTop: 40 } : { marginTop: 70 }}
           />
+        </section>
+        <section>
+          <div className={styles.flex}>
+            <dl>
+              <dt>宇宙人はダレ？</dt>
+              <dd>内容物：コマ4個  /  ミッションカード3枚  /  トラップカード3枚  /  星のかけら20枚  /  スタート・ゴール各1枚  /  付箋1冊  /  エネルギーカード6枚  /  宇宙人カード4枚  /  説明書</dd>
+            </dl>
+            <p>3,500円( 税込・送料別 )</p>
+            <dl>
+              <dt>企画/制作</dt>
+              <dd>田中楠乃 ・野中杏莉</dd>
+              <dt>制作年</dt>
+              <dd>2022年</dd>
+            </dl>
+          </div>
         </section>
         <section className={styles.section_qa}>
           <h2 className={styles.h2}>
