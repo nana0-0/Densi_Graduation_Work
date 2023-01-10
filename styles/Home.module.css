@@ -1,9 +1,20 @@
 .main {
   background: #fff;
 }
+
+/* Spline */
+
 .spline {
   width: 100%;
   height: 100vh;
+}
+
+/* フォント */
+
+.font_VDL {
+  font-family: vdl-logomaru-jr, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* ここからオリジナル */
@@ -81,6 +92,165 @@
   }
 }
 
+/* ゲーム内容 */
+
+
+.flex{
+  display: flex;
+}
+
+.spline_game{
+  width: 70%;
+  height: 80vh;
+}
+
+.section_purchase{
+  background: #343434;
+  color: #fff;
+}
+
+.game_detail{
+  margin: auto 0;
+  margin-left: 50px;
+  padding-bottom: 50px;
+}
+
+.section_purchase_gametitle dt{
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.section_purchase_gametitle dd{
+  font-size: 12px;
+  width: 80%;
+  line-height: 2;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.section_purchase_gametitle dd::after{
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 70px;
+}
+
+.purchase_price{
+  padding-top: 25px;
+  font-size: 20px;
+  position: relative;
+  width: 80%;
+}
+
+.purchase_price_en{
+  font-style: normal;
+  font-size: 10px;
+  padding-left: 3px;
+  padding-right: 5px;
+}
+
+.purchase_price_kakko{
+  font-style: normal;
+  font-size: 13px;
+}
+
+.purchase_price::after{
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 75px;
+}
+
+.section_purchase_author{
+  margin-top: 50px;
+  font-size: 12px;
+}
+
+.section_purchase_author div{
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.section_purchase_author div dt{
+  padding-right: 20px;
+}
+
+.game_a_purchase{
+  background: #E0493B;
+  border-radius: 33px;
+  padding: 15px 65px 15px 25px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  top: 30px;
+}
+
+.game_a_purchase::after{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 27px;
+  padding: 12px 12px;
+  background-image: url(/purchase_a.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 1000px) {
+.spline_game{
+  width: 100%;
+  height: 80vh;
+}
+}
+
+@media (max-width: 700px) {
+
+  .flex{
+    display:block;
+  }
+
+  .game_detail{
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .spline_game{
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 30px;
+  }
+
+  .purchase_price{
+    padding-top: 25px;
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+  }
+
+  .section_purchase{
+    background: #343434;
+    color: #fff;
+    padding-bottom: 80px;
+  }
+
+  .section_purchase_gametitle dd{
+    font-size: 12px;
+    width: 100%;
+    line-height: 2;
+    margin-bottom: 15px;
+    position: relative;
+  }
+    
+}
+
 /* QA質問 */
 
 .section_qa {
@@ -106,19 +276,19 @@
   display: block;
   width: 55%;
   border-radius: 16px;
-  border: 2.5px solid #103047;
+  border: 2px solid #103047;
   margin-bottom: 40px;
 }
 
 .qa_button_open {
   border: none;
-  border-bottom: #103047 2.5px dashed;
+  border-bottom: #103047 2px dashed;
   margin: 0 auto;
   display: block;
   padding-top: 28px;
   padding-bottom: 28px;
   padding-left: 46px;
-  padding-right: 40px;
+  padding-right: 50px;
   font-size: 15px;
   font-weight: 700;
   width: 100%;
@@ -141,11 +311,12 @@
   right: 6.5%;
   padding-left: 54px;
   background-image: url(/qa_open.svg);
-  background-size: 35%;
+  background-size: 30%;
   background-repeat: no-repeat;
   padding-top: 20px;
   padding-bottom: 28px;
   background-position: right center;
+  top: 20px;
 }
 
 .qa_dd_open {
@@ -164,7 +335,7 @@
   padding-top: 28px;
   padding-bottom: 28px;
   padding-left: 46px;
-  padding-right: 40px;
+  padding-right: 50px;
   font-size: 15px;
   font-weight: 700;
   width: 55%;
@@ -172,7 +343,8 @@
   background-color: #f7f7f7;
   border-radius: 16px;
   margin-bottom: 40px;
-  border: #103047 2.5px solid;
+  border: #103047 2px solid;
+  position: relative;
 }
 
 .qa_button_close::first-letter {
@@ -185,10 +357,11 @@
 .qa_button_close::after {
   content: "";
   position: absolute;
-  right: 26%;
+  top: 20px;
+  right: 6.5%;
   padding-left: 54px;
   background-image: url(/qa_close.svg);
-  background-size: 35%;
+  background-size: 30%;
   background-repeat: no-repeat;
   padding-top: 20px;
   padding-bottom: 28px;
@@ -196,6 +369,11 @@
 }
 
 @media (max-width: 700px) {
+
+  .section_qa{
+    margin-top: 100px;
+  }
+
   .h2 {
     text-align: center;
     font-size: 28px;
@@ -254,7 +432,7 @@
     right: 7%;
     padding-left: 54px;
     background-image: url(/qa_open.svg);
-    background-size: 35%;
+    background-size: 30%;
     background-repeat: no-repeat;
     padding-top: 20px;
     padding-bottom: 28px;
@@ -305,7 +483,7 @@
     right: 7%;
     padding-left: 50px;
     background-image: url(/qa_close.svg);
-    background-size: 35%;
+    background-size: 30%;
     background-repeat: no-repeat;
     padding-top: 20px;
     padding-bottom: 28px;
@@ -318,6 +496,12 @@
   background: #0b0b0b;
   margin-top: 200px;
 }
+
+.gameLogo {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
 
 .footer_text {
   background: #00c965;
@@ -347,7 +531,7 @@
 }
 
 .footer_note {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .footer_flex {
@@ -356,11 +540,6 @@
   margin: 0 auto;
   justify-content: center;
   margin-bottom: 40px;
-}
-
-.gameLogo {
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .copyright::before {
@@ -383,6 +562,11 @@
 }
 
 @media (max-width: 700px) {
+
+  .footer {
+    margin-top: 100px;
+  }
+
   .footer_text {
     background: #00c965;
     display: inline-block;

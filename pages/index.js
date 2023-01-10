@@ -46,12 +46,38 @@ export default function Home() {
           href="https://use.typekit.net/mdl4cir.css"
         ></link>
 
-        <meta property="og:url" content="https://utyujinhadare.yonayonaramens.com/" />
+        <meta
+          property="og:url"
+          content="https://utyujinhadare.yonayonaramens.com/"
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="ボードゲーム『宇宙人はダレ？』公式サイト" />
-        <meta property="og:description" content="ボードゲーム『宇宙人はダレ？』遊びで中１ギャップを未然に防ぐ卒業制作プロジェクト。日本電子専門学校 Webデザイン科 卒業・進級制作展2022にて展示します。" />
+        <meta
+          property="og:title"
+          content="ボードゲーム『宇宙人はダレ？』公式サイト"
+        />
+        <meta
+          property="og:description"
+          content="ボードゲーム『宇宙人はダレ？』遊びで中１ギャップを未然に防ぐ卒業制作プロジェクト。日本電子専門学校 Webデザイン科 卒業・進級制作展2022にて展示します。"
+        />
         <meta property="og:site_name" content="宇宙人はダレ？" />
-        <meta property="og:image" content="https://utyujinhadare.yonayonaramens.com/thumbnail.jpg" />
+        <meta
+          property="og:image"
+          content="https://utyujinhadare.yonayonaramens.com/thumbnail.jpg"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(d) {
+                var config = {
+                  kitId: 'gqb2syj',
+                  scriptTimeout: 3000,
+                  async: true
+                },
+                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+              })(document);
+        `,
+          }}
+        />
       </Head>
       <div className={styles.spline}>
         <Spline scene="https://prod.spline.design/sPpkqagelFpsWtVE/scene.splinecode" />
@@ -79,7 +105,7 @@ export default function Home() {
             <em className={styles.title_em}>宇宙人</em>
             <GlitchText text="が潜んでいる !?" />
             <br />
-            <GlitchText text="潜んでいる宇宙人を見つけ出して無事に惑星に辿り着けるのか。 !?" />
+            <GlitchText text="潜んでいる宇宙人を見つけ出して無事に惑星に辿り着けるのか!?" />
           </p>
           <Image
             src="/game_menu.png"
@@ -89,19 +115,45 @@ export default function Home() {
             style={width < 700 ? { marginTop: 40 } : { marginTop: 70 }}
           />
         </section>
-        <section>
+        <section className={styles.section_purchase}>
           <div className={styles.flex}>
-            <dl>
-              <dt>宇宙人はダレ？</dt>
-              <dd>内容物：コマ4個  /  ミッションカード3枚  /  トラップカード3枚  /  星のかけら20枚  /  スタート・ゴール各1枚  /  付箋1冊  /  エネルギーカード6枚  /  宇宙人カード4枚  /  説明書</dd>
-            </dl>
-            <p>3,500円( 税込・送料別 )</p>
-            <dl>
-              <dt>企画/制作</dt>
-              <dd>田中楠乃 ・野中杏莉</dd>
-              <dt>制作年</dt>
-              <dd>2022年</dd>
-            </dl>
+            <div className={styles.spline_game}>
+              <Spline scene="https://prod.spline.design/JV1TetnFwIWDEenD/scene.splinecode" />
+            </div>
+            <div className={styles.game_detail}>
+              <dl className={styles.section_purchase_gametitle}>
+                <dt className={styles.font_VDL}>宇宙人はダレ？</dt>
+                <dd>
+                  内容物：コマ4個 / ミッションカード3枚 / トラップカード3枚 /
+                  星のかけら20枚 / スタート・ゴール各1枚 / 付箋1冊 /
+                  エネルギーカード6枚 / 宇宙人カード4枚 / 説明書
+                </dd>
+              </dl>
+              <p className={styles.purchase_price}>
+                3,500<em className={styles.purchase_price_en}>円</em>
+                <em className={styles.purchase_price_kakko}>
+                  ( 税込・送料別 )
+                </em>
+              </p>
+              <dl className={styles.section_purchase_author}>
+                <div>
+                  <dt>企画/制作</dt>
+                  <dd>田中楠乃 ・野中杏莉</dd>
+                </div>
+                <div>
+                  <dt>制作年</dt>
+                  <dd>2022年</dd>
+                </div>
+              </dl>
+              <a
+                href="#"
+                className={styles.game_a_purchase}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                宇宙人はダレ？の購入はこちらから
+              </a>
+            </div>
           </div>
         </section>
         <section className={styles.section_qa}>
@@ -192,7 +244,7 @@ export default function Home() {
           <a href="https://note.com/yonayonaramens/" target="_blank">
             <Image
               src="/footer_note.png"
-              alt="Game Logo"
+              alt="宇宙人はダレ？"
               width={100.4}
               height={37.1}
               className={styles.footer_note}
@@ -200,9 +252,7 @@ export default function Home() {
           </a>
         </div>
         <p className={styles.copyright}>
-          <small>
-            COPYRIGHT &copy; 2022 YonayonaRamens. ALL RIGHTS RESERVED.
-          </small>
+          <small>&copy; 2022 YonayonaRamens. ALL RIGHTS RESERVED.</small>
         </p>
       </footer>
       {/* <main className={styles.main}>
