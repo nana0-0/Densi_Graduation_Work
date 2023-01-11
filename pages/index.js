@@ -82,6 +82,7 @@ export default function Home() {
       <div className={styles.spline}>
         <Spline scene="https://prod.spline.design/sPpkqagelFpsWtVE/scene.splinecode" />
       </div>
+      <p className={styles.scroll}>SCROLL</p>
       <main className={styles.main}>
         <section className={styles.section_game}>
           <h1 className={styles.h1}>
