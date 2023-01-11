@@ -59,6 +59,32 @@
   }
 }
 
+
+/* ipadサイズ */
+
+@media (max-width: 1000px) {
+  .scroll{
+    display: inline-block;
+    position: absolute;
+    right: 49%;
+    bottom: 0;
+    z-index: 2;
+    padding: 10px 10px 110px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    writing-mode: vertical-lr;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  
+  }
+  }
+
 @media (max-width: 700px) {
 .scroll{
   display: inline-block;
@@ -289,9 +315,16 @@
 /* ipadサイズ */
 
 @media (max-width: 1000px) {
+
 .spline_game{
   width: 110%;
   height: 80vh;
+}
+
+.game_detail{
+  margin: auto 0;
+  margin-left: 10px;
+  padding-bottom: 50px;
 }
 
 .section_purchase_gametitle dd::after{
@@ -303,6 +336,13 @@
   position: absolute;
   top: 130%;
 }
+
+.section_purchase{
+  background: #343434;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
 
 }
 

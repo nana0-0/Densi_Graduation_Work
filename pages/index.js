@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Spline from "@splinetool/react-spline";
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { GlitchText } from "../components/font";
 import { getWindowSize } from "../components/screensize.js";
 
@@ -25,6 +25,29 @@ const CollapseQA = (props) => {
         {props.answer}
       </dd>
     </dl>
+  );
+};
+
+const ResizeSpline = ({scene,threshhold}) => {
+  const { height, width } = getWindowSize();
+  const onLoad = useCallback(
+    (spline) => {
+      spline.setZoom(width < threshhold ? 0.5 : 1);
+    },
+    [width]
+  );
+
+  return (
+    <>
+      {width === 0 ? (
+        <></>
+      ) : (
+        <Spline
+          onLoad={onLoad}
+          scene={scene}
+        />
+      )}
+    </>
   );
 };
 
@@ -80,13 +103,13 @@ export default function Home() {
         />
       </Head>
       <div className={styles.spline}>
-        <Spline scene="https://prod.spline.design/sPpkqagelFpsWtVE/scene.splinecode" />
+        <ResizeSpline scene="https://prod.spline.design/sPpkqagelFpsWtVE/scene.splinecode" threshhold={700} />
       </div>
       <p className={styles.scroll}>SCROLL</p>
       <main className={styles.main}>
         <section className={styles.section_game}>
           <h1 className={styles.h1}>
-            <GlitchText text="宇宙人はダレ？"/>
+            <GlitchText text="宇宙人はダレ？" />
           </h1>
           <Image
             src="/section_game_bkfont.png"
@@ -119,7 +142,7 @@ export default function Home() {
         <section className={styles.section_purchase}>
           <div className={styles.flex}>
             <div className={styles.spline_game}>
-              <Spline scene="https://prod.spline.design/JV1TetnFwIWDEenD/scene.splinecode" />
+              <ResizeSpline scene="https://prod.spline.design/JV1TetnFwIWDEenD/scene.splinecode" threshhold={1200} />
             </div>
             <div className={styles.game_detail}>
               <dl className={styles.section_purchase_gametitle}>
