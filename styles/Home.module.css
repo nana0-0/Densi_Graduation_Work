@@ -157,7 +157,7 @@
   .scroll{
     display: inline-block;
     position: absolute;
-    right: 49%;
+    right: 45%;
     bottom: 0;
     z-index: 2;
     padding: 10px 10px 110px;
@@ -168,15 +168,26 @@
     letter-spacing: .2em;
     text-transform: uppercase;
     text-decoration: none;
-    writing-mode: vertical-lr;
     font-family: futura-pt-bold, sans-serif;
     font-weight: 700;
-    font-style: normal;
-  
   }
   }
 
 @media (max-width: 700px) {
+
+  .topmove p{
+    text-align: center;
+    background: rgb(131, 131, 131, 0.7);
+    color: rgb(233, 233, 233);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size:12px;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
 .scroll{
   display: inline-block;
   position: absolute;

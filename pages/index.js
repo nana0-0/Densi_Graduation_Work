@@ -117,9 +117,9 @@ export default function Home() {
       <main className={styles.main}>
       <div className={styles.topmove}>
         <p>
-          {!width < 700
-            ? "パッケージをドラックして動かすことが出来ます"
-            : "パッケージを２本指で触ると動かすことが出来ます"}
+          {width < 700
+            ?"パッケージを２本指で触ると動かすことが出来ます"
+            : "パッケージをドラックして動かすことが出来ます"}
         </p>
       </div>
       <p className={styles.scroll}>SCROLL</p>
