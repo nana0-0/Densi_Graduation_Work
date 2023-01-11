@@ -134,7 +134,7 @@ export default function Home() {
               <Image
                 src="/section_game_bkfont.png"
                 alt="Game Logo"
-                width={763}
+                width={width<700?`${763}`:`${763}`}
                 height={157}
                 className={styles.h1_bkfont}
               />
