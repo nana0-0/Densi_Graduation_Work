@@ -2,10 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-import Spline from "@splinetool/react-spline";
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, Suspense } from "react";
 import { GlitchText } from "../components/font";
 import { getWindowSize } from "../components/screensize.js";
+
+const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,7 @@ const CollapseQA = (props) => {
   );
 };
 
-const ResizeSpline = ({scene,threshhold}) => {
+const ResizeSpline = ({ scene, threshhold, loadtype }) => {
   const { height, width } = getWindowSize();
   const onLoad = useCallback(
     (spline) => {
@@ -37,17 +38,21 @@ const ResizeSpline = ({scene,threshhold}) => {
     [width]
   );
 
+  const loadingComponent_top = (
+    // <div className={styles.lds}>
+    //   <div className={styles.lds_spinner}><div></div><div></div></div>
+    // </div>
+    <div></div>
+  );
+
   return (
-    <>
+    <Suspense fallback={<>{loadingComponent_top}</>}>
       {width === 0 ? (
-        <></>
+        <>{loadingComponent_top}</>
       ) : (
-        <Spline
-          onLoad={onLoad}
-          scene={scene}
-        />
+        <Spline onLoad={onLoad} scene={scene} />
       )}
-    </>
+    </Suspense>
   );
 };
 
@@ -103,7 +108,11 @@ export default function Home() {
         />
       </Head>
       <div className={styles.spline}>
-        <ResizeSpline scene="https://prod.spline.design/sPpkqagelFpsWtVE/scene.splinecode" threshhold={700} />
+        <ResizeSpline
+          scene="https://prod.spline.design/sPpkqagelFpsWtVE/scene.splinecode"
+          threshhold={700}
+          loadtype="top"
+        />
       </div>
       <p className={styles.scroll}>SCROLL</p>
       <main className={styles.main}>
@@ -111,13 +120,40 @@ export default function Home() {
           <h1 className={styles.h1}>
             <GlitchText text="宇宙人はダレ？" />
           </h1>
-          <Image
-            src="/section_game_bkfont.png"
-            alt="Game Logo"
-            width={1841}
-            height={125}
-            className={styles.h1_bkfont}
-          />
+          <div className={styles.h1_bkfont_wrap}>
+            <div className={styles.h1_bkfont_flex}>
+              <Image
+                src="/section_game_bkfont.png"
+                alt="Game Logo"
+                width={763}
+                height={157}
+                className={styles.h1_bkfont}
+              />
+              <Image
+                src="/section_game_bkfont.png"
+                alt="Game Logo"
+                width={763}
+                height={157}
+                className={styles.h1_bkfont}
+              />
+            </div>
+            <div className={styles.h1_bkfont_flex}>
+              <Image
+                src="/section_game_bkfont.png"
+                alt="Game Logo"
+                width={763}
+                height={157}
+                className={styles.h1_bkfont}
+              />
+              <Image
+                src="/section_game_bkfont.png"
+                alt="Game Logo"
+                width={763}
+                height={157}
+                className={styles.h1_bkfont}
+              />
+            </div>
+          </div>
           <p className={styles.title}>
             <GlitchText text="ある日、地球は" />
             <em className={styles.title_em}>宇宙人</em>
@@ -142,7 +178,11 @@ export default function Home() {
         <section className={styles.section_purchase}>
           <div className={styles.flex}>
             <div className={styles.spline_game}>
-              <ResizeSpline scene="https://prod.spline.design/JV1TetnFwIWDEenD/scene.splinecode" threshhold={1200} />
+              <ResizeSpline
+                scene="https://prod.spline.design/JV1TetnFwIWDEenD/scene.splinecode"
+                threshhold={1200}
+                loadtype="game"
+              />
             </div>
             <div className={styles.game_detail}>
               <dl className={styles.section_purchase_gametitle}>
