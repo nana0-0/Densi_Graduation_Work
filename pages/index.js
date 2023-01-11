@@ -114,8 +114,15 @@ export default function Home() {
           loadtype="top"
         />
       </div>
-      <p className={styles.scroll}>SCROLL</p>
       <main className={styles.main}>
+      <div className={styles.topmove}>
+        <p>
+          {!width < 700
+            ? "パッケージをドラックして動かすことが出来ます"
+            : "パッケージを２本指で触ると動かすことが出来ます"}
+        </p>
+      </div>
+      <p className={styles.scroll}>SCROLL</p>
         <section className={styles.section_game}>
           <h1 className={styles.h1}>
             <GlitchText text="宇宙人はダレ？" />
