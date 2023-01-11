@@ -85,7 +85,7 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.section_game}>
           <h1 className={styles.h1}>
-            <GlitchText text="宇宙人はダレ？" />
+            <GlitchText text="宇宙人はダレ？"/>
           </h1>
           <Image
             src="/section_game_bkfont.png"
@@ -141,7 +141,7 @@ export default function Home() {
                   <dd>田中楠乃 ・野中杏莉</dd>
                 </div>
                 <div>
-                  <dt>制作年</dt>
+                  <dt>制作年 {"　"}</dt>
                   <dd>2022年</dd>
                 </div>
               </dl>
@@ -222,20 +222,13 @@ export default function Home() {
         </section>
       </main>
       <footer className={styles.footer}>
-        <div className={styles.gameLogo}>
-          <Image
-            src="/footer_font.png"
-            alt="Game Logo"
-            width={210}
-            height={30}
-          />
-        </div>
+        <p className={styles.footer_logo}>宇宙人はダレ？</p>
         <p className={styles.footer_text}>最新情報や制作裏話を発信中！</p>
         <div className={styles.footer_flex}>
           <a href="https://twitter.com/YonayonaRamens" target="_blank">
             <Image
               src="/footer_twitter.png"
-              alt="Game Logo"
+              alt="宇宙人はダレ？Twitterアカウント"
               width={25.08}
               height={20.38}
               className={styles.footer_twitter}
@@ -244,7 +237,7 @@ export default function Home() {
           <a href="https://note.com/yonayonaramens/" target="_blank">
             <Image
               src="/footer_note.png"
-              alt="宇宙人はダレ？"
+              alt="宇宙人はダレ？noteサイト"
               width={100.4}
               height={37.1}
               className={styles.footer_note}
