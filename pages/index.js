@@ -107,22 +107,24 @@ export default function Home() {
           }}
         />
       </Head>
-      <div className={styles.spline}>
-        <ResizeSpline
-          scene="https://prod.spline.design/sPpkqagelFpsWtVE/scene.splinecode"
-          threshhold={700}
-          loadtype="top"
-        />
+      <div className={styles.fv}>
+        <div className={styles.spline}>
+          <ResizeSpline
+            scene="https://prod.spline.design/sPpkqagelFpsWtVE/scene.splinecode"
+            threshhold={700}
+            loadtype="top"
+          />
+        </div>
       </div>
       <main className={styles.main}>
-      <div className={styles.topmove}>
-        <p>
-          {width < 700
-            ?"パッケージを２本指で触ると動かすことが出来ます"
-            : "パッケージをドラックして動かすことが出来ます"}
-        </p>
-      </div>
-      <p className={styles.scroll}>SCROLL</p>
+        <div className={styles.topmove}>
+          <p>
+            {width < 1000
+              ? "パッケージを２本指で触ると動かすことが出来ます"
+              : "パッケージをドラックして動かすことが出来ます"}
+          </p>
+        </div>
+        <p className={styles.scroll}>SCROLL</p>
         <section className={styles.section_game}>
           <h1 className={styles.h1}>
             <GlitchText text="宇宙人はダレ？" />
