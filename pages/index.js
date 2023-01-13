@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
-import React, { useCallback, useState, Suspense } from "react";
+import styles from "../styles/Home.module.scss";
+import React, { useCallback, useState, Suspense, useEffect } from "react";
 import { GlitchText } from "../components/font";
 import { getWindowSize } from "../components/screensize.js";
 
@@ -55,6 +55,70 @@ const ResizeSpline = ({ scene, threshhold, loadtype }) => {
     </Suspense>
   );
 };
+
+function PDFIntro() {
+  const { height, width } = getWindowSize();
+  const [pdfimage, setPdfImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPdfImage((i) => (i + 1) % 6);
+    }, 6000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  return (
+    <section className={styles.pdf}>
+      <h2>ゲームの説明書</h2>
+      <ul>
+        <li>
+          <Image
+            src={"/pdf_" + pdfimage + ".svg"}
+            alt="ルール説明1"
+            width={width < 700 ? 335 : 629}
+            height={width < 700 ? 213 : 400}
+            className={styles.pdf_img}
+          />
+          <div className={styles.pdf_carousel_wrap}>
+            <ul className={styles.pdf_carousel}>
+              {[...Array(6).keys()].map((_, i) => (
+                <li className={pdfimage == i ? styles.circle : ""} key={i}>
+                  {pdfimage == i ? (
+                    <>
+                      <span className={styles.cover1}></span>
+                      <span className={styles.cover2}></span>
+                    </>
+                  ) : (
+                    <></>
+                  )}
+                  <button
+                    onClick={() => setPdfImage(i)}
+                    className={
+                      pdfimage == i
+                        ? styles.pdfimg_c_true
+                        : styles.pdfimg_c_false
+                    }
+                  >
+                    {pdfimage == i ? (i + 1).toString() : "・"}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <p>詳しいルールは説明書(PDF)をダウンロード！!</p>
+      <a
+        href="https://drive.google.com/file/d/1y2R4mcj1_mLnwDGiks66NWxIvrEUT3nn/view?usp=sharing"
+        target="_blank"
+      >
+        説明書
+      </a>
+    </section>
+  );
+}
 
 export default function Home() {
   const { height, width } = getWindowSize();
@@ -115,8 +179,6 @@ export default function Home() {
             loadtype="top"
           />
         </div>
-      </div>
-      <main className={styles.main}>
         <div className={styles.topmove}>
           <p>
             {width < 1000
@@ -125,6 +187,8 @@ export default function Home() {
           </p>
         </div>
         <p className={styles.scroll}>SCROLL</p>
+      </div>
+      <main className={styles.main}>
         <section className={styles.section_game}>
           <h1 className={styles.h1}>
             <GlitchText text="宇宙人はダレ？" />
@@ -134,15 +198,15 @@ export default function Home() {
               <Image
                 src="/section_game_bkfont.png"
                 alt="Game Logo"
-                width={width<700?`${763}`:`${763}`}
-                height={157}
+                width={width < 700 ? `${455}` : `${763}`}
+                height={width < 700 ? `${94}` : `${157}`}
                 className={styles.h1_bkfont}
               />
               <Image
                 src="/section_game_bkfont.png"
                 alt="Game Logo"
-                width={763}
-                height={157}
+                width={width < 700 ? `${455}` : `${763}`}
+                height={width < 700 ? `${94}` : `${157}`}
                 className={styles.h1_bkfont}
               />
             </div>
@@ -150,15 +214,15 @@ export default function Home() {
               <Image
                 src="/section_game_bkfont.png"
                 alt="Game Logo"
-                width={763}
-                height={157}
+                width={width < 700 ? `${455}` : `${763}`}
+                height={width < 700 ? `${94}` : `${157}`}
                 className={styles.h1_bkfont}
               />
               <Image
                 src="/section_game_bkfont.png"
                 alt="Game Logo"
-                width={763}
-                height={157}
+                width={width < 700 ? `${455}` : `${763}`}
+                height={width < 700 ? `${94}` : `${157}`}
                 className={styles.h1_bkfont}
               />
             </div>
@@ -184,6 +248,7 @@ export default function Home() {
             style={width < 700 ? { marginTop: 40 } : { marginTop: 70 }}
           />
         </section>
+        <PDFIntro />
         <section className={styles.section_purchase}>
           <div className={styles.flex}>
             <div className={styles.spline_game}>

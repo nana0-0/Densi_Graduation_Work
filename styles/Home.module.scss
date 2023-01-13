@@ -1,9 +1,9 @@
 .main {
-  background: #C8C8C8;
+  background: #c8c8c8;
 }
 
-.fv{
-  background: #C8C8C8;
+.fv {
+  background: #c8c8c8;
 }
 /* ローディング */
 /* .lds{
@@ -91,20 +91,20 @@
   height: 100vh;
 }
 
-.topmove p{
+.topmove p {
   text-align: center;
   background: rgb(131, 131, 131, 0.7);
   color: rgb(233, 233, 233);
   padding: 10px 20px;
   border-radius: 30px;
-  font-size:12px;
+  font-size: 12px;
   position: absolute;
   bottom: 170px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.scroll{
+.scroll {
   display: inline-block;
   position: absolute;
   right: 5%;
@@ -115,7 +115,7 @@
   color: #fff;
   font-size: 15px;
   line-height: 1;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
   writing-mode: vertical-lr;
@@ -125,7 +125,7 @@
 }
 
 .scroll::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -157,7 +157,7 @@
 /* ipadサイズ */
 
 @media (max-width: 1000px) {
-  .scroll{
+  .scroll {
     display: inline-block;
     position: absolute;
     right: 5%;
@@ -168,65 +168,64 @@
     color: #fff;
     font-size: 15px;
     line-height: 1;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
     writing-mode: vertical-lr;
     font-family: futura-pt-bold, sans-serif;
     font-weight: 700;
   }
-  }
+}
 
 @media (max-width: 700px) {
-
   .spline {
     width: 100%;
     height: 100vh;
   }
 
-  .topmove p{
+  .topmove p {
     text-align: center;
     background: rgb(131, 131, 131, 0.7);
     color: rgb(233, 233, 233);
     padding: 10px 20px;
     border-radius: 30px;
-    font-size:12px;
+    font-size: 12px;
     position: absolute;
     bottom: 20%;
     left: 50%;
     z-index: 5;
     transform: translateX(-50%);
   }
-  
-.scroll{
-  display: inline-block;
-  position: absolute;
-  right: 3%;
-  bottom: 50%;
-  z-index: 2;
-  padding: 10px 10px 90px;
-  overflow: hidden;
-  color: #fff;
-  font-size: 12px;
-  line-height: 1;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  text-decoration: none;
-  writing-mode: vertical-lr;
-  font-family: futura-pt-bold, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-.scroll::after {
-  content: '';
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  width: 1px;
-  height: 60px;
-  background: #fff;
-  animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
-}
+
+  .scroll {
+    display: inline-block;
+    position: absolute;
+    right: 3%;
+    bottom: 50%;
+    z-index: 2;
+    padding: 10px 10px 90px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    writing-mode: vertical-lr;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .scroll::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    width: 1px;
+    height: 60px;
+    background: #fff;
+    animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+  }
 }
 
 /* フォント */
@@ -264,13 +263,13 @@
   font-weight: 500;
 }
 
-.h1_bkfont_flex{
-  animation :infinity-scroll-left 25s infinite linear 0.5s both;
+.h1_bkfont_flex {
+  animation: infinity-scroll-left 25s infinite linear 0.5s both;
   display: flex;
   display: -ms-grid;
 }
 
-.h1_bkfont_wrap{
+.h1_bkfont_wrap {
   overflow: hidden;
   display: flex;
 }
@@ -298,7 +297,7 @@
   .section_game {
     background: #222222;
     text-align: center;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
   }
 
   .h1 {
@@ -308,7 +307,7 @@
     text-align: center;
     display: inline-block;
     position: relative;
-    top: 98px;
+    top: 85px;
   }
 
   .title {
@@ -330,35 +329,338 @@
   }
 }
 
-/* ゲーム内容 */
+/* PDF */
 
-.flex{
+.pdf {
+  background: #141414;
+  text-align: center;
+  padding-bottom: 110px;
+  padding-top: 110px;
+}
+
+.pdf h2{
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+.pdf ul {
   display: flex;
 }
 
-.spline_game{
+.pdf li {
+  // width: 80%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img {
+  width: 90%;
+}
+
+.pdf p {
+  margin-top: 60px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 60px;
+  font-size: 15px;
+}
+
+.pdf a {
+  color: #0b0b0b;
+  font-weight: 700;
+  background: #00c965;
+  font-size: 18px;
+  border-radius: 49px;
+  padding: 17px 130px;
+}
+
+.pdf_carousel_wrap {
+  padding-top: 18px;
+  width: 629px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pdf_carousel {
+  color: #fff;
+  font-size: 14px;
+  margin: 0 auto;
+  justify-content: center;
+  float: right;
+  padding-right: 50px;
+}
+
+.pdf_carousel li {
+  padding-right: 13px;
+  padding-left: 11px;
+}
+
+.pdfimg_c_true {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  background-color: #141414;
+  color: #fff;
+  position: relative;
+  top: 4px;
+  z-index: 10;
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  box-shadow: inset 0 0 0 2px #fff;
+  // animation: filling 0.2s ease-in 0.8s forwards;
+}
+.cover1,
+.cover2 {
+  position: absolute;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+}
+.cover1 {
+  left: 50%;
+}
+
+.cover2 {
+  left: 0%;
+}
+.cover1:before,
+.cover2:before {
+  position: absolute;
+  content: "";
+}
+.cover1:before {
+  left: 0%;
+  width: 100%;
+  height: 200%;
+  background: #141414; /* 背景色に合わせて変更してください */
+  transform-origin: 0 25%;
+  animation: draw 3s linear forwards;
+}
+.cover2:before {
+  left: -10%;
+  width: 110%;
+  height: 120%;
+  background: #141414; /* 背景色に合わせて変更してください */
+  transform-origin: 100% 40%;
+  animation: draw 3s ease-out 3s forwards;
+}
+
+/* 円を描くアニメーション */
+@keyframes draw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+/* 塗りのアニメーション */
+@keyframes filling {
+  0% {
+    box-shadow: inset 0 0 0 9px #fff;
+  }
+  100% {
+    box-shadow: inset 0 0 0 50px #fff;
+  }
+}
+
+.pdfimg_c_false {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  background-color: #141414;
+  color: #fff;
+  position: relative;
+  padding-top: 5px;
+}
+
+@media (max-width: 700px) {
+  .pdf {
+    background: #141414;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+
+  .pdf h2{
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  .pdf p {
+    margin-top: 60px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 60px;
+    font-size: 12px;
+  }
+
+  .pdf a {
+    color: #0b0b0b;
+    font-weight: 700;
+    background: #00c965;
+    font-size: 15px;
+    border-radius: 49px;
+    padding: 17px 130px;
+  }
+
+  .pdf_carousel_wrap {
+    padding-top: 8px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .pdf_carousel {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 auto;
+    justify-content: center;
+    float: right;
+    padding-right: 60px;
+  }
+
+  .pdf_carousel li {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+
+  .pdfimg_c_true {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    background-color: #141414;
+    color: #fff;
+    position: relative;
+    top: 0;
+    right: 0px;
+    z-index: 10;
+    font-size: 11px;
+  }
+
+  .circle {
+    position: relative;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    box-shadow: inset 0 0 0 1px #fff;
+    // animation: filling 0.2s ease-in 0.8s forwards;
+  }
+  .cover1,
+  .cover2 {
+    position: absolute;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+  }
+  .cover1 {
+    left: 50%;
+  }
+
+  .cover2 {
+    left: 0%;
+  }
+  .cover1:before,
+  .cover2:before {
+    position: absolute;
+    content: "";
+  }
+  .cover1:before {
+    left: 0%;
+    width: 110%;
+    height: 210%;
+    background: #141414; /* 背景色に合わせて変更してください */
+    transform-origin: 0 25%;
+    animation: draw 3s linear forwards;
+  }
+  .cover2:before {
+    left: -10%;
+    width: 120%;
+    height: 130%;
+    background: #141414; /* 背景色に合わせて変更してください */
+    transform-origin: 100% 40%;
+    animation: draw 3s ease-out 3s forwards;
+  }
+
+  /* 円を描くアニメーション */
+  @keyframes draw {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+
+  /* 塗りのアニメーション */
+  @keyframes filling {
+    0% {
+      box-shadow: inset 0 0 0 9px #fff;
+    }
+    100% {
+      box-shadow: inset 0 0 0 50px #fff;
+    }
+  }
+
+  .pdfimg_c_false {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    background-color: #141414;
+    color: #fff;
+    position: relative;
+    padding-top: 4px;
+  }
+}
+
+/* ゲーム購入 */
+
+.flex {
+  display: flex;
+}
+
+.spline_game {
   width: 70%;
   height: 80vh;
 }
 
-.section_purchase{
+.section_purchase {
   background: #343434;
   color: #fff;
 }
 
-.game_detail{
+.game_detail {
   margin: auto 0;
   margin-left: 50px;
   padding-bottom: 50px;
 }
 
-.section_purchase_gametitle dt{
+.section_purchase_gametitle dt {
   font-size: 28px;
   margin-bottom: 30px;
   padding-top: 30px;
 }
 
-.section_purchase_gametitle dd{
+.section_purchase_gametitle dd {
   font-size: 12px;
   width: 80%;
   line-height: 2;
@@ -366,7 +668,7 @@
   position: relative;
 }
 
-.section_purchase_gametitle dd::after{
+.section_purchase_gametitle dd::after {
   content: "";
   background: #fff;
   width: 100%;
@@ -376,51 +678,51 @@
   top: 140%;
 }
 
-.purchase_price{
+.purchase_price {
   padding-top: 25px;
   font-size: 20px;
   position: relative;
   width: 80%;
 }
 
-.purchase_price_en{
+.purchase_price_en {
   font-style: normal;
   font-size: 10px;
   padding-left: 3px;
   padding-right: 5px;
 }
 
-.purchase_price_kakko{
+.purchase_price_kakko {
   font-style: normal;
   font-size: 13px;
 }
 
-.purchase_price::after{
-    content: "";
-    background: #fff;
-    width: 100%;
-    height: 1px;
-    left: 0;
-    position: absolute;
-    top: 75px;
+.purchase_price::after {
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 75px;
 }
 
-.section_purchase_author{
+.section_purchase_author {
   margin-top: 40px;
   font-size: 12px;
 }
 
-.section_purchase_author div{
+.section_purchase_author div {
   display: flex;
   padding-bottom: 10px;
 }
 
-.section_purchase_author div dt{
+.section_purchase_author div dt {
   padding-right: 20px;
 }
 
-.game_a_purchase{
-  background: #E0493B;
+.game_a_purchase {
+  background: #e0493b;
   border-radius: 33px;
   padding: 15px 65px 15px 25px;
   font-size: 12px;
@@ -430,7 +732,7 @@
   top: 30px;
 }
 
-.game_a_purchase::after{
+.game_a_purchase::after {
   content: "";
   position: absolute;
   top: 12px;
@@ -445,82 +747,76 @@
 /* ipadサイズ */
 
 @media (max-width: 1000px) {
+  .spline_game {
+    width: 110%;
+    height: 80vh;
+  }
 
-.spline_game{
-  width: 110%;
-  height: 80vh;
-}
+  .game_detail {
+    margin: auto 0;
+    margin-left: 10px;
+    padding-bottom: 50px;
+  }
 
-.game_detail{
-  margin: auto 0;
-  margin-left: 10px;
-  padding-bottom: 50px;
-}
+  .section_purchase_gametitle dd::after {
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 130%;
+  }
 
-.section_purchase_gametitle dd::after{
-  content: "";
-  background: #fff;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  position: absolute;
-  top: 130%;
-}
-
-.section_purchase{
-  background: #343434;
-  color: #fff;
-  padding-bottom: 30px;
-}
-
-
+  .section_purchase {
+    background: #343434;
+    color: #fff;
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 700px) {
-
-  .flex{
-    display:block;
+  .flex {
+    display: block;
   }
 
-  .game_detail{
+  .game_detail {
     margin: 0 auto;
     width: 80%;
   }
 
-  .spline_game{
-
+  .spline_game {
     width: 100%;
     height: 40vh;
     margin-bottom: 10px;
   }
 
-  .section_purchase_gametitle dt{
+  .section_purchase_gametitle dt {
     font-size: 28px;
     margin-bottom: 30px;
     padding-top: 10px;
   }
 
-  .purchase_price{
+  .purchase_price {
     padding-top: 25px;
     font-size: 20px;
     position: relative;
     width: 100%;
   }
 
-  .section_purchase{
+  .section_purchase {
     background: #343434;
     color: #fff;
     padding-bottom: 80px;
   }
 
-  .section_purchase_gametitle dd{
+  .section_purchase_gametitle dd {
     font-size: 12px;
     width: 100%;
     line-height: 2;
     margin-bottom: 15px;
     position: relative;
   }
-    
 }
 
 /* QA質問 */
@@ -643,10 +939,8 @@
   background-position: right center;
 }
 
-
 @media (max-width: 700px) {
-
-  .section_qa{
+  .section_qa {
     padding-top: 100px;
   }
 
@@ -774,7 +1068,7 @@
   margin-top: 200px;
 }
 
-.footer_logo{
+.footer_logo {
   color: #fff;
   font-family: vdl-logomaru-jr, sans-serif;
   font-weight: 400;
@@ -789,7 +1083,7 @@
   display: inline-block;
   padding: 15px 20px;
   color: #0b0b0b;
-  font-size: 5px;
+  font-size: 10px;
   font-weight: 700;
   border-radius: 50px;
   margin-bottom: 30px;
@@ -805,6 +1099,7 @@
   position: absolute;
   top: 90%;
   right: 45%;
+  -webkit-text-size-adjust: 100%;
 }
 
 .footer_twitter {
@@ -856,11 +1151,9 @@
     margin-bottom: 30px;
     position: relative;
   }
-  
 }
 
 @media (max-width: 700px) {
-
   .footer {
     margin-top: 100px;
   }
