@@ -145,7 +145,7 @@ function PDFIntro() {
   return (
     <section className={PDFstyles.pdf}>
       <h2>ゲームの説明書</h2>
-          <embed
+          <Image
             src={"/pdf_" + pdfimage + ".svg"}
             alt="ルール説明1"
             width={width < 700 ? 335 : 629}
@@ -178,7 +178,6 @@ function PDFIntro() {
               ))}
             </ul>
           </div>
-
       <p>詳しいルールは説明書(PDF)をダウンロード！!</p>
       <a
         href="https://drive.google.com/file/d/1y2R4mcj1_mLnwDGiks66NWxIvrEUT3nn/view?usp=sharing"
