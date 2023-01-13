@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.scss";
+import PDFstyles from "../styles/PDFIntro.module.scss";
+import QAstyles from "../styles/CollapseQA.module.scss";
 import React, { useCallback, useState, Suspense, useEffect } from "react";
 import { GlitchText } from "../components/font";
 import { getWindowSize } from "../components/screensize.js";
@@ -12,6 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const CollapseQA = (props) => {
   const [open, setOpen] = useState(false);
+  const styles = QAstyles;
   return (
     <dl className={!open ? styles.qa_dl_close : styles.qa_dl_open}>
       <dt>
@@ -26,6 +29,76 @@ const CollapseQA = (props) => {
         {props.answer}
       </dd>
     </dl>
+  );
+};
+
+const QASection = () => {
+  const styles = QAstyles;
+  return (
+    <section className={styles.section_qa}>
+      <h2 className={styles.h2}>
+        {" "}
+        <GlitchText text="Q&A" />
+      </h2>
+      <p className={styles.qa_p}>
+        <GlitchText text="発送/返品・支払いについて" />
+      </p>
+      <CollapseQA
+        question="発送・送料について"
+        answer={
+          <>
+            商品の発送はヤマト運輸にてお送りいたします。送料は全国一律730円です。
+          </>
+        }
+      />
+      <CollapseQA
+        question="注文のキャンセル・返品について"
+        answer={
+          <>
+            商品に欠陥がある場合を除き、注文のキャンセル・返品は承っておりません。
+          </>
+        }
+      />
+      <CollapseQA
+        question="お支払い方法は何がありますか？"
+        answer="お支払いには、コンビニ決済・銀行振込・クレジットカード決済・（VISA / MASTER / JCB / AMEX / Diners）のご利用が可能です。"
+      />
+      <CollapseQA
+        question="請求書や領収書を送付してもらうことは可能ですか？"
+        answer={
+          <>
+            大変恐れ入りますが、BASEでは請求書や領収書の発行を行っておりませんので、基本的には、以下の内容でご対応をいただく必要がございます。
+            <br />
+            <br />
+            請求書：
+            <br />
+            購入時に届く「ご購入いただきありがとうございました」メールを請求書の代わりとしてご利用ください。
+            <br />
+            後払い決済の場合のみ、請求書ハガキが商品発送後に郵送で届きます。
+            <br />
+            <br />
+            領収書：
+            <br />
+            クレジットカード会社・キャリアより届く利用明細・コンビニや銀行より発行される受領書・後払い決済での
+            お支払い時の受領書と、購入時に届く「ご購入いただきありがとうございました」
+            <br />
+            メールをあわせて、領収書の代わりとしてご利用ください。
+          </>
+        }
+      />
+      <CollapseQA
+        question="商品はいつ届きますか？"
+        answer="代金のお支払い確定後、5日以内に発送いたします。"
+      />
+      <CollapseQA
+        question="受け取れなかった商品はどうなりますか？"
+        answer={
+          <>
+            配送センターへ返送されます。不在伝票から再配達依頼をしてください。
+          </>
+        }
+      />
+    </section>
   );
 };
 
@@ -70,25 +143,23 @@ function PDFIntro() {
   }, []);
 
   return (
-    <section className={styles.pdf}>
+    <section className={PDFstyles.pdf}>
       <h2>ゲームの説明書</h2>
-      <ul>
-        <li>
-          <Image
+          <embed
             src={"/pdf_" + pdfimage + ".svg"}
             alt="ルール説明1"
             width={width < 700 ? 335 : 629}
             height={width < 700 ? 213 : 400}
-            className={styles.pdf_img}
+            className={PDFstyles.pdf_img}
           />
-          <div className={styles.pdf_carousel_wrap}>
-            <ul className={styles.pdf_carousel}>
+          <div className={PDFstyles.pdf_carousel_wrap}>
+            <ul className={PDFstyles.pdf_carousel}>
               {[...Array(6).keys()].map((_, i) => (
-                <li className={pdfimage == i ? styles.circle : ""} key={i}>
+                <li className={pdfimage == i ? PDFstyles.circle : ""} key={i}>
                   {pdfimage == i ? (
                     <>
-                      <span className={styles.cover1}></span>
-                      <span className={styles.cover2}></span>
+                      <span className={PDFstyles.cover1}></span>
+                      <span className={PDFstyles.cover2}></span>
                     </>
                   ) : (
                     <></>
@@ -97,8 +168,8 @@ function PDFIntro() {
                     onClick={() => setPdfImage(i)}
                     className={
                       pdfimage == i
-                        ? styles.pdfimg_c_true
-                        : styles.pdfimg_c_false
+                        ? PDFstyles.pdfimg_c_true
+                        : PDFstyles.pdfimg_c_false
                     }
                   >
                     {pdfimage == i ? (i + 1).toString() : "・"}
@@ -107,8 +178,6 @@ function PDFIntro() {
               ))}
             </ul>
           </div>
-        </li>
-      </ul>
       <p>詳しいルールは説明書(PDF)をダウンロード！!</p>
       <a
         href="https://drive.google.com/file/d/1y2R4mcj1_mLnwDGiks66NWxIvrEUT3nn/view?usp=sharing"
@@ -294,70 +363,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.section_qa}>
-          <h2 className={styles.h2}>
-            {" "}
-            <GlitchText text="Q&A" />
-          </h2>
-          <p className={styles.qa_p}>
-            <GlitchText text="発送/返品・支払いについて" />
-          </p>
-          <CollapseQA
-            question="発送・送料について"
-            answer={
-              <>
-                商品の発送はヤマト運輸にてお送りいたします。送料は全国一律730円です。
-              </>
-            }
-          />
-          <CollapseQA
-            question="注文のキャンセル・返品について"
-            answer={
-              <>
-                商品に欠陥がある場合を除き、注文のキャンセル・返品は承っておりません。
-              </>
-            }
-          />
-          <CollapseQA
-            question="お支払い方法は何がありますか？"
-            answer="お支払いには、コンビニ決済・銀行振込・クレジットカード決済・（VISA / MASTER / JCB / AMEX / Diners）のご利用が可能です。"
-          />
-          <CollapseQA
-            question="請求書や領収書を送付してもらうことは可能ですか？"
-            answer={
-              <>
-                大変恐れ入りますが、BASEでは請求書や領収書の発行を行っておりませんので、基本的には、以下の内容でご対応をいただく必要がございます。
-                <br />
-                <br />
-                請求書：
-                <br />
-                購入時に届く「ご購入いただきありがとうございました」メールを請求書の代わりとしてご利用ください。
-                <br />
-                後払い決済の場合のみ、請求書ハガキが商品発送後に郵送で届きます。
-                <br />
-                <br />
-                領収書：
-                <br />
-                クレジットカード会社・キャリアより届く利用明細・コンビニや銀行より発行される受領書・後払い決済での
-                お支払い時の受領書と、購入時に届く「ご購入いただきありがとうございました」
-                <br />
-                メールをあわせて、領収書の代わりとしてご利用ください。
-              </>
-            }
-          />
-          <CollapseQA
-            question="商品はいつ届きますか？"
-            answer="代金のお支払い確定後、5日以内に発送いたします。"
-          />
-          <CollapseQA
-            question="受け取れなかった商品はどうなりますか？"
-            answer={
-              <>
-                配送センターへ返送されます。不在伝票から再配達依頼をしてください。
-              </>
-            }
-          />
-        </section>
+        <QASection />
       </main>
       <footer className={styles.footer}>
         <p className={styles.footer_logo}>宇宙人はダレ？</p>
