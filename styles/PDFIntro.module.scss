@@ -202,6 +202,10 @@
       float: right;
       padding-right: 60px;
     }
+
+    .embed{
+      background: #141414;
+    }
   
     .pdf_carousel li {
       padding-right: 7px;
@@ -218,7 +222,7 @@
       background-color: #141414;
       color: #fff;
       position: relative;
-      top: 0px;
+      top: 1px;
       right: 0px;
       z-index: 10;
       font-size: 11px;
