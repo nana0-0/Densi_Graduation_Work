@@ -1,71 +1,228 @@
-
-/* PDF */
+/* PDF 　説明書 */
 
 .pdf {
-    background: #141414;
+  background: #c8c8c8;
+  text-align: center;
+  padding-bottom: 110px;
+  padding-top: 110px;
+}
+
+.h2_span {
+  color: #00c965;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.pdf h2 span {
+  color: #0b0b0b;
+  font-size: 35px;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pdf h2 {
+  margin-bottom: 50px;
+}
+
+.pdf ul {
+  display: flex;
+}
+
+.pdf li {
+  // width: 80%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img {
+  width: 90%;
+}
+
+.pdf p {
+  margin-top: 60px;
+  color: #0b0b0b;
+  font-weight: 700;
+  margin-bottom: 60px;
+  font-size: 15px;
+}
+
+.pdf a {
+  color: #0b0b0b;
+  font-weight: 700;
+  background: #00c965;
+  font-size: 18px;
+  border-radius: 49px;
+  padding: 17px 130px;
+}
+
+.pdf_carousel_wrap {
+  padding-top: 18px;
+  width: 629px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pdf_carousel {
+  color: #0b0b0b;
+  font-size: 14px;
+  margin: 0 auto;
+  justify-content: center;
+  float: right;
+  padding-right: 50px;
+}
+
+.pdf_carousel li {
+  padding-right: 13px;
+  padding-left: 11px;
+}
+
+.pdfimg_c_true {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  background-color: #c8c8c8;
+  color: #0b0b0b;
+  position: relative;
+  top: 4px;
+  z-index: 10;
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  box-shadow: inset 0 0 0 2px #0b0b0b;
+  // animation: filling 0.2s ease-in 0.8s forwards;
+}
+.cover1,
+.cover2 {
+  position: absolute;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+}
+.cover1 {
+  left: 50%;
+}
+
+.cover2 {
+  left: 0%;
+}
+.cover1:before,
+.cover2:before {
+  position: absolute;
+  content: "";
+}
+.cover1:before {
+  left: 0%;
+  width: 100%;
+  height: 200%;
+  background: #c8c8c8; /* 背景色に合わせて変更してください */
+  transform-origin: 0 25%;
+  animation: draw 3s linear forwards;
+}
+.cover2:before {
+  left: -10%;
+  width: 110%;
+  height: 120%;
+  background: #c8c8c8; /* 背景色に合わせて変更してください */
+  transform-origin: 100% 40%;
+  animation: draw 3s ease-out 3s forwards;
+}
+
+/* 円を描くアニメーション */
+@keyframes draw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+/* 塗りのアニメーション */
+@keyframes filling {
+  0% {
+    box-shadow: inset 0 0 0 9px #0b0b0b;
+  }
+  100% {
+    box-shadow: inset 0 0 0 50px #0b0b0b;
+  }
+}
+
+.pdfimg_c_false {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  background-color: #c8c8c8;
+  color: #0b0b0b;
+  position: relative;
+  padding-top: 5px;
+}
+
+@media (max-width: 700px) {
+  .pdf {
+    background: #c8c8c8;
     text-align: center;
-    padding-bottom: 110px;
-    padding-top: 110px;
+    padding-bottom: 100px;
   }
-  
-  .pdf h2{
-    color: #fff;
-    margin-bottom: 80px;
+
+  .pdf h2 span {
+    color: #0b0b0b;
+    font-size: 30px;
   }
-  
-  .pdf ul {
-    display: flex;
+  .pdf h2 {
+    margin-bottom: 40px;
   }
-  
-  .pdf li {
-    // width: 80%;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .img {
-    width: 90%;
-  }
-  
   .pdf p {
     margin-top: 60px;
-    color: #fff;
+    color: #0b0b0b;
     font-weight: 700;
     margin-bottom: 60px;
-    font-size: 15px;
+    font-size: 12px;
   }
-  
+
   .pdf a {
     color: #0b0b0b;
     font-weight: 700;
     background: #00c965;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 49px;
     padding: 17px 130px;
   }
-  
+
   .pdf_carousel_wrap {
-    padding-top: 18px;
-    width: 629px;
+    padding-top: 8px;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
   }
-  
+
   .pdf_carousel {
-    color: #fff;
+    color: #0b0b0b;
     font-size: 14px;
     margin: 0 auto;
     justify-content: center;
     float: right;
-    padding-right: 50px;
+    padding-right: 60px;
   }
-  
+
   .pdf_carousel li {
-    padding-right: 13px;
-    padding-left: 11px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
-  
+
   .pdfimg_c_true {
     background-color: transparent;
     border: none;
@@ -73,19 +230,22 @@
     outline: none;
     padding: 0;
     appearance: none;
-    background-color: #141414;
-    color: #fff;
+    background-color: #c8c8c8;
+    color: #0b0b0b;
     position: relative;
-    top: 4px;
+    top: 2px;
+    // 数字の上げ下げ
+    right: 0px;
     z-index: 10;
+    font-size: 11px;
   }
-  
+
   .circle {
     position: relative;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    box-shadow: inset 0 0 0 2px #fff;
+    width: 25px;
+    height: 25px;
+    box-shadow: inset 0 0 0 1px #0b0b0b;
     // animation: filling 0.2s ease-in 0.8s forwards;
   }
   .cover1,
@@ -98,7 +258,7 @@
   .cover1 {
     left: 50%;
   }
-  
+
   .cover2 {
     left: 0%;
   }
@@ -109,21 +269,21 @@
   }
   .cover1:before {
     left: 0%;
-    width: 100%;
-    height: 200%;
-    background: #141414; /* 背景色に合わせて変更してください */
+    width: 110%;
+    height: 210%;
+    background: #c8c8c8; /* 背景色に合わせて変更してください */
     transform-origin: 0 25%;
     animation: draw 3s linear forwards;
   }
   .cover2:before {
     left: -10%;
-    width: 110%;
-    height: 120%;
-    background: #141414; /* 背景色に合わせて変更してください */
+    width: 120%;
+    height: 130%;
+    background: #c8c8c8; /* 背景色に合わせて変更してください */
     transform-origin: 100% 40%;
     animation: draw 3s ease-out 3s forwards;
   }
-  
+
   /* 円を描くアニメーション */
   @keyframes draw {
     0% {
@@ -133,17 +293,17 @@
       transform: rotate(180deg);
     }
   }
-  
+
   /* 塗りのアニメーション */
   @keyframes filling {
     0% {
-      box-shadow: inset 0 0 0 9px #fff;
+      box-shadow: inset 0 0 0 9px #0b0b0b;
     }
     100% {
-      box-shadow: inset 0 0 0 50px #fff;
+      box-shadow: inset 0 0 0 50px #0b0b0b;
     }
   }
-  
+
   .pdfimg_c_false {
     background-color: transparent;
     border: none;
@@ -151,155 +311,10 @@
     outline: none;
     padding: 0;
     appearance: none;
-    background-color: #141414;
-    color: #fff;
+    background-color: #c8c8c8;
+    color: #0b0b0b;
     position: relative;
-    padding-top: 5px;
+    padding-top: 0px;
+    font-size: 15px;
   }
-  
-  @media (max-width: 700px) {
-    .pdf {
-      background: #141414;
-      text-align: center;
-      padding-bottom: 100px;
-    }
-  
-    .pdf h2{
-      color: #fff;
-      margin-bottom: 40px;
-      font-size: 20px;
-    }
-  
-    .pdf p {
-      margin-top: 60px;
-      color: #fff;
-      font-weight: 700;
-      margin-bottom: 60px;
-      font-size: 12px;
-    }
-  
-    .pdf a {
-      color: #0b0b0b;
-      font-weight: 700;
-      background: #00c965;
-      font-size: 15px;
-      border-radius: 49px;
-      padding: 17px 130px;
-    }
-  
-    .pdf_carousel_wrap {
-      padding-top: 8px;
-      width: 400px;
-      margin: 0 auto;
-      text-align: center;
-    }
-  
-    .pdf_carousel {
-      color: #fff;
-      font-size: 14px;
-      margin: 0 auto;
-      justify-content: center;
-      float: right;
-      padding-right: 60px;
-    }
-  
-    .pdf_carousel li {
-      padding-right: 5px;
-      padding-left: 5px;
-    }
-  
-    .pdfimg_c_true {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      padding: 0;
-      appearance: none;
-      background-color: #141414;
-      color: #fff;
-      position: relative;
-      top: 2px;
-      // 数字の上げ下げ
-      right: 0px;
-      z-index: 10;
-      font-size: 11px;
-    }
-  
-    .circle {
-      position: relative;
-      border-radius: 50%;
-      width: 25px;
-      height: 25px;
-      box-shadow: inset 0 0 0 1px #fff;
-      // animation: filling 0.2s ease-in 0.8s forwards;
-    }
-    .cover1,
-    .cover2 {
-      position: absolute;
-      overflow: hidden;
-      width: 50%;
-      height: 100%;
-    }
-    .cover1 {
-      left: 50%;
-    }
-  
-    .cover2 {
-      left: 0%;
-    }
-    .cover1:before,
-    .cover2:before {
-      position: absolute;
-      content: "";
-    }
-    .cover1:before {
-      left: 0%;
-      width: 110%;
-      height: 210%;
-      background: #141414; /* 背景色に合わせて変更してください */
-      transform-origin: 0 25%;
-      animation: draw 3s linear forwards;
-    }
-    .cover2:before {
-      left: -10%;
-      width: 120%;
-      height: 130%;
-      background: #141414; /* 背景色に合わせて変更してください */
-      transform-origin: 100% 40%;
-      animation: draw 3s ease-out 3s forwards;
-    }
-  
-    /* 円を描くアニメーション */
-    @keyframes draw {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(180deg);
-      }
-    }
-  
-    /* 塗りのアニメーション */
-    @keyframes filling {
-      0% {
-        box-shadow: inset 0 0 0 9px #fff;
-      }
-      100% {
-        box-shadow: inset 0 0 0 50px #fff;
-      }
-    }
-  
-    .pdfimg_c_false {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      padding: 0;
-      appearance: none;
-      background-color: #141414;
-      color: #fff;
-      position: relative;
-      padding-top: 0px;
-      font-size: 15px;
-    }
-  }
+}

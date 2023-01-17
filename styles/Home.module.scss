@@ -5,6 +5,53 @@
 .fv {
   background: #c8c8c8;
 }
+
+.fv_h1{
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  font-size: 30px;
+  font-family: vdl-logomaru-jr, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+}
+
+.fv_parchese{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  background:#e0493b;
+  padding: 50px 31px;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 700px) {
+  .fv_h1{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 25px;
+    font-family: vdl-logomaru-jr, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+  }
+
+  .fv_parchese{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 13px;
+    color: #fff;
+    background:#e0493b;
+    padding: 25px 9px;
+    border-radius: 50%;
+  }
+  
+}
 /* ローディング */
 /* .lds{
   width: 100%;
@@ -238,27 +285,33 @@
 
 /* ここからオリジナル */
 .section_game {
-  background: #222222;
+  background: #141414;
   text-align: center;
   padding-bottom: 150px;
 }
 
 .h1 {
-  font-size: 40px;
-  background-color: #e0493b;
-  color: #000;
+  font-size: 60px;
+  color: #fff;
   text-align: center;
   display: inline-block;
   position: relative;
-  top: 123px;
+  top: 260px;
   z-index: 5;
-  font-weight: 700;
+  font-weight: 400;
+}
+
+.h1_p{
+  color: #fff;
+  position: relative;
+  top: 260px;
+  z-index: 5;
 }
 
 .title {
   color: #fff;
   line-height: 3;
-  font-size: 16px;
+  font-size: 17px;
   margin-top: 20px;
   font-weight: 500;
 }
@@ -295,26 +348,34 @@
 
 @media (max-width: 700px) {
   .section_game {
-    background: #222222;
+    background: #141414;
     text-align: center;
     padding-bottom: 80px;
   }
 
   .h1 {
     font-size: 32px;
-    background-color: #e0493b;
-    color: #000;
+    color: #fff;
     text-align: center;
     display: inline-block;
     position: relative;
-    top: 85px;
+    top: 160px;
   }
+
+
+.h1_p{
+  color: #fff;
+  position: relative;
+  top: 160px;
+  z-index: 5;
+  font-size: 13px;
+}
 
   .title {
     color: #fff;
     line-height: 3;
     font-size: 12px;
-    margin-top: 20px;
+    margin-top: 0px;
     font-weight: 700;
   }
 
@@ -326,6 +387,71 @@
     font-style: normal;
     background-color: #00c965;
     padding: 0px 2px;
+  }
+}
+
+// セット内容
+
+.set{
+  background:#141414;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.set canvas{
+  border-radius: 5px;
+}
+
+.h2_span {
+  color: #00c965;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.set h2 span{
+  color: #fff;
+  font-size: 35px;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.set h2{
+  margin-bottom: 50px;
+}
+
+
+.spline_set{
+  margin: 0 auto;
+  width: 60%;
+  height: 65vh;
+  border-radius: 30px;
+}
+
+.set_p{
+  color: #0B0B0B;
+  font-size: 13px;
+  width: 50%;
+  text-align: start;
+  margin: 0 auto;
+  line-height: 2;
+  letter-spacing: 1px;
+  position: relative;
+  bottom: 90px;
+  font-weight: 400;
+}
+
+
+@media (max-width: 700px) {
+  .set h2 span{
+    color: #fff;
+    font-size: 30px;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
 }
 

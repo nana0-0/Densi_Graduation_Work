@@ -144,40 +144,43 @@ function PDFIntro() {
 
   return (
     <section className={PDFstyles.pdf}>
-      <h2>ゲームの説明書</h2>
-          <Image
-            src={"/pdf_" + pdfimage + ".svg"}
-            alt="ルール説明1"
-            width={width < 700 ? 335 : 629}
-            height={width < 700 ? 213 : 400}
-            className={PDFstyles.pdf_img}
-          />
-          <div className={PDFstyles.pdf_carousel_wrap}>
-            <ul className={PDFstyles.pdf_carousel}>
-              {[...Array(6).keys()].map((_, i) => (
-                <li className={pdfimage == i ? PDFstyles.circle : ""} key={i}>
-                  {pdfimage == i ? (
-                    <>
-                      <span className={PDFstyles.cover1}></span>
-                      <span className={PDFstyles.cover2}></span>
-                    </>
-                  ) : (
-                    <></>
-                  )}
-                  <button
-                    onClick={() => setPdfImage(i)}
-                    className={
-                      pdfimage == i
-                        ? PDFstyles.pdfimg_c_true
-                        : PDFstyles.pdfimg_c_false
-                    }
-                  >
-                    {pdfimage == i ? (i + 1).toString() : "・"}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
+      <span className={PDFstyles.h2_span}>ゲームの説明書</span>
+      <h2>
+        <GlitchText text="GAME RULES" />
+      </h2>
+      <Image
+        src={"/pdf_" + pdfimage + ".svg"}
+        alt="ルール説明1"
+        width={width < 700 ? 335 : 629}
+        height={width < 700 ? 213 : 400}
+        className={PDFstyles.pdf_img}
+      />
+      <div className={PDFstyles.pdf_carousel_wrap}>
+        <ul className={PDFstyles.pdf_carousel}>
+          {[...Array(6).keys()].map((_, i) => (
+            <li className={pdfimage == i ? PDFstyles.circle : ""} key={i}>
+              {pdfimage == i ? (
+                <>
+                  <span className={PDFstyles.cover1}></span>
+                  <span className={PDFstyles.cover2}></span>
+                </>
+              ) : (
+                <></>
+              )}
+              <button
+                onClick={() => setPdfImage(i)}
+                className={
+                  pdfimage == i
+                    ? PDFstyles.pdfimg_c_true
+                    : PDFstyles.pdfimg_c_false
+                }
+              >
+                {pdfimage == i ? (i + 1).toString() : "・"}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
       <p>詳しいルールは説明書(PDF)をダウンロード！!</p>
       <a
         href="https://drive.google.com/file/d/1y2R4mcj1_mLnwDGiks66NWxIvrEUT3nn/view?usp=sharing"
@@ -240,10 +243,14 @@ export default function Home() {
           }}
         />
       </Head>
+      <h1 className={styles.fv_h1}>宇宙人はダレ？</h1>
+      <a href="#" target="_blank" className={styles.fv_parchese}>
+        購入する
+      </a>
       <div className={styles.fv}>
         <div className={styles.spline}>
           <ResizeSpline
-            scene="https://prod.spline.design/sPpkqagelFpsWtVE/scene.splinecode"
+            scene="https://prod.spline.design/9ylSx0Y1eq4DTNo1/scene.splinecode"
             threshhold={700}
             loadtype="top"
           />
@@ -259,39 +266,40 @@ export default function Home() {
       </div>
       <main className={styles.main}>
         <section className={styles.section_game}>
+          <p className={styles.h1_p}>”遊び”で子供が抱えている問題に寄り添う</p>
           <h1 className={styles.h1}>
             <GlitchText text="宇宙人はダレ？" />
           </h1>
           <div className={styles.h1_bkfont_wrap}>
             <div className={styles.h1_bkfont_flex}>
               <Image
-                src="/section_game_bkfont.png"
+                src="/section_game_bkfont.svg"
                 alt="Game Logo"
-                width={width < 700 ? `${455}` : `${763}`}
-                height={width < 700 ? `${94}` : `${157}`}
+                width={width < 700 ? `${1704}` : `${2556}`}
+                height={width < 700 ? `${208}` : `${311}`}
                 className={styles.h1_bkfont}
               />
               <Image
-                src="/section_game_bkfont.png"
+                src="/section_game_bkfont.svg"
                 alt="Game Logo"
-                width={width < 700 ? `${455}` : `${763}`}
-                height={width < 700 ? `${94}` : `${157}`}
+                width={width < 700 ? `${1704}` : `${2556}`}
+                height={width < 700 ? `${208}` : `${311}`}
                 className={styles.h1_bkfont}
               />
             </div>
             <div className={styles.h1_bkfont_flex}>
               <Image
-                src="/section_game_bkfont.png"
+                src="/section_game_bkfont.svg"
                 alt="Game Logo"
-                width={width < 700 ? `${455}` : `${763}`}
-                height={width < 700 ? `${94}` : `${157}`}
+                width={width < 700 ? `${1704}` : `${2556}`}
+                height={width < 700 ? `${208}` : `${311}`}
                 className={styles.h1_bkfont}
               />
               <Image
-                src="/section_game_bkfont.png"
+                src="/section_game_bkfont.svg"
                 alt="Game Logo"
-                width={width < 700 ? `${455}` : `${763}`}
-                height={width < 700 ? `${94}` : `${157}`}
+                width={width < 700 ? `${1704}` : `${2556}`}
+                height={width < 700 ? `${208}` : `${311}`}
                 className={styles.h1_bkfont}
               />
             </div>
@@ -317,12 +325,30 @@ export default function Home() {
             style={width < 700 ? { marginTop: 40 } : { marginTop: 70 }}
           />
         </section>
+        <section className={styles.set}>
+          <span className={styles.h2_span}>セット内容</span>
+          <h2>
+            <GlitchText text="SET CONTENTS" />
+          </h2>
+          <div className={styles.spline_set}>
+            <ResizeSpline
+              scene="https://prod.spline.design/X3VlyHt4jpTqn6jS/scene.splinecode"
+              threshhold={1200}
+              loadtype="game"
+            />
+          </div>
+          <p className={styles.set_p}>
+            内容物：コマ4個 / ミッションカード3枚 / トラップカード3枚 /
+            星のかけら20枚 / スタート・ゴール各1枚 / 付箋1冊 /
+            エネルギーカード6枚 / 宇宙人カード4枚 / 説明書
+          </p>
+        </section>
         <PDFIntro />
         <section className={styles.section_purchase}>
           <div className={styles.flex}>
             <div className={styles.spline_game}>
               <ResizeSpline
-                scene="https://prod.spline.design/JV1TetnFwIWDEenD/scene.splinecode"
+                scene="https://prod.spline.design/02til1DwlqIF5m0O/scene.splinecode"
                 threshhold={1200}
                 loadtype="game"
               />
@@ -366,6 +392,40 @@ export default function Home() {
         <QASection />
       </main>
       <footer className={styles.footer}>
+        {/* <div className={styles.h1_bkfont_wrap}>
+            <div className={styles.h1_bkfont_flex}>
+              <Image
+                src="/footer_bkimage.svg"
+                alt="Game Logo"
+                width={width < 700 ? `${630}` : `${1088}`}
+                height={width < 700 ? `${90}` : `${41}`}
+                className={styles.h1_bkfont}
+              />
+              <Image
+                src="/footer_bkimage.svg"
+                alt="Game Logo"
+                width={width < 700 ? `${630}` : `${1088}`}
+                height={width < 700 ? `${90}` : `${41}`}
+                className={styles.h1_bkfont}
+              />
+            </div>
+            <div className={styles.h1_bkfont_flex}>
+              <Image
+                src="/footer_bkimage.svg"
+                alt="Game Logo"
+                width={width < 700 ? `${630}` : `${1088}`}
+                height={width < 700 ? `${90}` : `${41}`}
+                className={styles.h1_bkfont}
+              />
+              <Image
+                src="/footer_bkimage.svg"
+                alt="Game Logo"
+                width={width < 700 ? `${630}` : `${1088}`}
+                height={width < 700 ? `${90}` : `${41}`}
+                className={styles.h1_bkfont}
+              />
+            </div>
+          </div> */}
         <p className={styles.footer_logo}>宇宙人はダレ？</p>
         <p className={styles.footer_text}>最新情報や制作裏話を発信中！</p>
         <div className={styles.footer_flex}>

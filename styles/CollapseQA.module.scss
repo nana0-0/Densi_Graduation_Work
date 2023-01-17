@@ -1,12 +1,23 @@
 
 .section_qa {
-    padding-top: 200px;
+    padding-top: 100px;
     background-color: #fff;
   }
   
   .h2 {
     text-align: center;
     font-size: 35px;
+    margin-bottom: 50px;
+  }
+
+  .h2_span {
+    color: #00c965;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
   }
   
   .qa_p {
@@ -21,7 +32,7 @@
   .qa_dl_open {
     margin: 0 auto;
     display: block;
-    width: 55%;
+    width: 48%;
     border-radius: 16px;
     border: 2px solid #103047;
     margin-bottom: 40px;
@@ -47,7 +58,7 @@
   }
   
   .qa_button_open::first-letter {
-    font-size: 23px;
+    font-size: 25px;
     font-family: futura-pt-bold, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -86,18 +97,18 @@
     padding-right: 50px;
     font-size: 15px;
     font-weight: 700;
-    width: 55%;
+    width: 48%;
     text-align: start;
     background-color: #f7f7f7;
     border-radius: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     border: #103047 2px solid;
     position: relative;
     color: #000;
   }
   
   .qa_button_close::first-letter {
-    font-size: 23px;
+    font-size: 25px;
     font-family: futura-pt-bold, sans-serif;
     font-weight: 700;
     font-style: normal;
