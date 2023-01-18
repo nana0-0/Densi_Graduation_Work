@@ -320,8 +320,8 @@ export default function Home() {
           <Image
             src="/game_menu.png"
             alt="Game Logo"
-            width={width < 700 ? 366 : 531}
-            height={width < 700 ? 25 : 36}
+            width={width < 700 ? 366 : 607}
+            height={width < 700 ? 25 : 42}
             style={width < 700 ? { marginTop: 40 } : { marginTop: 70 }}
           />
         </section>
@@ -331,11 +331,18 @@ export default function Home() {
             <GlitchText text="SET CONTENTS" />
           </h2>
           <div className={styles.spline_set}>
+            {width < 700 ? 
             <ResizeSpline
+              scene="https://prod.spline.design/kij-EKWAzqH2005U/scene.splinecode"
+              threshhold={1200}
+              loadtype="game"
+            />:
+             <ResizeSpline
               scene="https://prod.spline.design/X3VlyHt4jpTqn6jS/scene.splinecode"
               threshhold={1200}
               loadtype="game"
             />
+            }
           </div>
           <p className={styles.set_p}>
             内容物：コマ4個 / ミッションカード3枚 / トラップカード3枚 /
