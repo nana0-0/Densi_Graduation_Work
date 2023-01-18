@@ -198,7 +198,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>宇宙人はダレ？</title>
+        <title>ボードゲーム『宇宙人はダレ？』公式サイト</title>
         <meta
           name="description"
           content="ボードゲーム『宇宙人はダレ？』遊びで中１ギャップを未然に防ぐ卒業制作プロジェクト。日本電子専門学校 Webデザイン科 卒業・進級制作展2022にて展示します。"
