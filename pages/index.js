@@ -243,7 +243,7 @@ export default function Home() {
         `,
           }}
         />
-        <script src="https://fobi.io/embed.js"></script>
+        {/* <script src="https://fobi.io/embed.js"></script>
         <div
           id="embed-fobi"
           data-fobi-id="PtQLFQ4"
@@ -259,7 +259,7 @@ export default function Home() {
           data-btn-bg="#000000"
           data-cb-height="400px"
           data-cb-width="330px"
-        ></div>
+        ></div> */}
       </Head>
       <h1 className={styles.fv_h1}>宇宙人はダレ？</h1>
       <a href="#" target="_blank" className={styles.fv_parchese}>
