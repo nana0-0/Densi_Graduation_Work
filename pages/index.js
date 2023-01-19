@@ -7,6 +7,7 @@ import QAstyles from "../styles/CollapseQA.module.scss";
 import React, { useCallback, useState, Suspense, useEffect } from "react";
 import { GlitchText } from "../components/font";
 import { getWindowSize } from "../components/screensize.js";
+import { TwitterTweetEmbed, TwitterShareButton } from "react-twitter-embed";
 
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
@@ -242,6 +243,23 @@ export default function Home() {
         `,
           }}
         />
+        <script src="https://fobi.io/embed.js"></script>
+        <div
+          id="embed-fobi"
+          data-fobi-id="PtQLFQ4"
+          data-bot-title="お問い合せ"
+          data-hd-bg="#000000"
+          data-hd-ti-clr="#FFF"
+          data-ct-pm="#000000"
+          data-ct-sc="#FFF"
+          data-ct-bot-img="https://utyujinhadare.yonayonaramens.com/twitter.png"
+          data-btn-offset="Right: 30px"
+          data-cb-offset="Right: 30px"
+          data-btn-img="https://fobi.io/icon.png"
+          data-btn-bg="#000000"
+          data-cb-height="400px"
+          data-cb-width="330px"
+        ></div>
       </Head>
       <h1 className={styles.fv_h1}>宇宙人はダレ？</h1>
       <a href="#" target="_blank" className={styles.fv_parchese}>
@@ -331,18 +349,19 @@ export default function Home() {
             <GlitchText text="SET CONTENTS" />
           </h2>
           <div className={styles.spline_set}>
-            {width < 700 ? 
-            <ResizeSpline
-              scene="https://prod.spline.design/kij-EKWAzqH2005U/scene.splinecode"
-              threshhold={1200}
-              loadtype="game"
-            />:
-             <ResizeSpline
-              scene="https://prod.spline.design/X3VlyHt4jpTqn6jS/scene.splinecode"
-              threshhold={1200}
-              loadtype="game"
-            />
-            }
+            {width < 700 ? (
+              <ResizeSpline
+                scene="https://prod.spline.design/kij-EKWAzqH2005U/scene.splinecode"
+                threshhold={1200}
+                loadtype="game"
+              />
+            ) : (
+              <ResizeSpline
+                scene="https://prod.spline.design/X3VlyHt4jpTqn6jS/scene.splinecode"
+                threshhold={1200}
+                loadtype="game"
+              />
+            )}
           </div>
           <p className={styles.set_p}>
             内容物：コマ4個 / ミッションカード3枚 / トラップカード3枚 /
@@ -396,6 +415,16 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* <section className={styles.section_twitter}>
+          <TwitterTweetEmbed tweetId={"1610189188338679808"} className={styles.twitter_embed}/>
+          <TwitterShareButton
+            url={"https://utyujinhadare.yonayonaramens.com/"}
+            options={{
+              text: "#宇宙人はダレ？ をシェアしよう！！",
+              via: "YonayonaRamens",
+            }}
+          />
+        </section> */}
         <QASection />
       </main>
       <footer className={styles.footer}>

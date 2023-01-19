@@ -2,6 +2,13 @@
   background: #c8c8c8;
 }
 
+.chatbot{
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .fv {
   background: #c8c8c8;
 }
@@ -12,7 +19,7 @@
   left: 50px;
   font-size: 30px;
   font-family: vdl-logomaru-jr, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   color: #fff;
 }
@@ -25,6 +32,8 @@
   background:#e0493b;
   padding: 50px 31px;
   border-radius: 50%;
+  position: fixed;
+  z-index: 20;
 }
 
 
@@ -49,6 +58,8 @@
     background:#e0493b;
     padding: 25px 9px;
     border-radius: 50%;
+    position: fixed;
+    z-index: 20;
   }
   
 }
@@ -354,7 +365,7 @@
   }
 
   .h1 {
-    font-size: 32px;
+    font-size: 30px;
     color: #fff;
     text-align: center;
     display: inline-block;
@@ -650,7 +661,14 @@
   }
 }
 
-/* QA質問 */
+/* Twitterシェア */
+
+.twitter-tweet .twitter-tweet-rendered{
+  margin: 0 auto;
+  text-align: center;
+  width: 30%;
+}
+
 
 
 /* ここからfooter */
