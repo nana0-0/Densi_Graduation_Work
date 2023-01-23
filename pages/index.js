@@ -335,12 +335,22 @@ export default function Home() {
           </p>
           <Image
             src="/game_menu.png"
-            alt="Game Logo"
+            alt="プレイヤー"
             className={styles.explain}
             width={width < 700 ? 366 : 607}
             height={width < 700 ? 25 : 42}
             style={width < 700 ? { marginTop: 40 } : { marginTop: 70 }}
           />
+          <div>
+          <Image
+            src="/gamepurchase_title.jpg"
+            alt="Game Logo"
+            className={styles.explain}
+            width={width < 700 ? 366 : 396}
+            height={width < 700 ? 25 : 260}
+            style={width < 700 ? { marginTop: 40 } : { marginTop: 70 }}
+          />
+          </div>
         </section>
         <section className={styles.set}>
           <span className={styles.h2_span}>セット内容</span>

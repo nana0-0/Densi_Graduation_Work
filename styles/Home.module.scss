@@ -71,16 +71,20 @@
   }
 
   .fv_parchese{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    font-size: 13px;
+    font-size: 14px;
     color: #fff;
+    text-align: center;
+    vertical-align: middle;
     background:#e0493b;
-    padding: 25px 9px;
+    padding: 33px 0px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
-    position: fixed;
     z-index: 20;
+    position: absolute;
+    top: 85vh;
+    right: 30px;
+    position: fixed;
   }
 
   // .fv_parchese::after{
@@ -500,6 +504,14 @@
 
 
 @media (max-width: 700px) {
+
+  .set{
+    background:#141414;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 00px;
+  }
+
   .set h2 span{
     color: #fff;
     font-size: 30px;
@@ -510,10 +522,24 @@
 
   .spline_set{
     margin: 0 auto;
-    width: 80%;
-    height: 90vh;
+    width: 85%;
+    height: 100vh;
     border-radius: 30px;
   }
+
+  .set_p{
+    color: #0B0B0B;
+    font-size: 13px;
+    width: 68%;
+    text-align: start;
+    margin: 0 auto;
+    line-height: 2;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 140px;
+    font-weight: 400;
+  }
+  
   
 }
 
