@@ -341,15 +341,29 @@ export default function Home() {
             height={width < 700 ? 25 : 42}
             style={width < 700 ? { marginTop: 40 } : { marginTop: 70 }}
           />
-          <div>
-          <Image
-            src="/gamepurchase_title.jpg"
-            alt="Game Logo"
-            className={styles.explain}
-            width={width < 700 ? 366 : 396}
-            height={width < 700 ? 25 : 260}
-            style={width < 700 ? { marginTop: 40 } : { marginTop: 70 }}
-          />
+          <div className={styles.gamepurchase}>
+            <Image
+              src="/gamepurchase_title.jpg"
+              alt="Game Logo"
+              className={styles}
+              width={width < 700 ? 276 : 396}
+              height={width < 700 ? 181 : 260}
+            />
+            <div className={styles.gamepurchase_right}>
+              <p className={styles.gamepurchase_font_VDL}>宇宙人はダレ？</p>
+              <p className={styles.gamepurchase_p}>
+                3,500<em className={styles.gamepurchase_en}>円</em>
+                <em className={styles.gamepurchase_kakko}>( 税込・送料別 )</em>
+              </p>
+              <a
+                href="#"
+                className={styles.gamepurchase_btn}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                購入する
+              </a>
+            </div>
           </div>
         </section>
         <section className={styles.set}>
