@@ -243,23 +243,19 @@ export default function Home() {
         `,
           }}
         />
-        {/* <script src="https://fobi.io/embed.js"></script>
-        <div
-          id="embed-fobi"
-          data-fobi-id="PtQLFQ4"
-          data-bot-title="お問い合せ"
-          data-hd-bg="#000000"
-          data-hd-ti-clr="#FFF"
-          data-ct-pm="#000000"
-          data-ct-sc="#FFF"
-          data-ct-bot-img="https://utyujinhadare.yonayonaramens.com/twitter.png"
-          data-btn-offset="Right: 30px"
-          data-cb-offset="Right: 30px"
-          data-btn-img="https://fobi.io/icon.png"
-          data-btn-bg="#000000"
-          data-cb-height="400px"
-          data-cb-width="330px"
-        ></div> */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-JZ93K6Y5M6"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-JZ93K6Y5M6');`,
+          }}
+        />
       </Head>
       <h1 className={styles.fv_h1}>宇宙人はダレ？</h1>
       <a href="#" target="_blank" className={styles.fv_parchese}>
