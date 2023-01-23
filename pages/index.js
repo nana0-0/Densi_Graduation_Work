@@ -293,15 +293,15 @@ export default function Home() {
               <Image
                 src="/section_game_bkfont.svg"
                 alt="Game Logo"
-                width={width < 700 ? `${1704}` : `${2556}`}
-                height={width < 700 ? `${208}` : `${311}`}
+                width={width < 700 ? `${1278}` : `${2308}`}
+                height={width < 700 ? `${156}` : `${273}`}
                 className={styles.h1_bkfont}
               />
               <Image
                 src="/section_game_bkfont.svg"
                 alt="Game Logo"
-                width={width < 700 ? `${1704}` : `${2556}`}
-                height={width < 700 ? `${208}` : `${311}`}
+                width={width < 700 ? `${1278}` : `${2308}`}
+                height={width < 700 ? `${156}` : `${273}`}
                 className={styles.h1_bkfont}
               />
             </div>
@@ -309,28 +309,26 @@ export default function Home() {
               <Image
                 src="/section_game_bkfont.svg"
                 alt="Game Logo"
-                width={width < 700 ? `${1704}` : `${2556}`}
-                height={width < 700 ? `${208}` : `${311}`}
+                width={width < 700 ? `${1278}` : `${2308}`}
+                height={width < 700 ? `${156}` : `${273}`}
                 className={styles.h1_bkfont}
               />
               <Image
                 src="/section_game_bkfont.svg"
                 alt="Game Logo"
-                width={width < 700 ? `${1704}` : `${2556}`}
-                height={width < 700 ? `${208}` : `${311}`}
+                width={width < 700 ? `${1278}` : `${2308}`}
+                height={width < 700 ? `${156}` : `${273}`}
                 className={styles.h1_bkfont}
               />
             </div>
           </div>
           <p className={styles.title}>
-            <GlitchText text="ある日、地球は" />
-            <em className={styles.title_em}>宇宙人</em>
+            <GlitchText text="ある日、地球は宇宙人" />
             <GlitchText text="に侵略されてしまう。" />
             <br />
             <GlitchText text="ロケットで地球を脱出して惑星まで逃げようとするが　" />
             <br />
-            <GlitchText text="逃げ込んだロケットの中に" />
-            <em className={styles.title_em}>宇宙人</em>
+            <GlitchText text="逃げ込んだロケットの中に宇宙人" />
             <GlitchText text="が潜んでいる !?" />
             <br />
             <GlitchText text="潜んでいる宇宙人を見つけ出して無事に惑星に辿り着けるのか!?" />
@@ -338,6 +336,7 @@ export default function Home() {
           <Image
             src="/game_menu.png"
             alt="Game Logo"
+            className={styles.explain}
             width={width < 700 ? 366 : 607}
             height={width < 700 ? 25 : 42}
             style={width < 700 ? { marginTop: 40 } : { marginTop: 70 }}
