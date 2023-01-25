@@ -1,5 +1,5 @@
+$green : #00c965;
 /* PDF 　説明書 */
-
 .pdf {
   background: #c8c8c8;
   text-align: center;
@@ -8,7 +8,7 @@
 }
 
 .h2_span {
-  color: #00c965;
+  color: $green;
   font-family: futura-pt-bold, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -53,7 +53,7 @@
 .pdf a {
   color: #0b0b0b;
   font-weight: 700;
-  background: #00c965;
+  background: $green;
   font-size: 18px;
   border-radius: 49px;
   padding: 17px 130px;
@@ -196,7 +196,7 @@
   .pdf a {
     color: #0b0b0b;
     font-weight: 700;
-    background: #00c965;
+    background: $green;
     font-size: 15px;
     border-radius: 49px;
     padding: 17px 130px;

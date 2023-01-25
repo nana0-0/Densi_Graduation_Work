@@ -152,8 +152,8 @@ function PDFIntro() {
       <Image
         src={"/pdf_" + pdfimage + ".svg"}
         alt="ルール説明1"
-        width={width < 700 ? 335 : 629}
-        height={width < 700 ? 213 : 400}
+        width={width < 700 ? 382 : 629}
+        height={width < 700 ? 243 : 400}
         className={PDFstyles.pdf_img}
       />
       <div className={PDFstyles.pdf_carousel_wrap}>
