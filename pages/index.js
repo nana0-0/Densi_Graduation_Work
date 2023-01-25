@@ -341,8 +341,8 @@ export default function Home() {
               src="/game_menu_phone.png"
               alt="プレイヤー：4人 プレイ時間：20分 対象年齢：10歳以上"
               className={styles.explain}
-              width={266}
-              height={85}
+              width={299}
+              height={99}
               style={{ marginTop: 40 }}
             />
           ) : (
@@ -385,21 +385,39 @@ export default function Home() {
           <h2>
             <GlitchText text="SET CONTENTS" />
           </h2>
-          <div className={styles.spline_set}>
             {width < 700 ? (
-              <ResizeSpline
-                scene="https://prod.spline.design/kij-EKWAzqH2005U/scene.splinecode"
-                threshhold={1200}
-                loadtype="game"
-              />
+              <Image
+              src="/set_phone.svg"
+              alt="セット内容"
+              className={styles.set_phone}
+              width={339}
+              height={716}
+            />
+            ) :width < 1200 ? (
+              <Image
+              src="/set_ipad.jpg"
+              alt="セット内容"
+              className={styles.set_phone}
+              width={677}
+              height={373}
+            />
             ) : (
+              <div className={styles.spline_set}>
+                 {/* <Image
+              src="/set_ipad.png"
+              alt="セット内容"
+              className={styles.set_phone}
+              width={809}
+              height={500}
+            /> */}
               <ResizeSpline
                 scene="https://prod.spline.design/X3VlyHt4jpTqn6jS/scene.splinecode"
                 threshhold={1200}
                 loadtype="game"
+                className={styles.set_pc}
               />
+              </div>
             )}
-          </div>
           <p className={styles.set_p}>
             内容物：コマ4個 / ミッションカード3枚 / トラップカード3枚 /
             星のかけら20枚 / スタート・ゴール各1枚 / 付箋1冊 /
