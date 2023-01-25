@@ -198,7 +198,7 @@ $green :#00c965;
   border-radius: 30px;
   font-size: 12px;
   position: absolute;
-  bottom: 170px;
+  bottom: 130px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -339,12 +339,42 @@ $green :#00c965;
 
 .goal{
   position: absolute;
-  top: 400px;
+  top: 370px;
   right: 230px;
+}
+
+.hosinokakera{
+  position: absolute;
+  top: 520px;
+  right: 130px;
+}
+
+.start{
+  position: absolute;
+  top: 520px;
+  left: 140px;
+}
+
+.trap{
+  position: absolute;
+  top: 350px;
+  left: 230px;
 }
 
 @media (max-width: 1250px) {
   .goal{
+    display: none;
+  }
+
+  .hosinokakera{
+    display: none;
+  }
+  
+  .start{
+    display: none;
+  }
+  
+  .trap{
     display: none;
   }
 }
@@ -615,7 +645,7 @@ font-size: 13px;
   background:#141414;
   text-align: center;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 170px;
 }
 
 .set canvas{
@@ -664,7 +694,7 @@ font-size: 13px;
   border-radius: 0px 0px 5px 5px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .spline_set{
     margin: 0 auto;
     width: 85%;
@@ -693,7 +723,7 @@ font-size: 13px;
     background:#141414;
     text-align: center;
     padding-top: 80px;
-    padding-bottom: 0px;
+    padding-bottom: 120px;
   }
 
   .set h2 span{

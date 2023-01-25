@@ -336,6 +336,27 @@ export default function Home() {
             height={200}
             className={styles.goal}
           />
+            <Image
+            src="/hosinokakera.gif"
+            alt="ゴールチップ"
+            width={200}
+            height={200}
+            className={styles.hosinokakera}
+          />
+           <Image
+            src="/start.gif"
+            alt="ゴールチップ"
+            width={200}
+            height={200}
+            className={styles.start}
+          />
+           <Image
+            src="/trap.gif"
+            alt="ゴールチップ"
+            width={200}
+            height={200}
+            className={styles.trap}
+          />
           {width < 700 ? (
             <Image
               src="/game_menu_phone.png"
@@ -387,13 +408,13 @@ export default function Home() {
           </h2>
             {width < 700 ? (
               <Image
-              src="/set_phone.svg"
+              src="/set_phone.jpg"
               alt="セット内容"
               className={styles.set_phone}
               width={339}
               height={716}
             />
-            ) :width < 1200 ? (
+            ) :width < 1400 ? (
               <Image
               src="/set_ipad.jpg"
               alt="セット内容"
