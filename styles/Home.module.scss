@@ -905,7 +905,88 @@ font-size: 13px;
   width: 30%;
 }
 
+//ABOUT US
 
+.section_aboutas{
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  margin-top: 200px;
+}
+
+.section_aboutas h2{
+  font-size:15px;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.section_aboutas_dl1{
+  font-size: 14px;
+  margin-top: 12px;
+}
+.section_aboutas_dl1 dt{
+  font-weight: 500;
+}
+
+.section_aboutas_dl1 dt em{
+  font-size:24px;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.section_aboutas_dl1 dd{
+  font-weight: 500;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+  line-height: 2;
+}
+
+.section_aboutas_dl2{
+  margin-top: 60px;
+}
+
+.section_aboutas_dl2 dt{
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.section_aboutas_dl2 dd{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.section_aboutas_dl2 dd div{
+  margin-top: 34px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.section_aboutas_dl2 dd div p{
+  margin-top: 26px;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .section_aboutas{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    margin-top: 150px;
+  }
+
+  .section_aboutas_dl1 dd{
+    font-weight: 500;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    line-height: 2;
+  }
+  
+}
 
 /* ここからfooter */
 .footer {

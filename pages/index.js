@@ -446,6 +446,43 @@ export default function Home() {
         </section> */}
         <QASection />
       </main>
+      <section className={styles.section_aboutas}>
+        <h2>ABOUT US</h2>
+        <dl className={styles.section_aboutas_dl1}>
+          <dt>
+            <em>YonayonaRamens</em> とは
+          </dt>
+          <dd>
+            ”遊び”で子どもや子を持つ親並びに子供の成長に寄り添う教育者の方々が
+            抱えている問題に寄り添うことを目的とした卒業制作プロジェクトです。
+          </dd>
+        </dl>
+        <dl className={styles.section_aboutas_dl2}>
+          <dt>制作者</dt>
+          <dd>
+            <div>
+              <Image
+                src="/twitter.png"
+                alt="宇宙人はダレ？Twitterアカウント"
+                width={120}
+                height={120}
+                className={styles.footer_twitter}
+              />
+              <p>ネコが好き</p>
+            </div>
+            <div>
+              <Image
+                src="/twitter.png"
+                alt="宇宙人はダレ？Twitterアカウント"
+                width={120}
+                height={120}
+                className={styles.footer_twitter}
+              />
+              <p>ギターが好き</p>
+            </div>
+          </dd>
+        </dl>
+      </section>
       <footer className={styles.footer}>
         {/* <div className={styles.h1_bkfont_wrap}>
             <div className={styles.h1_bkfont_flex}>
