@@ -336,10 +336,24 @@ $green :#00c965;
 }
 
 /* ここからオリジナル */
+
+.goal{
+  position: absolute;
+  top: 400px;
+  right: 230px;
+}
+
+@media (max-width: 1250px) {
+  .goal{
+    display: none;
+  }
+}
+
 .section_game {
   background: #141414;
   text-align: center;
   padding-bottom: 110px;
+  position: relative;
 }
 
 .h1 {
@@ -645,7 +659,7 @@ font-size: 13px;
   line-height: 2;
   letter-spacing: 1px;
   position: relative;
-  bottom: 90px;
+  bottom: 75px;
   font-weight: 500;
 }
 
@@ -992,7 +1006,7 @@ font-size: 13px;
 .footer {
   text-align: center;
   background: #0b0b0b;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .footer_logo {

@@ -330,14 +330,32 @@ export default function Home() {
             <GlitchText text="潜んでいる宇宙人を見つけ出して無事に惑星に辿り着けるのか!?" />
           </p>
           <Image
-            src="/game_menu.png"
-            alt="プレイヤー"
-            className={styles.explain}
-            width={width < 700 ? 366 : 607}
-            height={width < 700 ? 25 : 42}
-            style={width < 700 ? { marginTop: 40 } : { marginTop: 70 }}
+            src="/goal.gif"
+            alt="ゴールチップ"
+            width={200}
+            height={200}
+            className={styles.goal}
           />
-          <div className={styles.gamepurchase}>
+          {width < 700 ? (
+            <Image
+              src="/game_menu_phone.png"
+              alt="プレイヤー：4人 プレイ時間：20分 対象年齢：10歳以上"
+              className={styles.explain}
+              width={266}
+              height={85}
+              style={{ marginTop: 40 }}
+            />
+          ) : (
+            <Image
+              src="/game_menu.png"
+              alt="プレイヤー：4人 プレイ時間：20分 対象年齢：10歳以上"
+              className={styles.explain}
+              width={607}
+              height={42}
+              style={{marginTop: 70 }}
+            />
+          )}
+          {/* <div className={styles.gamepurchase}>
             <Image
               src="/gamepurchase_title.jpg"
               alt="Game Logo"
@@ -360,7 +378,7 @@ export default function Home() {
                 購入する
               </a>
             </div>
-          </div>
+          </div> */}
         </section>
         <section className={styles.set}>
           <span className={styles.h2_span}>セット内容</span>
