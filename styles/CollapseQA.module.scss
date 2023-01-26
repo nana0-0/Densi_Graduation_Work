@@ -6,11 +6,15 @@
   
   .h2 {
     text-align: center;
-    font-size: 35px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
-  .h2_span {
+  .h2 span{
+    font-family: futura-pt-bold, sans-serif;
+    font-size: 35px;
+  }
+
+  .h2_span{
     color: #00c965;
     font-family: futura-pt-bold, sans-serif;
     font-weight: 700;
@@ -138,9 +142,14 @@
       font-size: 28px;
       font-weight: 900;
     }
+
+    .h2 span{
+      font-family: futura-pt-bold, sans-serif;
+      font-size: 30px;
+    }
     .qa_p {
-      margin-top: 20px;
-      margin-bottom: 75px;
+      margin-top: 10px;
+      margin-bottom: 55px;
       color: #0b0b0b;
       font-size: 15px;
       text-align: center;
@@ -177,7 +186,7 @@
     }
   
     .qa_button_open::first-letter {
-      font-size: 20px;
+      font-size: 22px;
       font-family: futura-pt-bold, sans-serif;
       font-weight: 700;
       font-style: normal;
@@ -232,7 +241,7 @@
     }
   
     .qa_button_close::first-letter {
-      font-size: 20px;
+      font-size: 22px;
     }
   
     .qa_button_close::after {
