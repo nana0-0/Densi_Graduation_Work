@@ -410,6 +410,7 @@ $green :#00c965;
   font-size: 18px;
   margin-top: -22px;
   font-weight: 500;
+  z-index: 30;
 }
 
 .h1_bkfont_flex {
@@ -439,10 +440,6 @@ $green :#00c965;
 //   background-color: #00c965;
 //   padding: 0px 2px;
 // }
-
-.game_menu {
-  width: 551px;
-}
 
 
 @media (max-width: 700px) {
@@ -676,7 +673,7 @@ font-size: 13px;
 .spline_set{
   margin: 0 auto;
   width: 60%;
-  height: 65vh;
+  height: 60vh;
   border-radius: 30px;
 }
 
@@ -690,7 +687,8 @@ font-size: 13px;
   letter-spacing: 1px;
   font-weight: 500;
   background: #c8c8c8;
-  padding: 10px 20px;
+  padding: 10px 40px;
+  padding-bottom: 20px;
   border-radius: 0px 0px 5px 5px;
 }
 
@@ -705,7 +703,7 @@ font-size: 13px;
     color: #0B0B0B;
     font-size: 13px;
     width: 677px;
-    padding: 10px 20px;
+    padding: 10px 40px;
     text-align: start;
     margin: 0 auto;
     line-height: 2;
@@ -749,7 +747,7 @@ font-size: 13px;
     margin: 0 auto;
     line-height: 2;
     letter-spacing: 1px;
-    padding: 10px 20px;
+    padding: 10px 40px;
     font-weight: 400;
     background: #c8c8c8;
     position: relative;
