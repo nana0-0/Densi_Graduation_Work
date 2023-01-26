@@ -187,7 +187,7 @@ function PDFIntro() {
         href="https://drive.google.com/file/d/1y2R4mcj1_mLnwDGiks66NWxIvrEUT3nn/view?usp=sharing"
         target="_blank"
       >
-        説明書
+        ダウンロード
       </a>
     </section>
   );
@@ -332,29 +332,29 @@ export default function Home() {
           <Image
             src="/goal.gif"
             alt="ゴールチップ"
-            width={200}
-            height={200}
+            width={width < 700 ? `${80}` : `${200}`}
+            height={width < 700 ? `${80}` : `${200}`}
             className={styles.goal}
           />
-            <Image
+          <Image
             src="/hosinokakera.gif"
             alt="ゴールチップ"
-            width={200}
-            height={200}
+            width={width < 700 ? `${100}` : `${200}`}
+            height={width < 700 ? `${100}` : `${200}`}
             className={styles.hosinokakera}
           />
-           <Image
+          <Image
             src="/start.gif"
             alt="ゴールチップ"
-            width={200}
-            height={200}
+            width={width < 700 ? `${80}` : `${200}`}
+            height={width < 700 ? `${80}` : `${200}`}
             className={styles.start}
           />
-           <Image
+          <Image
             src="/trap.gif"
             alt="ゴールチップ"
-            width={200}
-            height={200}
+            width={width < 700 ? `${100}` : `${200}`}
+            height={width < 700 ? `${100}` : `${200}`}
             className={styles.trap}
           />
           {width < 700 ? (
@@ -373,7 +373,7 @@ export default function Home() {
               className={styles.explain}
               width={607}
               height={42}
-              style={{marginTop: 70 }}
+              style={{ marginTop: 70 }}
             />
           )}
           {/* <div className={styles.gamepurchase}>
@@ -406,25 +406,25 @@ export default function Home() {
           <h2>
             <GlitchText text="SET CONTENTS" />
           </h2>
-            {width < 700 ? (
-              <Image
+          {width < 700 ? (
+            <Image
               src="/set_phone.jpg"
               alt="セット内容"
               className={styles.set_phone}
               width={339}
               height={716}
             />
-            ) :width < 1400 ? (
-              <Image
+          ) : width < 1400 ? (
+            <Image
               src="/set_ipad.jpg"
               alt="セット内容"
               className={styles.set_phone}
               width={677}
               height={373}
             />
-            ) : (
-              <div className={styles.spline_set}>
-                 {/* <Image
+          ) : (
+            <div className={styles.spline_set}>
+              {/* <Image
               src="/set_ipad.png"
               alt="セット内容"
               className={styles.set_phone}
@@ -437,8 +437,8 @@ export default function Home() {
                 loadtype="game"
                 className={styles.set_pc}
               />
-              </div>
-            )}
+            </div>
+          )}
           <p className={styles.set_p}>
             内容物：コマ4個 / ミッションカード3枚 / トラップカード3枚 /
             星のかけら20枚 / スタート・ゴール各1枚 / 付箋1冊 /

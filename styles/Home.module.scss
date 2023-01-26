@@ -1,11 +1,13 @@
-$green : #05FF14;
-$green :#00c965;
+$green: #00c965;
+$green: #00d857;
+$green: #00d861;
 
+$red: #f23030;
 .main {
   background: #c8c8c8;
 }
 
-.chatbot{
+.chatbot {
   width: 100%;
   height: 80vh;
   margin: 0 auto;
@@ -16,7 +18,7 @@ $green :#00c965;
   background: #c8c8c8;
 }
 
-.fv_h1{
+.fv_h1 {
   position: absolute;
   top: 30px;
   left: 50px;
@@ -27,17 +29,77 @@ $green :#00c965;
   color: #fff;
 }
 
-.fv_parchese{
+.fv_parchese {
   position: absolute;
   top: 50px;
   font-size: 16px;
   right: 70px;
   color: #fff;
-  background:#e0493b;
+  background: $red;
   padding: 48px 28px;
   border-radius: 50%;
   position: fixed;
   z-index: 20;
+}
+
+.fv_parchese:hover {
+  animation: animScale 0.4s ease-out;
+  transform-origin: 50% 50%;
+  -webkit-animation: animScale 0.4s ease-out;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animScale 0.4s ease-out;
+  -moz-transform-origin: 50% 50%;
+}
+@keyframes animScale {
+  0% {
+    transform: scale(0.8, 0.8);
+  }
+  40% {
+    transform: scale(1.2, 1.2);
+  }
+  60% {
+    transform: scale(1, 1);
+  }
+  80% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes animScale {
+  0% {
+    -webkit-transform: scale(0.8, 0.8);
+  }
+  40% {
+    -webkit-transform: scale(1.2, 1.2);
+  }
+  60% {
+    -webkit-transform: scale(1, 1);
+  }
+  80% {
+    -webkit-transform: scale(1.1, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+@-moz-keyframes animScale {
+  0% {
+    -moz-transform: scale(0.8, 0.8);
+  }
+  40% {
+    -moz-transform: scale(1.2, 1.2);
+  }
+  60% {
+    -moz-transform: scale(1, 1);
+  }
+  80% {
+    -moz-transform: scale(1.1, 1.1);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+  }
 }
 
 // .fv_parchese::after{
@@ -62,7 +124,7 @@ $green :#00c965;
   }
 }
 @media (max-width: 700px) {
-  .fv_h1{
+  .fv_h1 {
     position: absolute;
     top: 20px;
     left: 30px;
@@ -73,12 +135,12 @@ $green :#00c965;
     color: #fff;
   }
 
-  .fv_parchese{
+  .fv_parchese {
     font-size: 14px;
     color: #fff;
     text-align: center;
     vertical-align: middle;
-    background:#e0493b;
+    background: $red;
     padding: 33px 0px;
     width: 85px;
     height: 85px;
@@ -102,7 +164,6 @@ $green :#00c965;
   //   background-position: center center;
   //   animation: rotate 10s linear infinite;
   // }
-  
 }
 /* ローディング */
 /* .lds{
@@ -292,7 +353,7 @@ $green :#00c965;
     position: absolute;
     bottom: 20%;
     left: 50%;
-    z-index: 5;
+    z-index: 15;
     transform: translateX(-50%);
   }
 
@@ -337,45 +398,55 @@ $green :#00c965;
 
 /* ここからオリジナル */
 
-.goal{
+.goal {
   position: absolute;
   top: 370px;
   right: 230px;
 }
 
-.hosinokakera{
+.hosinokakera {
   position: absolute;
   top: 520px;
   right: 130px;
 }
 
-.start{
+.start {
   position: absolute;
   top: 520px;
   left: 140px;
 }
 
-.trap{
+.trap {
   position: absolute;
   top: 350px;
   left: 230px;
 }
 
 @media (max-width: 1250px) {
-  .goal{
+  .goal {
+    position: absolute;
+    top: 410px;
+    right: 15px;
     display: none;
   }
 
-  .hosinokakera{
+  .hosinokakera {
+    position: absolute;
+    top: 250px;
+  right: -5px;
+  }
+
+  .start {
+    position: absolute;
+    top: 390px;
+    left: 30px;
     display: none;
   }
-  
-  .start{
-    display: none;
-  }
-  
-  .trap{
-    display: none;
+
+  .trap {
+    position: absolute;
+    top: 190px;
+    left: -7px;
   }
 }
 
@@ -397,7 +468,7 @@ $green :#00c965;
   font-weight: 400;
 }
 
-.h1_p{
+.h1_p {
   color: #fff;
   position: relative;
   top: 220px;
@@ -441,7 +512,6 @@ $green :#00c965;
 //   padding: 0px 2px;
 // }
 
-
 @media (max-width: 700px) {
   .section_game {
     background: #141414;
@@ -455,17 +525,16 @@ $green :#00c965;
     text-align: center;
     display: inline-block;
     position: relative;
-    top:  110px;
+    top: 110px;
   }
 
-
-.h1_p{
-  color: #fff;
-  position: relative;
-  top: 110px;
-  z-index: 5;
-  font-size: 12px;
-}
+  .h1_p {
+    color: #fff;
+    position: relative;
+    top: 110px;
+    z-index: 5;
+    font-size: 12px;
+  }
 
   .title {
     color: #fff;
@@ -481,7 +550,7 @@ $green :#00c965;
     overflow: hidden;
   }
 
-  .explain{
+  .explain {
     position: relative;
     top: -20px;
   }
@@ -493,10 +562,9 @@ $green :#00c965;
   // }
 }
 
-
 // ゲーム購入バナー
 
-.gamepurchase{
+.gamepurchase {
   display: flex;
   color: #0b0b0b;
   justify-content: center;
@@ -508,41 +576,41 @@ $green :#00c965;
   margin-top: 120px;
 }
 
-.gamepurchase img{
+.gamepurchase img {
   margin-bottom: 70px;
   margin-top: 70px;
 }
 
-.gamepurchase_right{
+.gamepurchase_right {
   text-align: left;
   padding-left: 60px;
 }
-.gamepurchase_font_VDL{
+.gamepurchase_font_VDL {
   font-size: 23px;
   font-family: vdl-logomaru-jr, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.gamepurchase_p{
-  font-size:18px;
+.gamepurchase_p {
+  font-size: 18px;
   margin-bottom: 40px;
   font-weight: 700;
 }
 
-.gamepurchase_en{
-font-style: normal;
-font-size: 10px;
-padding-left: 3px;
-padding-right: 5px;
+.gamepurchase_en {
+  font-style: normal;
+  font-size: 10px;
+  padding-left: 3px;
+  padding-right: 5px;
 }
 
-.gamepurchase_kakko{
-font-style: normal;
-font-size: 13px;
+.gamepurchase_kakko {
+  font-style: normal;
+  font-size: 13px;
 }
 
-.gamepurchase_btn{
+.gamepurchase_btn {
   background: $green;
   padding: 13px 70px;
   font-size: 14px;
@@ -551,8 +619,8 @@ font-size: 13px;
 }
 
 @media (max-width: 1100px) {
-  .gamepurchase{
-    display:block;
+  .gamepurchase {
+    display: block;
     color: #0b0b0b;
     justify-content: center;
     align-items: center;
@@ -564,23 +632,22 @@ font-size: 13px;
     padding-bottom: 50px;
   }
 
-  .gamepurchase img{
+  .gamepurchase img {
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 20px;
   }
 
-   .gamepurchase_right{
+  .gamepurchase_right {
     margin: 0 auto;
     text-align: left;
     padding-left: 0px;
     width: 396px;
   }
-
 }
 
 @media (max-width: 700px) {
-  .gamepurchase{
+  .gamepurchase {
     display: block;
     color: #0b0b0b;
     justify-content: center;
@@ -591,42 +658,42 @@ font-size: 13px;
     border-radius: 5px;
     margin-top: 120px;
   }
-  
-  .gamepurchase img{
+
+  .gamepurchase img {
     margin-bottom: 20px;
   }
-  
-  .gamepurchase_right{
+
+  .gamepurchase_right {
     text-align: left;
     padding-left: 0px;
     width: 276px;
   }
-  .gamepurchase_font_VDL{
+  .gamepurchase_font_VDL {
     font-size: 23px;
     font-family: vdl-logomaru-jr, sans-serif;
     font-weight: 700;
     font-style: normal;
   }
-  
-  .gamepurchase_p{
-    font-size:18px;
+
+  .gamepurchase_p {
+    font-size: 18px;
     margin-bottom: 40px;
     font-weight: 700;
   }
-  
-  .gamepurchase_en{
-  font-style: normal;
-  font-size: 10px;
-  padding-left: 3px;
-  padding-right: 5px;
+
+  .gamepurchase_en {
+    font-style: normal;
+    font-size: 10px;
+    padding-left: 3px;
+    padding-right: 5px;
   }
-  
-  .gamepurchase_kakko{
-  font-style: normal;
-  font-size: 13px;
+
+  .gamepurchase_kakko {
+    font-style: normal;
+    font-size: 13px;
   }
-  
-  .gamepurchase_btn{
+
+  .gamepurchase_btn {
     background: $green;
     padding: 13px 70px;
     font-size: 14px;
@@ -635,17 +702,16 @@ font-size: 13px;
   }
 }
 
-
 // セット内容
 
-.set{
-  background:#141414;
+.set {
+  background: #141414;
   text-align: center;
   padding-top: 80px;
   padding-bottom: 170px;
 }
 
-.set canvas{
+.set canvas {
   border-radius: 5px 5px 0px 0px;
 }
 
@@ -657,7 +723,7 @@ font-size: 13px;
   font-size: 15px;
 }
 
-.set h2 span{
+.set h2 span {
   color: #fff;
   font-size: 35px;
   font-family: futura-pt-bold, sans-serif;
@@ -665,20 +731,19 @@ font-size: 13px;
   font-style: normal;
 }
 
-.set h2{
+.set h2 {
   margin-bottom: 50px;
 }
 
-
-.spline_set{
+.spline_set {
   margin: 0 auto;
   width: 60%;
-  height: 60vh;
+  height: 55vh;
   border-radius: 30px;
 }
 
-.set_p{
-  color: #0B0B0B;
+.set_p {
+  color: #0b0b0b;
   font-size: 13px;
   width: 60%;
   text-align: start;
@@ -686,21 +751,22 @@ font-size: 13px;
   line-height: 2;
   letter-spacing: 1px;
   font-weight: 500;
-  background: #c8c8c8;
+  background: #c4c4c4;
   padding: 10px 40px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  padding-top: 0;
   border-radius: 0px 0px 5px 5px;
 }
 
 @media (max-width: 1400px) {
-  .spline_set{
+  .spline_set {
     margin: 0 auto;
     width: 85%;
     height: 65vh;
     border-radius: 30px;
   }
-  .set_p{
-    color: #0B0B0B;
+  .set_p {
+    color: #0b0b0b;
     font-size: 13px;
     width: 677px;
     padding: 10px 40px;
@@ -708,23 +774,24 @@ font-size: 13px;
     margin: 0 auto;
     line-height: 2;
     letter-spacing: 1px;
-    background: #c8c8c8;
-    font-weight: 400;
+    background: #c4c4c4;
+    font-weight: 500;
     position: relative;
     top: -10px;
+    padding-top: 0;
+    padding-bottom: 30px;
   }
 }
 
 @media (max-width: 700px) {
-
-  .set{
-    background:#141414;
+  .set {
+    background: #141414;
     text-align: center;
     padding-top: 80px;
     padding-bottom: 120px;
   }
 
-  .set h2 span{
+  .set h2 span {
     color: #fff;
     font-size: 30px;
     font-family: futura-pt-bold, sans-serif;
@@ -732,15 +799,15 @@ font-size: 13px;
     font-style: normal;
   }
 
-  .spline_set{
+  .spline_set {
     margin: 0 auto;
     width: 85%;
     height: 110vh;
     text-align: center;
   }
 
-  .set_p{
-    color: #0B0B0B;
+  .set_p {
+    color: #0b0b0b;
     font-size: 13px;
     width: 339px;
     text-align: start;
@@ -748,13 +815,13 @@ font-size: 13px;
     line-height: 2;
     letter-spacing: 1px;
     padding: 10px 40px;
-    font-weight: 400;
-    background: #c8c8c8;
+    font-weight: 500;
+    background: #c4c4c4;
     position: relative;
     top: -10px;
+    padding-top: 0;
+    padding-bottom: 30px;
   }
-  
-  
 }
 
 /* ゲーム購入 */
@@ -847,7 +914,7 @@ font-size: 13px;
 }
 
 .game_a_purchase {
-  background: #e0493b;
+  background: $red;
   border-radius: 33px;
   padding: 15px 65px 15px 25px;
   font-size: 12px;
@@ -946,7 +1013,7 @@ font-size: 13px;
 
 /* Twitterシェア */
 
-.twitter-tweet .twitter-tweet-rendered{
+.twitter-tweet .twitter-tweet-rendered {
   margin: 0 auto;
   text-align: center;
   width: 30%;
@@ -954,36 +1021,36 @@ font-size: 13px;
 
 //ABOUT US
 
-.section_aboutas{
+.section_aboutas {
   margin: 0 auto;
   text-align: center;
   width: 80%;
   margin-top: 200px;
 }
 
-.section_aboutas h2{
-  font-size:15px;
+.section_aboutas h2 {
+  font-size: 15px;
   font-family: futura-pt-bold, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.section_aboutas_dl1{
+.section_aboutas_dl1 {
   font-size: 14px;
   margin-top: 12px;
 }
-.section_aboutas_dl1 dt{
+.section_aboutas_dl1 dt {
   font-weight: 500;
 }
 
-.section_aboutas_dl1 dt em{
-  font-size:24px;
+.section_aboutas_dl1 dt em {
+  font-size: 24px;
   font-family: futura-pt-bold, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.section_aboutas_dl1 dd{
+.section_aboutas_dl1 dd {
   font-weight: 500;
   width: 50%;
   margin: 0 auto;
@@ -991,48 +1058,47 @@ font-size: 13px;
   line-height: 2;
 }
 
-.section_aboutas_dl2{
+.section_aboutas_dl2 {
   margin-top: 60px;
 }
 
-.section_aboutas_dl2 dt{
+.section_aboutas_dl2 dt {
   font-weight: 700;
   font-size: 14px;
 }
 
-.section_aboutas_dl2 dd{
+.section_aboutas_dl2 dd {
   display: flex;
   margin: 0 auto;
   justify-content: center;
 }
 
-.section_aboutas_dl2 dd div{
+.section_aboutas_dl2 dd div {
   margin-top: 34px;
   padding-right: 30px;
   padding-left: 30px;
 }
 
-.section_aboutas_dl2 dd div p{
+.section_aboutas_dl2 dd div p {
   margin-top: 26px;
   font-size: 13px;
 }
 
 @media (max-width: 700px) {
-  .section_aboutas{
+  .section_aboutas {
     margin: 0 auto;
     text-align: center;
     width: 80%;
     margin-top: 150px;
   }
 
-  .section_aboutas_dl1 dd{
+  .section_aboutas_dl1 dd {
     font-weight: 500;
     width: 100%;
     margin: 0 auto;
     margin-top: 30px;
     line-height: 2;
   }
-  
 }
 
 /* ここからfooter */
