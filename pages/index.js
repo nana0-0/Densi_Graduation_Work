@@ -332,29 +332,29 @@ export default function Home() {
           <Image
             src="/goal.gif"
             alt="ゴールチップ"
-            width={width < 700 ? `${80}` : `${200}`}
-            height={width < 700 ? `${80}` : `${200}`}
+            width={width < 700 ? `${60}` : `${200}`}
+            height={width < 700 ? `${60}` : `${200}`}
             className={styles.goal}
           />
           <Image
             src="/hosinokakera.gif"
             alt="ゴールチップ"
-            width={width < 700 ? `${100}` : `${200}`}
-            height={width < 700 ? `${100}` : `${200}`}
+            width={width < 700 ? `${80}` : `${200}`}
+            height={width < 700 ? `${80}` : `${200}`}
             className={styles.hosinokakera}
           />
           <Image
             src="/start.gif"
             alt="ゴールチップ"
-            width={width < 700 ? `${80}` : `${200}`}
-            height={width < 700 ? `${80}` : `${200}`}
+            width={width < 700 ? `${60}` : `${200}`}
+            height={width < 700 ? `${60}` : `${200}`}
             className={styles.start}
           />
           <Image
             src="/trap.gif"
             alt="ゴールチップ"
-            width={width < 700 ? `${100}` : `${200}`}
-            height={width < 700 ? `${100}` : `${200}`}
+            width={width < 700 ? `${80}` : `${200}`}
+            height={width < 700 ? `${80}` : `${200}`}
             className={styles.trap}
           />
           {width < 700 ? (

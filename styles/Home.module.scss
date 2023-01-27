@@ -39,7 +39,7 @@ $red: #f23030;
   padding: 48px 28px;
   border-radius: 50%;
   position: fixed;
-  z-index: 20;
+  z-index: 100;
 }
 
 .fv_parchese:hover {
@@ -145,7 +145,7 @@ $red: #f23030;
     width: 85px;
     height: 85px;
     border-radius: 50%;
-    z-index: 20;
+    z-index: 100;
     position: absolute;
     top: 79vh;
     right: 15px;
