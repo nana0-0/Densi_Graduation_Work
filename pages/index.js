@@ -400,6 +400,74 @@ export default function Home() {
               </a>
             </div>
           </div> */}
+           {/* <div className={styles.h1_bkfont_wrap}>
+            <div className={styles.h1_bkfont_flex}>
+              <Image
+                src="/slider0.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${1278}` : `${640}`}
+                height={width < 700 ? `${156}` : `${427}`}
+                className={styles.h1_bkfont}
+              />
+              <Image
+                src="/slider0.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${1278}` : `${640}`}
+                height={width < 700 ? `${156}` : `${427}`}
+                className={styles.h1_bkfont}
+              />
+            </div>
+            <div className={styles.h1_bkfont_flex}>
+              <Image
+                src="/slider0.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${1278}` : `${640}`}
+                height={width < 700 ? `${156}` : `${427}`}
+                className={styles.h1_bkfont}
+              />
+              <Image
+                src="/slider0.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${1278}` : `${640}`}
+                height={width < 700 ? `${156}` : `${427}`}
+                className={styles.h1_bkfont}
+              />
+            </div>
+          </div>
+          <div className={styles.h1_bkfont_wrap}>
+            <div className={styles.h1_bkfont_flex}>
+              <Image
+                src="/section_game_bkfont.svg"
+                alt="Game Logo"
+                width={width < 700 ? `${1278}` : `${2308}`}
+                height={width < 700 ? `${156}` : `${273}`}
+                className={styles.h1_bkfont}
+              />
+              <Image
+                src="/section_game_bkfont.svg"
+                alt="Game Logo"
+                width={width < 700 ? `${1278}` : `${2308}`}
+                height={width < 700 ? `${156}` : `${273}`}
+                className={styles.h1_bkfont}
+              />
+            </div>
+            <div className={styles.h1_bkfont_flex}>
+              <Image
+                src="/section_game_bkfont.svg"
+                alt="Game Logo"
+                width={width < 700 ? `${1278}` : `${2308}`}
+                height={width < 700 ? `${156}` : `${273}`}
+                className={styles.h1_bkfont}
+              />
+              <Image
+                src="/section_game_bkfont.svg"
+                alt="Game Logo"
+                width={width < 700 ? `${1278}` : `${2308}`}
+                height={width < 700 ? `${156}` : `${273}`}
+                className={styles.h1_bkfont}
+              />
+            </div>
+          </div> */}
         </section>
         <section className={styles.set}>
           <span className={styles.h2_span}>セット内容</span>

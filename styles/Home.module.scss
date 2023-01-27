@@ -402,51 +402,87 @@ $red: #f23030;
   position: absolute;
   top: 370px;
   right: 230px;
+  z-index: 5;
 }
 
 .hosinokakera {
   position: absolute;
   top: 520px;
   right: 130px;
+  z-index: 5;
 }
 
 .start {
   position: absolute;
   top: 520px;
   left: 140px;
+  z-index: 5;
 }
 
 .trap {
   position: absolute;
   top: 350px;
   left: 230px;
+  z-index: 5;
 }
 
 @media (max-width: 1250px) {
   .goal {
     position: absolute;
-    top: 410px;
+    top: 480px;
     right: 15px;
-    display: none;
+    z-index: 6;
   }
 
   .hosinokakera {
     position: absolute;
-    top: 250px;
-  right: -5px;
+    top: 300px;
+    right: -5px;
+    z-index: 5;
   }
 
   .start {
     position: absolute;
-    top: 390px;
-    left: 30px;
-    display: none;
+    top: 340px;
+    left: 10px;
+    z-index: 5;
   }
 
   .trap {
     position: absolute;
+    top: 500px;
+    left: 42px;
+    z-index: 5;
+  }
+}
+
+@media (max-width: 700px) {
+  .goal {
+    position: absolute;
+    top: 250px;
+    right: -2px;
+    z-index: 6;
+  }
+
+  .hosinokakera {
+    position: absolute;
+    top: 180px;
+    right: 5px;
+    z-index: 5;
+  }
+
+  .start {
+    position: absolute;
     top: 190px;
-    left: -7px;
+    left: 5px;
+    z-index: 6;
+  }
+
+  .trap {
+    position: absolute;
+    top: 253px;
+    left: -8px;
+    z-index: 5;
   }
 }
 
@@ -464,7 +500,7 @@ $red: #f23030;
   display: inline-block;
   position: relative;
   top: 220px;
-  z-index: 5;
+  z-index: 15;
   font-weight: 400;
 }
 
@@ -472,7 +508,7 @@ $red: #f23030;
   color: #fff;
   position: relative;
   top: 220px;
-  z-index: 5;
+  z-index: 15;
 }
 
 .title {
@@ -488,6 +524,7 @@ $red: #f23030;
   animation: infinity-scroll-left 35s infinite linear 0.5s both;
   display: flex;
   display: -ms-grid;
+  z-index: 10;
 }
 
 .h1_bkfont_wrap {
@@ -495,6 +532,7 @@ $red: #f23030;
   display: flex;
   position: relative;
   top: -20px;
+  z-index: 10;
 }
 
 @keyframes infinity-scroll-left {
@@ -504,6 +542,12 @@ $red: #f23030;
   to {
     transform: translateX(-100%);
   }
+}
+
+.explain {
+  position: relative;
+  top: -20px;
+  z-index: 10;
 }
 
 // .title_em {
@@ -525,6 +569,7 @@ $red: #f23030;
     text-align: center;
     display: inline-block;
     position: relative;
+    z-index: 15;
     top: 110px;
   }
 
@@ -532,7 +577,7 @@ $red: #f23030;
     color: #fff;
     position: relative;
     top: 110px;
-    z-index: 5;
+    z-index: 15;
     font-size: 12px;
   }
 
@@ -553,6 +598,7 @@ $red: #f23030;
   .explain {
     position: relative;
     top: -20px;
+    z-index: 10;
   }
 
   // .title_em {
