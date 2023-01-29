@@ -202,7 +202,7 @@ export default function Home() {
         <title>ボードゲーム『宇宙人はダレ？』公式サイト</title>
         <meta
           name="description"
-          content="ボードゲーム『宇宙人はダレ？』遊びで中１ギャップを未然に防ぐ卒業制作プロジェクト。日本電子専門学校 Webデザイン科 卒業・進級制作展2022にて展示します。"
+          content="ボードゲーム『宇宙人はダレ？』遊びで中１ギャップを未然に防ぐ卒業制作プロジェクト。"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -222,8 +222,9 @@ export default function Home() {
         />
         <meta
           property="og:description"
-          content="ボードゲーム『宇宙人はダレ？』遊びで中１ギャップを未然に防ぐ卒業制作プロジェクト。日本電子専門学校 Webデザイン科 卒業・進級制作展2022にて展示します。"
+          content="ボードゲーム『宇宙人はダレ？』遊びで中１ギャップを未然に防ぐ卒業制作プロジェクト。"
         />
+        <meta name="twitter:card" content="summary_large_image"></meta>
         <meta property="og:site_name" content="宇宙人はダレ？" />
         <meta
           property="og:image"
@@ -376,6 +377,96 @@ export default function Home() {
               style={{ marginTop: 70 }}
             />
           )}
+          <div className={styles.slider_img_wrap}>
+            <div className={styles.slider_img_flex}>
+              <Image
+                src="/slider1.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider2.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider3.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider4.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider5.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider6.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+            </div>
+            <div className={styles.slider_img_flex}>
+              <Image
+                src="/slider1.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider2.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider3.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider4.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider5.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider6.jpg"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+            </div>
+          </div>
           {/* <div className={styles.gamepurchase}>
             <Image
               src="/gamepurchase_title.jpg"
@@ -398,74 +489,6 @@ export default function Home() {
               >
                 購入する
               </a>
-            </div>
-          </div> */}
-           {/* <div className={styles.h1_bkfont_wrap}>
-            <div className={styles.h1_bkfont_flex}>
-              <Image
-                src="/slider0.jpg"
-                alt="Game Logo"
-                width={width < 700 ? `${1278}` : `${640}`}
-                height={width < 700 ? `${156}` : `${427}`}
-                className={styles.h1_bkfont}
-              />
-              <Image
-                src="/slider0.jpg"
-                alt="Game Logo"
-                width={width < 700 ? `${1278}` : `${640}`}
-                height={width < 700 ? `${156}` : `${427}`}
-                className={styles.h1_bkfont}
-              />
-            </div>
-            <div className={styles.h1_bkfont_flex}>
-              <Image
-                src="/slider0.jpg"
-                alt="Game Logo"
-                width={width < 700 ? `${1278}` : `${640}`}
-                height={width < 700 ? `${156}` : `${427}`}
-                className={styles.h1_bkfont}
-              />
-              <Image
-                src="/slider0.jpg"
-                alt="Game Logo"
-                width={width < 700 ? `${1278}` : `${640}`}
-                height={width < 700 ? `${156}` : `${427}`}
-                className={styles.h1_bkfont}
-              />
-            </div>
-          </div>
-          <div className={styles.h1_bkfont_wrap}>
-            <div className={styles.h1_bkfont_flex}>
-              <Image
-                src="/section_game_bkfont.svg"
-                alt="Game Logo"
-                width={width < 700 ? `${1278}` : `${2308}`}
-                height={width < 700 ? `${156}` : `${273}`}
-                className={styles.h1_bkfont}
-              />
-              <Image
-                src="/section_game_bkfont.svg"
-                alt="Game Logo"
-                width={width < 700 ? `${1278}` : `${2308}`}
-                height={width < 700 ? `${156}` : `${273}`}
-                className={styles.h1_bkfont}
-              />
-            </div>
-            <div className={styles.h1_bkfont_flex}>
-              <Image
-                src="/section_game_bkfont.svg"
-                alt="Game Logo"
-                width={width < 700 ? `${1278}` : `${2308}`}
-                height={width < 700 ? `${156}` : `${273}`}
-                className={styles.h1_bkfont}
-              />
-              <Image
-                src="/section_game_bkfont.svg"
-                alt="Game Logo"
-                width={width < 700 ? `${1278}` : `${2308}`}
-                height={width < 700 ? `${156}` : `${273}`}
-                className={styles.h1_bkfont}
-              />
             </div>
           </div> */}
         </section>
@@ -559,16 +582,26 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* <section className={styles.section_twitter}>
-          <TwitterTweetEmbed tweetId={"1610189188338679808"} className={styles.twitter_embed}/>
-          <TwitterShareButton
+        <section className={styles.section_twitter}>
+          <h2>#宇宙人はダレ？をTwitterでシェアしよう！</h2>
+          <TwitterTweetEmbed
+            tweetId={"1610189188338679808"}
+            className={styles.twitter_embed}
+          />
+          {/* <TwitterShareButton
             url={"https://utyujinhadare.yonayonaramens.com/"}
             options={{
               text: "#宇宙人はダレ？ をシェアしよう！！",
               via: "YonayonaRamens",
             }}
-          />
-        </section> */}
+          /> */}
+          <a
+            href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flocalhost%3A3000%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Eshare%7Ctwgr%5E&text=%23%E5%AE%87%E5%AE%99%E4%BA%BA%E3%81%AF%E3%83%80%E3%83%AC%EF%BC%9F%20%E3%82%92%E3%82%B7%E3%82%A7%E3%82%A2%E3%81%97%E3%82%88%E3%81%86%EF%BC%81%EF%BC%81&url=https%3A%2F%2Futyujinhadare.yonayonaramens.com%2F&via=YonayonaRamens"
+            className={styles.twitterbtn}
+          >
+            Twitterでシェアする
+          </a>
+        </section>
         <QASection />
       </main>
       <section className={styles.section_aboutas}>
@@ -593,7 +626,8 @@ export default function Home() {
                 height={120}
                 className={styles.footer_twitter}
               />
-              <p>ネコが好き</p>
+              <p style={{ fontWeight: 700 }}>Nanai</p>
+              <p style={{ marginTop: 0 }}>ネコが好き</p>
             </div>
             <div>
               <Image
@@ -603,7 +637,8 @@ export default function Home() {
                 height={120}
                 className={styles.footer_twitter}
               />
-              <p>ギターが好き</p>
+              <p style={{ fontWeight: 700 }}>Anri</p>
+              <p style={{ marginTop: 0 }}>ギターが好き</p>
             </div>
           </dd>
         </dl>

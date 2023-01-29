@@ -473,8 +473,8 @@ $red: #f23030;
 
   .start {
     position: absolute;
-    top: 190px;
-    left: 5px;
+    top: 200px;
+    left: 10px;
     z-index: 6;
   }
 
@@ -511,7 +511,7 @@ $red: #f23030;
   z-index: 15;
 }
 
-.title {
+.title span{
   color: #fff;
   line-height: 2.7;
   font-size: 18px;
@@ -535,6 +535,52 @@ $red: #f23030;
   z-index: 10;
 }
 
+.slider_img_flex {
+  animation: infinity-scroll-left 30s infinite linear 0.5s both;
+  display: flex;
+  display: -ms-grid;
+}
+
+.slider_img_wrap {
+  overflow: hidden;
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 0px;
+  padding-bottom: 150px;
+}
+
+.slider_img{
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.slider_img::after{
+  content:"";
+  
+}
+
+.slider_img:nth-child(even) {
+  overflow: hidden;
+  position: relative;
+  top: 150px;
+}
+
+@media (max-width: 700px) {
+  .slider_img_wrap {
+    overflow: hidden;
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    padding-bottom: 90px;
+  }
+  .slider_img:nth-child(even) {
+    overflow: hidden;
+    position: relative;
+    top: 80px;
+  }
+}
+
+
 @keyframes infinity-scroll-left {
   from {
     transform: translateX(0);
@@ -555,6 +601,18 @@ $red: #f23030;
 //   background-color: #00c965;
 //   padding: 0px 2px;
 // }
+
+@media (max-width: 1200px) {
+  .title span{
+    color: #fff;
+    line-height: 2.7;
+    font-size: 18px;
+    margin-top: -22px;
+    font-weight: 500;
+    z-index: 30;
+  }
+
+}
 
 @media (max-width: 700px) {
   .section_game {
@@ -581,7 +639,7 @@ $red: #f23030;
     font-size: 12px;
   }
 
-  .title {
+  .title span{
     color: #fff;
     line-height: 3;
     font-size: 12px;
@@ -589,6 +647,7 @@ $red: #f23030;
     font-weight: 700;
     position: relative;
     top: -20px;
+    z-index: 30;
   }
 
   .h1_bkfont {
@@ -790,7 +849,7 @@ $red: #f23030;
 
 .set_p {
   color: #0b0b0b;
-  font-size: 13px;
+  font-size: 14px;
   width: 60%;
   text-align: start;
   margin: 0 auto;
@@ -1059,10 +1118,43 @@ $red: #f23030;
 
 /* Twitterシェア */
 
+.section_twitter{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.section_twitter h2{
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+.section_twitter div{
+  margin: 0 auto;
+  width: 380px;
+  margin-bottom: 50px;
+}
+
+.twitterbtn{
+  background-color: #f23030;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 5px;
+}
 .twitter-tweet .twitter-tweet-rendered {
   margin: 0 auto;
   text-align: center;
   width: 30%;
+}
+
+
+@media (max-width: 700px) {
+  .section_twitter div{
+    margin: 0 auto;
+    width: 75%;
+  }  
 }
 
 //ABOUT US
