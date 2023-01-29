@@ -1129,6 +1129,10 @@ $red: #f23030;
   font-size: 25px;
 }
 
+.twitter_br{
+  display: none;
+}
+
 .section_twitter div{
   margin: 0 auto;
   width: 380px;
@@ -1155,6 +1159,41 @@ $red: #f23030;
     margin: 0 auto;
     width: 75%;
   }  
+
+  .section_twitter h2{
+    margin-bottom: 50px;
+    font-size: 20px;
+    width: 260px;
+    margin: 0 auto;
+    line-height:1.5;
+    margin-bottom: 40px;
+  }
+
+  .twitter_br{
+    display: block;
+  }
+
+.section_twitter div{
+  margin: 0 auto;
+  width: 380px;
+  margin-bottom: 50px;
+}
+
+.twitterbtn{
+  background-color: #f23030;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.twitter-tweet .twitter-tweet-rendered {
+  margin: 0 auto;
+  text-align: center;
+  width: 30%;
+}
+
+
 }
 
 //ABOUT US

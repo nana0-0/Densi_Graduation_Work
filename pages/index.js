@@ -583,7 +583,7 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.section_twitter}>
-          <h2>#宇宙人はダレ？をTwitterでシェアしよう！</h2>
+          <h2>#宇宙人はダレ？を<br className={styles.twitter_br}></br>Twitterでシェアしよう！</h2>
           <TwitterTweetEmbed
             tweetId={"1610189188338679808"}
             className={styles.twitter_embed}
