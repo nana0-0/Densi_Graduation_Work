@@ -380,42 +380,42 @@ export default function Home() {
           <div className={styles.slider_img_wrap}>
             <div className={styles.slider_img_flex}>
               <Image
-                src="/slider1.jpg"
+                src="/slidertest1.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slider2.jpg"
+                src="/slidertest2.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slider3.jpg"
+                src="/slidertest1.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slider4.jpg"
+                src="/slidertest2.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slider5.jpg"
+                src="/slidertest1.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slider6.jpg"
+                src="/slidertest2.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
@@ -424,42 +424,42 @@ export default function Home() {
             </div>
             <div className={styles.slider_img_flex}>
               <Image
-                src="/slider1.jpg"
+                src="/slidertest1.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slider2.jpg"
+                src="/slidertest2.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slider3.jpg"
+                src="/slidertest1.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slider4.jpg"
+                src="/slidertest2.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slider5.jpg"
+                src="/slidertest1.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slider6.jpg"
+                src="/slidertest2.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
@@ -611,8 +611,8 @@ export default function Home() {
             <em>YonayonaRamens</em> とは
           </dt>
           <dd>
-            ”遊び”で子どもや子を持つ親並びに子供の成長に寄り添う教育者の方々が
-            抱えている問題に寄り添うことを目的とした卒業制作プロジェクトです。
+            “モノづくり”で驚きと楽しさを提供する二人組のクリエーターです。<br></br>
+            「妥協しないで、より良いサービスを生み出す」というコンセプトを掲げ、活動を行っています。
           </dd>
         </dl>
         <dl className={styles.section_aboutas_dl2}>
