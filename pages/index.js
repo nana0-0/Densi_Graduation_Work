@@ -130,6 +130,36 @@ const ResizeSpline = ({ scene, threshhold, loadtype }) => {
   );
 };
 
+function Loading() {
+  const { height, width } = getWindowSize();
+  const [loading, setLoading] = useState(<></>);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      return (
+       setLoading(<></>)
+      );
+    }, 4000);
+    return () => {
+      clearInterval(interval);
+      setLoading(<section className={styles.loading}>
+        <p className={styles.loading_p}>宇宙人はダレ？</p>
+        <div className={styles.loading_img}>
+        <Image
+              src="/loading.png"
+              alt="Game Logo"
+              width={width < 700 ? `${115}` : `${115}`}
+              height={width < 700 ? `${90}` : `${90}`}
+            />
+            </div>
+      </section>)
+    };
+  }, []);
+
+  return (
+    loading
+  );
+}
+
 function PDFIntro() {
   const { height, width } = getWindowSize();
   const [pdfimage, setPdfImage] = useState(0);
@@ -258,6 +288,7 @@ export default function Home() {
           }}
         />
       </Head>
+      <Loading />
       <h1 className={styles.fv_h1}>宇宙人はダレ？</h1>
       <a href="#" target="_blank" className={styles.fv_parchese}>
         購入する
@@ -583,7 +614,10 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.section_twitter}>
-          <h2>#宇宙人はダレ？を<br className={styles.twitter_br}></br>Twitterでシェアしよう！</h2>
+          <h2>
+            #宇宙人はダレ？を<br className={styles.twitter_br}></br>
+            Twitterでシェアしよう！
+          </h2>
           <TwitterTweetEmbed
             tweetId={"1610189188338679808"}
             className={styles.twitter_embed}
@@ -611,7 +645,8 @@ export default function Home() {
             <em>YonayonaRamens</em> とは
           </dt>
           <dd>
-            “モノづくり”で驚きと楽しさを提供する二人組のクリエーターです。<br></br>
+            “モノづくり”で驚きと楽しさを提供する二人組のクリエーターです。
+            <br></br>
             「妥協しないで、より良いサービスを生み出す」というコンセプトを掲げ、活動を行っています。
           </dd>
         </dl>

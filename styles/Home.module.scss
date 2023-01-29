@@ -3,6 +3,35 @@ $green: #00d857;
 $green: #00d861;
 
 $red: #f23030;
+
+.loading {
+  height: 100%;
+  width: 100%;
+  background: #0b0b0b;
+  z-index: 300;
+  position: absolute;
+  top: 0;
+  right: 0;
+  position: fixed;
+  padding-top: 40vh;
+}
+
+.loading_p {
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-family: vdl-logomaru-jr, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding-bottom: 20px;
+}
+
+.loading_img{
+  margin: 0 auto;
+  text-align: center;
+}
+
 .main {
   background: #c8c8c8;
 }
@@ -511,7 +540,7 @@ $red: #f23030;
   z-index: 15;
 }
 
-.title span{
+.title span {
   color: #fff;
   line-height: 2.7;
   font-size: 18px;
@@ -549,14 +578,13 @@ $red: #f23030;
   padding-bottom: 150px;
 }
 
-.slider_img{
+.slider_img {
   margin-right: 20px;
   border-radius: 5px;
 }
 
-.slider_img::after{
-  content:"";
-  
+.slider_img::after {
+  content: "";
 }
 
 .slider_img:nth-child(even) {
@@ -580,7 +608,6 @@ $red: #f23030;
   }
 }
 
-
 @keyframes infinity-scroll-left {
   from {
     transform: translateX(0);
@@ -603,7 +630,7 @@ $red: #f23030;
 // }
 
 @media (max-width: 1200px) {
-  .title span{
+  .title span {
     color: #fff;
     line-height: 2.7;
     font-size: 18px;
@@ -611,7 +638,6 @@ $red: #f23030;
     font-weight: 500;
     z-index: 30;
   }
-
 }
 
 @media (max-width: 700px) {
@@ -639,7 +665,7 @@ $red: #f23030;
     font-size: 12px;
   }
 
-  .title span{
+  .title span {
     color: #fff;
     line-height: 3;
     font-size: 12px;
@@ -1118,28 +1144,28 @@ $red: #f23030;
 
 /* Twitterシェア */
 
-.section_twitter{
+.section_twitter {
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
 }
 
-.section_twitter h2{
+.section_twitter h2 {
   margin-bottom: 50px;
   font-size: 25px;
 }
 
-.twitter_br{
+.twitter_br {
   display: none;
 }
 
-.section_twitter div{
+.section_twitter div {
   margin: 0 auto;
   width: 380px;
   margin-bottom: 50px;
 }
 
-.twitterbtn{
+.twitterbtn {
   background-color: #f23030;
   color: #fff;
   padding: 10px 20px;
@@ -1153,47 +1179,44 @@ $red: #f23030;
   width: 30%;
 }
 
-
 @media (max-width: 700px) {
-  .section_twitter div{
+  .section_twitter div {
     margin: 0 auto;
     width: 75%;
-  }  
+  }
 
-  .section_twitter h2{
+  .section_twitter h2 {
     margin-bottom: 50px;
     font-size: 20px;
     width: 260px;
     margin: 0 auto;
-    line-height:1.5;
+    line-height: 1.5;
     margin-bottom: 40px;
   }
 
-  .twitter_br{
+  .twitter_br {
     display: block;
   }
 
-.section_twitter div{
-  margin: 0 auto;
-  width: 380px;
-  margin-bottom: 50px;
-}
+  .section_twitter div {
+    margin: 0 auto;
+    width: 380px;
+    margin-bottom: 50px;
+  }
 
-.twitterbtn{
-  background-color: #f23030;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 15px;
-  font-weight: 700;
-  border-radius: 5px;
-}
-.twitter-tweet .twitter-tweet-rendered {
-  margin: 0 auto;
-  text-align: center;
-  width: 30%;
-}
-
-
+  .twitterbtn {
+    background-color: #f23030;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+  .twitter-tweet .twitter-tweet-rendered {
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+  }
 }
 
 //ABOUT US
