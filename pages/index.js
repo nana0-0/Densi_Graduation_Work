@@ -130,18 +130,51 @@ const ResizeSpline = ({ scene, threshhold, loadtype }) => {
   );
 };
 
+// function Loading() {
+//   const { height, width } = getWindowSize();
+//   const [loading, setLoading] = useState(<></>);
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       return (
+//        setLoading(<></>)
+//       );
+//     }, 4000);
+//     return () => {
+//       clearInterval(interval);
+//       setLoading(<section className={styles.loading}>
+//         <p className={styles.loading_p}>宇宙人はダレ？</p>
+//         <div className={styles.loading_img}>
+//         <Image
+//               src="/loading.png"
+//               alt="Game Logo"
+//               width={width < 700 ? `${115}` : `${115}`}
+//               height={width < 700 ? `${90}` : `${90}`}
+//             />
+//             </div>
+//       </section>)
+//     };
+//   }, []);
+
+//   return (
+//     loading
+//   );
+// }
+
 function Loading() {
   const { height, width } = getWindowSize();
-  const [loading, setLoading] = useState(<></>);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     const interval = setInterval(() => {
-      return (
-       setLoading(<></>)
-      );
-    }, 4000);
+      setLoading(false)
+    }, 6000);
+    setLoading(true)
     return () => {
       clearInterval(interval);
-      setLoading(<section className={styles.loading}>
+    };
+  }, []);
+  
+  return loading?(
+     <section className={styles.loading}>
         <p className={styles.loading_p}>宇宙人はダレ？</p>
         <div className={styles.loading_img}>
         <Image
@@ -151,13 +184,8 @@ function Loading() {
               height={width < 700 ? `${90}` : `${90}`}
             />
             </div>
-      </section>)
-    };
-  }, []);
-
-  return (
-    loading
-  );
+      </section>
+  ):(<></>);
 }
 
 function PDFIntro() {
