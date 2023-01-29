@@ -162,7 +162,7 @@ const ResizeSpline = ({ scene, threshhold, loadtype }) => {
 
 function Loading() {
   const { height, width } = getWindowSize();
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const interval = setInterval(() => {
       setLoading(false)
