@@ -163,6 +163,7 @@ const ResizeSpline = ({ scene, threshhold, loadtype }) => {
 function Loading() {
   const { height, width } = getWindowSize();
   const [loading, setLoading] = useState(true);
+  let [ counter, setCounter ] =  useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
       setLoading(false);
@@ -444,14 +445,7 @@ export default function Home() {
           <div className={styles.slider_img_wrap}>
             <div className={styles.slider_img_flex}>
               <Image
-                src="/slidertest1.gif"
-                alt="Game Logo"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
-                className={styles.slider_img}
-              />
-              <Image
-                src="/slidertest2.gif"
+                src="/slidertest3.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
@@ -465,21 +459,28 @@ export default function Home() {
                 className={styles.slider_img}
               />
               <Image
-                src="/slidertest2.gif"
+                src="/slidertest3.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slidertest1.gif"
+                src="/slidertest3.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slidertest2.gif"
+                src="/slidertest3.gif"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slidertest3.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
@@ -488,14 +489,7 @@ export default function Home() {
             </div>
             <div className={styles.slider_img_flex}>
               <Image
-                src="/slidertest1.gif"
-                alt="Game Logo"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
-                className={styles.slider_img}
-              />
-              <Image
-                src="/slidertest2.gif"
+                src="/slidertest3.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
@@ -509,21 +503,28 @@ export default function Home() {
                 className={styles.slider_img}
               />
               <Image
-                src="/slidertest2.gif"
+                src="/slidertest3.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slidertest1.gif"
+                src="/slidertest3.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
               <Image
-                src="/slidertest2.gif"
+                src="/slidertest3.gif"
+                alt="Game Logo"
+                width={width < 700 ? `${232}` : `${380}`}
+                height={width < 700 ? `${154}` : `${252}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slidertest3.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
