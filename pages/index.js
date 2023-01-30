@@ -163,7 +163,7 @@ const ResizeSpline = ({ scene, threshhold, loadtype }) => {
 function Loading() {
   const { height, width } = getWindowSize();
   const [loading, setLoading] = useState(true);
-  let [ counter, setCounter ] =  useState(0);
+  let [counter, setCounter] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
       setLoading(false);
@@ -402,6 +402,12 @@ export default function Home() {
             height={width < 700 ? `${120}` : `${200}`}
             className={styles.goal}
           />
+          <video
+            src="/hosinokakera.webm"
+            loop
+            width={width < 700 ? `${120}` : `${200}`}
+            height={width < 700 ? `${120}` : `${200}`}
+          ></video>
           <Image
             src="/hosinokakera.gif"
             alt="星のかけら"
