@@ -54,6 +54,58 @@ $red: #f23030;
   100% {width: 100%}
 }
 
+@media (max-width: 700px) {
+  .loading {
+    height: 100%;
+    width: 100%;
+    background: #0b0b0b;
+    z-index: 300;
+    position: absolute;
+    top: 0;
+    right: 0;
+    position: fixed;
+    padding-top: 30vh;
+  }
+  
+  .loading_p {
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    font-family: vdl-logomaru-jr, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-bottom: 20px;
+  }
+  
+  .loading_img{
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .progBar{
+    width:85px;
+    height:5px;
+    background-color:#ececec;
+    position:relative;
+    border-radius:5px;
+    overflow: hidden;
+    margin: 20px auto;
+  }
+  .progBar .bar{
+    position:absolute;
+    height:100%;
+    background-color:$red;
+    animation: progress 4s normal;
+    animation-fill-mode: forwards;
+  }
+  @keyframes progress {
+    0% {width: 0}
+    100% {width: 100%}
+  }
+}
+
+
 .main {
   background: #c8c8c8;
 }
