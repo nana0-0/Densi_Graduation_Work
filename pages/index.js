@@ -309,11 +309,6 @@ export default function Home() {
           }}
         />
         <script
-          dangerouslySetInnerHTML={{
-            __html: `document.addEventListener('touchstart', onTouchStart, {passive: true});`,
-          }}
-        />
-        <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-JZ93K6Y5M6"
         />
@@ -407,19 +402,30 @@ export default function Home() {
             height={width < 700 ? `${120}` : `${200}`}
             className={styles.goal}
           />
+          <video
+            width={width < 700 ? `${120}` : `${200}`}
+            height={width < 700 ? `${120}` : `${200}`}
+            className={styles.start}
+            src="/start.webm"
+            loop
+            autoPlay
+            muted
+            playsInline
+            autoplay
+          ></video>
+           {/* <Image
+            src="/start.gif"
+            alt="スタートカード"
+            width={width < 700 ? `${120}` : `${200}`}
+            height={width < 700 ? `${120}` : `${200}`}
+            className={styles.start}
+          /> */}
           <Image
             src="/hosinokakera.gif"
             alt="星のかけら"
             width={width < 700 ? `${120}` : `${200}`}
             height={width < 700 ? `${120}` : `${200}`}
             className={styles.hosinokakera}
-          />
-          <Image
-            src="/start.gif"
-            alt="スタートカード"
-            width={width < 700 ? `${120}` : `${200}`}
-            height={width < 700 ? `${120}` : `${200}`}
-            className={styles.start}
           />
           <Image
             src="/trap.gif"
