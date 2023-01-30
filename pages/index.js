@@ -165,27 +165,32 @@ function Loading() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const interval = setInterval(() => {
-      setLoading(false)
+      setLoading(false);
     }, 6000);
-    setLoading(true)
+    setLoading(true);
     return () => {
       clearInterval(interval);
     };
   }, []);
-  
-  return loading?(
-     <section className={styles.loading}>
-        <p className={styles.loading_p}>宇宙人はダレ？</p>
-        <div className={styles.loading_img}>
+
+  return loading ? (
+    <section className={styles.loading}>
+      <p className={styles.loading_p}>宇宙人はダレ？</p>
+      <div className={styles.loading_img}>
         <Image
-              src="/loading.png"
-              alt="Game Logo"
-              width={width < 700 ? `${115}` : `${115}`}
-              height={width < 700 ? `${90}` : `${90}`}
-            />
-            </div>
-      </section>
-  ):(<></>);
+          src="/loading.png"
+          alt="Game Logo"
+          width={width < 700 ? `${115}` : `${115}`}
+          height={width < 700 ? `${90}` : `${90}`}
+        />
+      </div>
+      <div className={styles.progBar}>
+        <p className={styles.bar}></p>
+      </div>
+    </section>
+  ) : (
+    <></>
+  );
 }
 
 function PDFIntro() {
@@ -642,15 +647,16 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.section_twitter}>
-        <Image
-                src="/share.svg"
-                alt="share"
-                width={69}
-                height={16}
-                className={styles.twitter_share}
-              />
+          <Image
+            src="/share.svg"
+            alt="share"
+            width={69}
+            height={16}
+            className={styles.twitter_share}
+          />
           <h2>
-            #宇宙人はダレ？で<br className={styles.twitter_br}></br>シェアしよう！
+            #宇宙人はダレ？で<br className={styles.twitter_br}></br>
+            シェアしよう！
           </h2>
           <TwitterTweetEmbed
             tweetId={"1610189188338679808"}

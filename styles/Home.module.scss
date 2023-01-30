@@ -4,6 +4,7 @@ $green: #00d861;
 
 $red: #f23030;
 
+// ローディング画面
 .loading {
   height: 100%;
   width: 100%;
@@ -30,6 +31,27 @@ $red: #f23030;
 .loading_img{
   margin: 0 auto;
   text-align: center;
+}
+
+.progBar{
+  width:85px;
+  height:5px;
+  background-color:#ececec;
+  position:relative;
+  border-radius:5px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.progBar .bar{
+  position:absolute;
+  height:100%;
+  background-color:$red;
+  animation: progress 4s normal;
+  animation-fill-mode: forwards;
+}
+@keyframes progress {
+  0% {width: 0}
+  100% {width: 100%}
 }
 
 .main {
