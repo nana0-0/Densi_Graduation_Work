@@ -458,7 +458,7 @@ export default function Home() {
                 className={styles.slider_img}
               />
               <Image
-                src="/slidertest1.gif"
+                src="/slidertest3.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
@@ -502,7 +502,7 @@ export default function Home() {
                 className={styles.slider_img}
               />
               <Image
-                src="/slidertest1.gif"
+                src="/slidertest3.gif"
                 alt="Game Logo"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}

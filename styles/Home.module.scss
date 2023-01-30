@@ -64,7 +64,7 @@ $red: #f23030;
     top: 0;
     right: 0;
     position: fixed;
-    padding-top: 30vh;
+    padding-top: 40vh;
   }
   
   .loading_p {
@@ -703,7 +703,7 @@ $red: #f23030;
 //   padding: 0px 2px;
 // }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .title span {
     color: #fff;
     line-height: 2.7;
@@ -711,8 +711,10 @@ $red: #f23030;
     margin-top: -22px;
     font-weight: 500;
     z-index: 30;
+    position: relative;
   }
 }
+
 
 @media (max-width: 700px) {
   .section_game {
@@ -1333,7 +1335,7 @@ $red: #f23030;
 
 .section_aboutas_dl1 dd {
   font-weight: 500;
-  width: 55%;
+  width: 65%;
   margin: 0 auto;
   margin-top: 30px;
   line-height: 2;
