@@ -309,6 +309,11 @@ export default function Home() {
           }}
         />
         <script
+          dangerouslySetInnerHTML={{
+            __html: `document.addEventListener('touchstart', onTouchStart, {passive: true});`,
+          }}
+        />
+        <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-JZ93K6Y5M6"
         />
