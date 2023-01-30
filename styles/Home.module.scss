@@ -46,7 +46,7 @@ $red: #f23030;
   position:absolute;
   height:100%;
   background-color:$red;
-  animation: progress 4s normal;
+  animation: progress 2s normal;
   animation-fill-mode: forwards;
 }
 @keyframes progress {
@@ -562,30 +562,34 @@ $red: #f23030;
 @media (max-width: 700px) {
   .goal {
     position: absolute;
-    top: 250px;
-    right: -2px;
+    top: 520px;
+    right: 92px;
     z-index: 6;
+    display: none;
   }
 
   .hosinokakera {
     position: absolute;
-    top: 180px;
-    right: 5px;
+    top: 480px;
+    right: 35px;
     z-index: 5;
+    display: none;
   }
 
   .start {
     position: absolute;
-    top: 200px;
-    left: 10px;
+    top: 510px;
+    left: 30px;
     z-index: 6;
+    display: none;
   }
 
   .trap {
     position: absolute;
-    top: 253px;
-    left: -8px;
+    top: 520px;
+    left: 108px;
     z-index: 5;
+    display: none;
   }
 }
 

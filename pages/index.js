@@ -167,7 +167,7 @@ function Loading() {
   useEffect(() => {
     const interval = setInterval(() => {
       setLoading(false);
-    }, 6000);
+    }, 2000);
     setLoading(true);
     return () => {
       clearInterval(interval);
@@ -397,30 +397,30 @@ export default function Home() {
           </p>
           <Image
             src="/goal.gif"
-            alt="ゴールチップ"
-            width={width < 700 ? `${60}` : `${200}`}
-            height={width < 700 ? `${60}` : `${200}`}
+            alt="ゴールカード"
+            width={width < 700 ? `${120}` : `${200}`}
+            height={width < 700 ? `${120}` : `${200}`}
             className={styles.goal}
           />
           <Image
             src="/hosinokakera.gif"
-            alt="ゴールチップ"
-            width={width < 700 ? `${80}` : `${200}`}
-            height={width < 700 ? `${80}` : `${200}`}
+            alt="星のかけら"
+            width={width < 700 ? `${120}` : `${200}`}
+            height={width < 700 ? `${120}` : `${200}`}
             className={styles.hosinokakera}
           />
           <Image
             src="/start.gif"
-            alt="ゴールチップ"
-            width={width < 700 ? `${60}` : `${200}`}
-            height={width < 700 ? `${60}` : `${200}`}
+            alt="スタートカード"
+            width={width < 700 ? `${120}` : `${200}`}
+            height={width < 700 ? `${120}` : `${200}`}
             className={styles.start}
           />
           <Image
             src="/trap.gif"
-            alt="ゴールチップ"
-            width={width < 700 ? `${80}` : `${200}`}
-            height={width < 700 ? `${80}` : `${200}`}
+            alt="トラップカード"
+            width={width < 700 ? `${120}` : `${200}`}
+            height={width < 700 ? `${120}` : `${200}`}
             className={styles.trap}
           />
           {width < 700 ? (
@@ -530,30 +530,6 @@ export default function Home() {
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
               />
-            </div>
-          </div> */}
-          {/* <div className={styles.gamepurchase}>
-            <Image
-              src="/gamepurchase_title.jpg"
-              alt="Game Logo"
-              className={styles}
-              width={width < 700 ? 276 : 396}
-              height={width < 700 ? 181 : 260}
-            />
-            <div className={styles.gamepurchase_right}>
-              <p className={styles.gamepurchase_font_VDL}>宇宙人はダレ？</p>
-              <p className={styles.gamepurchase_p}>
-                3,500<em className={styles.gamepurchase_en}>円</em>
-                <em className={styles.gamepurchase_kakko}>( 税込・送料別 )</em>
-              </p>
-              <a
-                href="#"
-                className={styles.gamepurchase_btn}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                購入する
-              </a>
             </div>
           </div> */}
         </section>
@@ -780,106 +756,6 @@ export default function Home() {
           <small>&copy; 2022 YonayonaRamens. ALL RIGHTS RESERVED.</small>
         </p>
       </footer>
-      {/* <main className={styles.main}>
-        <div className={styles.description}>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-               <Image
-                src="/footer_img.svg"
-                alt="Game Logo"
-                className={styles.vercelLogo}
-                width={150}
-                height={30}
-                priority
-              />
-              『宇宙人はダレ？』を購入する
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main> */}
     </>
   );
 }
