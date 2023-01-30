@@ -1145,14 +1145,17 @@ $red: #f23030;
 /* Twitterシェア */
 
 .section_twitter {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
+  background: #141414;
 }
 
 .section_twitter h2 {
   margin-bottom: 50px;
-  font-size: 25px;
+  font-size: 23px;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .twitter_br {
@@ -1161,17 +1164,21 @@ $red: #f23030;
 
 .section_twitter div {
   margin: 0 auto;
-  width: 380px;
-  margin-bottom: 50px;
+  width: 300px;
+  margin-bottom: 70px;
+}
+
+.twitter_share{
+  margin-bottom: 10px;
 }
 
 .twitterbtn {
   background-color: #f23030;
   color: #fff;
-  padding: 10px 20px;
-  font-size: 15px;
+  padding: 14px 55px;
+  font-size: 17px;
   font-weight: 700;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .twitter-tweet .twitter-tweet-rendered {
   margin: 0 auto;
@@ -1200,17 +1207,17 @@ $red: #f23030;
 
   .section_twitter div {
     margin: 0 auto;
-    width: 380px;
+    width: 350px;
     margin-bottom: 50px;
   }
 
   .twitterbtn {
     background-color: #f23030;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 50px;
     font-size: 15px;
     font-weight: 700;
-    border-radius: 5px;
+    border-radius: 3px;
   }
   .twitter-tweet .twitter-tweet-rendered {
     margin: 0 auto;
@@ -1225,7 +1232,7 @@ $red: #f23030;
   margin: 0 auto;
   text-align: center;
   width: 80%;
-  margin-top: 200px;
+  padding-top: 200px;
 }
 
 .section_aboutas h2 {
@@ -1291,6 +1298,18 @@ $red: #f23030;
     width: 80%;
     margin-top: 150px;
   }
+  
+  .section_aboutas h2 {
+    font-size: 14px;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .section_aboutas_dl1 {
+    font-size: 12px;
+    margin-top: 12px;
+  }
 
   .section_aboutas_dl1 dd {
     font-weight: 500;
@@ -1299,6 +1318,7 @@ $red: #f23030;
     margin-top: 30px;
     line-height: 2;
   }
+
 }
 
 /* ここからfooter */

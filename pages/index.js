@@ -642,9 +642,15 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.section_twitter}>
+        <Image
+                src="/share.svg"
+                alt="share"
+                width={69}
+                height={16}
+                className={styles.twitter_share}
+              />
           <h2>
-            #宇宙人はダレ？を<br className={styles.twitter_br}></br>
-            Twitterでシェアしよう！
+            #宇宙人はダレ？で<br className={styles.twitter_br}></br>シェアしよう！
           </h2>
           <TwitterTweetEmbed
             tweetId={"1610189188338679808"}
@@ -661,7 +667,7 @@ export default function Home() {
             href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flocalhost%3A3000%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Eshare%7Ctwgr%5E&text=%23%E5%AE%87%E5%AE%99%E4%BA%BA%E3%81%AF%E3%83%80%E3%83%AC%EF%BC%9F%20%E3%82%92%E3%82%B7%E3%82%A7%E3%82%A2%E3%81%97%E3%82%88%E3%81%86%EF%BC%81%EF%BC%81&url=https%3A%2F%2Futyujinhadare.yonayonaramens.com%2F&via=YonayonaRamens"
             className={styles.twitterbtn}
           >
-            Twitterでシェアする
+            シェアする
           </a>
         </section>
         <QASection />
@@ -684,9 +690,9 @@ export default function Home() {
             <div>
               <Image
                 src="/twitter.png"
-                alt="宇宙人はダレ？Twitterアカウント"
-                width={120}
-                height={120}
+                alt="Nanaiの画像"
+                width={width < 700 ? `${100}` : `${120}`}
+                height={width < 700 ? `${100}` : `${120}`}
                 className={styles.footer_twitter}
               />
               <p style={{ fontWeight: 700 }}>Nanai</p>
@@ -695,9 +701,9 @@ export default function Home() {
             <div>
               <Image
                 src="/twitter.png"
-                alt="宇宙人はダレ？Twitterアカウント"
-                width={120}
-                height={120}
+                alt="Anriの画像"
+                width={width < 700 ? `${100}` : `${120}`}
+                height={width < 700 ? `${100}` : `${120}`}
                 className={styles.footer_twitter}
               />
               <p style={{ fontWeight: 700 }}>Anri</p>
