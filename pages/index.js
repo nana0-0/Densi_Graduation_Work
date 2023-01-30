@@ -442,7 +442,7 @@ export default function Home() {
               style={{ marginTop: 70 }}
             />
           )}
-          <div className={styles.slider_img_wrap}>
+          {/* <div className={styles.slider_img_wrap}>
             <div className={styles.slider_img_flex}>
               <Image
                 src="/slidertest3.gif"
@@ -531,7 +531,7 @@ export default function Home() {
                 className={styles.slider_img}
               />
             </div>
-          </div>
+          </div> */}
           {/* <div className={styles.gamepurchase}>
             <Image
               src="/gamepurchase_title.jpg"
