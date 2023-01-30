@@ -402,12 +402,6 @@ export default function Home() {
             height={width < 700 ? `${120}` : `${200}`}
             className={styles.goal}
           />
-          <video
-            src="/hosinokakera.webm"
-            loop
-            width={width < 700 ? `${120}` : `${200}`}
-            height={width < 700 ? `${120}` : `${200}`}
-          ></video>
           <Image
             src="/hosinokakera.gif"
             alt="星のかけら"
