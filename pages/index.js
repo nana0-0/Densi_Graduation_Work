@@ -461,7 +461,7 @@ export default function Home() {
           /> */}
           {width < 700 ? (
             <Image
-              src="/game_menu_phone.avif"
+              src="/game_menu_phone.png"
               alt="プレイヤー：4人 プレイ時間：20分 対象年齢：10歳以上"
               className={styles.explain}
               width={299}
@@ -470,7 +470,7 @@ export default function Home() {
             />
           ) : (
             <Image
-              src="/game_menu.avif"
+              src="/game_menu.png"
               alt="プレイヤー：4人 プレイ時間：20分 対象年齢：10歳以上"
               className={styles.explain}
               width={607}
@@ -576,7 +576,7 @@ export default function Home() {
           </h2>
           {width < 700 ? (
             <Image
-              src="/set_phone.avif"
+              src="/set_phone.jpg"
               alt="セット内容"
               className={styles.set_phone}
               width={339}
@@ -584,7 +584,7 @@ export default function Home() {
             />
           ) : width < 1400 ? (
             <Image
-              src="/set_ipad.avif"
+              src="/set_ipad.jpg"
               alt="セット内容"
               className={styles.set_phone}
               width={677}
@@ -706,7 +706,7 @@ export default function Home() {
             <div className={styles.section_production_background_div_r}>
               <div className={styles.section_production_background_div_c}>
                 <Image
-                  src="/tanaka.avif"
+                  src="/tanaka.png"
                   alt="田中楠乃"
                   width={width < 700 ? `${186}` : `${314}`}
                   height={width < 700 ? `${151}` : `${255}`}
@@ -725,7 +725,7 @@ export default function Home() {
                   <dd>ギターが好き</dd>
                 </dl>
                 <Image
-                  src="/nonaka.avif"
+                  src="/nonaka.png"
                   alt="野中杏莉"
                   width={width < 700 ? `${166}` : `${274}`}
                   height={width < 700 ? `${172}` : `${265}`}
@@ -789,7 +789,7 @@ export default function Home() {
           <dd>
             <div>
               <Image
-                src="/aboutas_tanaka.avif"
+                src="/aboutas_tanaka.png"
                 alt="Nanaiの画像"
                 width={width < 700 ? `${100}` : `${120}`}
                 height={width < 700 ? `${100}` : `${120}`}
@@ -800,7 +800,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="/aboutas_nonaka.avif"
+                src="/aboutas_nonaka.png"
                 alt="Anriの画像"
                 width={width < 700 ? `${100}` : `${120}`}
                 height={width < 700 ? `${100}` : `${120}`}
@@ -819,7 +819,7 @@ export default function Home() {
         <div className={styles.footer_flex}>
           <a href="https://twitter.com/YonayonaRamens" target="_blank">
             <Image
-              src="/footer_twitter.avif"
+              src="/footer_twitter.png"
               alt="宇宙人はダレ？Twitterアカウント"
               width={25.08}
               height={20.38}
@@ -828,7 +828,7 @@ export default function Home() {
           </a>
           <a href="https://note.com/yonayonaramens/" target="_blank">
             <Image
-              src="/footer_note.avif"
+              src="/footer_note.png"
               alt="宇宙人はダレ？noteサイト"
               width={100.4}
               height={37.1}
