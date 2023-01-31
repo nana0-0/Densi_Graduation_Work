@@ -670,10 +670,10 @@ export default function Home() {
             />
           ) : width < 1100 ? (
             <Image
-              src="/section_talk_background_phone.svg"
+              src="/section_talk_background.svg"
               alt="share"
-              width={390}
-              height={158}
+              width={1196}
+              height={124}
               className={styles.section_talk_background}
             />
           ) : (
