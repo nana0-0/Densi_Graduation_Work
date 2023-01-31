@@ -176,15 +176,7 @@ function Loading() {
 
   return loading ? (
     <section className={styles.loading}>
-      <p className={styles.loading_p}>宇宙人はダレ？</p>
-      <div className={styles.loading_img}>
-        <Image
-          src="/loading.png"
-          alt="Game Logo"
-          width={width < 700 ? `${115}` : `${115}`}
-          height={width < 700 ? `${90}` : `${90}`}
-        />
-      </div>
+      <p className={styles.loading_p}>Loading</p>
       <div className={styles.progBar}>
         <p className={styles.bar}></p>
       </div>
@@ -395,13 +387,24 @@ export default function Home() {
             <br />
             <GlitchText text="潜んでいる宇宙人を見つけ出して無事に惑星に辿り着けるのか!?" />
           </p>
-          <Image
+          {/* <Image
             src="/goal.gif"
             alt="ゴールカード"
             width={width < 700 ? `${120}` : `${200}`}
             height={width < 700 ? `${120}` : `${200}`}
             className={styles.goal}
-          />
+          /> */}
+          <video
+            width={width < 700 ? `${120}` : `${200}`}
+            height={width < 700 ? `${120}` : `${200}`}
+            className={styles.goal}
+            src="/goal.webm"
+            loop
+            autoPlay
+            muted
+            playsInline
+            autoplay
+          ></video>
           <video
             width={width < 700 ? `${120}` : `${200}`}
             height={width < 700 ? `${120}` : `${200}`}
@@ -413,14 +416,36 @@ export default function Home() {
             playsInline
             autoplay
           ></video>
-           {/* <Image
+          {/* <Image
             src="/start.gif"
             alt="スタートカード"
             width={width < 700 ? `${120}` : `${200}`}
             height={width < 700 ? `${120}` : `${200}`}
             className={styles.start}
           /> */}
-          <Image
+          <video
+            width={width < 700 ? `${120}` : `${200}`}
+            height={width < 700 ? `${120}` : `${200}`}
+            className={styles.hosinokakera}
+            src="/hosinokakera.webm"
+            loop
+            autoPlay
+            muted
+            playsInline
+            autoplay
+          ></video>
+          <video
+            width={width < 700 ? `${120}` : `${200}`}
+            height={width < 700 ? `${120}` : `${200}`}
+            className={styles.trap}
+            src="/trap.webm"
+            loop
+            autoPlay
+            muted
+            playsInline
+            autoplay
+          ></video>
+          {/* <Image
             src="/hosinokakera.gif"
             alt="星のかけら"
             width={width < 700 ? `${120}` : `${200}`}
@@ -433,10 +458,10 @@ export default function Home() {
             width={width < 700 ? `${120}` : `${200}`}
             height={width < 700 ? `${120}` : `${200}`}
             className={styles.trap}
-          />
+          /> */}
           {width < 700 ? (
             <Image
-              src="/game_menu_phone.png"
+              src="/game_menu_phone.avif"
               alt="プレイヤー：4人 プレイ時間：20分 対象年齢：10歳以上"
               className={styles.explain}
               width={299}
@@ -445,7 +470,7 @@ export default function Home() {
             />
           ) : (
             <Image
-              src="/game_menu.png"
+              src="/game_menu.avif"
               alt="プレイヤー：4人 プレイ時間：20分 対象年齢：10歳以上"
               className={styles.explain}
               width={607}
@@ -551,7 +576,7 @@ export default function Home() {
           </h2>
           {width < 700 ? (
             <Image
-              src="/set_phone.jpg"
+              src="/set_phone.avif"
               alt="セット内容"
               className={styles.set_phone}
               width={339}
@@ -559,7 +584,7 @@ export default function Home() {
             />
           ) : width < 1400 ? (
             <Image
-              src="/set_ipad.jpg"
+              src="/set_ipad.avif"
               alt="セット内容"
               className={styles.set_phone}
               width={677}
@@ -634,6 +659,82 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className={styles.section_production_background}>
+          {width < 700 ? (
+            <Image
+              src="/section_talk_background_phone.svg"
+              alt=""
+              width={286}
+              height={115}
+              className={styles.section_talk_background}
+            />
+          ) : width < 1100 ? (
+            <Image
+              src="/section_talk_background_phone.svg"
+              alt="share"
+              width={390}
+              height={158}
+              className={styles.section_talk_background}
+            />
+          ) : (
+            <Image
+              src="/section_talk_background.svg"
+              alt="share"
+              width={1196}
+              height={124}
+              className={styles.section_talk_background}
+            />
+          )}
+          <div className={styles.section_production_background_flex}>
+            <div className={styles.section_production_background_div_l}>
+              <h2>制作背景座談会</h2>
+              <p>
+                このゲームは中１プロブレムという問題を未然に防ぐことを目標に制作しました。
+                中１プロブレムとは小学校から中学校に上がる際に自意識と客観的事実との違いに悩み、
+                周りの学生との人間関係をうまく構築できず集団生活になじめないという問題のことです。
+                中１プロブレムを解決するための対策として集団でのコミュニケーションに関心を持つきっかけづくりが必要とされています。
+                そこで、私たちは中１プロブレムという問題を解決するためのアプローチとして”遊び”を提供しようと考えました。
+              </p>
+              <a
+                href="https://note.com/yonayonaramens/"
+                target="_blank"
+                className={styles.section_production_background_a}
+              >
+                座談会を読む
+              </a>
+            </div>
+            <div className={styles.section_production_background_div_r}>
+              <div className={styles.section_production_background_div_c}>
+                <Image
+                  src="/tanaka.avif"
+                  alt="田中楠乃"
+                  width={width < 700 ? `${186}` : `${314}`}
+                  height={width < 700 ? `${151}` : `${255}`}
+                  className={styles.twitter_share}
+                />
+                <dl>
+                  <dt>田中 楠乃（たなか なない）</dt>
+                  <dd>2002年 7月生まれ</dd>
+                  <dd>ネコが好き</dd>
+                </dl>
+              </div>
+              <div className={styles.section_production_background_div_c}>
+                <dl>
+                  <dt>野中 杏莉（のなか あんり）</dt>
+                  <dd>2002年 7月生まれ</dd>
+                  <dd>ギターが好き</dd>
+                </dl>
+                <Image
+                  src="/nonaka.avif"
+                  alt="野中杏莉"
+                  width={width < 700 ? `${166}` : `${274}`}
+                  height={width < 700 ? `${172}` : `${265}`}
+                  className={styles.twitter_share}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
         <section className={styles.section_twitter}>
           <Image
             src="/share.svg"
@@ -646,6 +747,10 @@ export default function Home() {
             #宇宙人はダレ？で<br className={styles.twitter_br}></br>
             シェアしよう！
           </h2>
+          {/* <p>
+            卒業制作展示会にて、ボードゲームの抽選会を開催します🎉<br></br>
+            2023/2/3(木)15時までにこのツイートをリツイートすることで参加できます
+          </p> */}
           <TwitterTweetEmbed
             tweetId={"1610189188338679808"}
             className={styles.twitter_embed}
@@ -660,6 +765,7 @@ export default function Home() {
           <a
             href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flocalhost%3A3000%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Eshare%7Ctwgr%5E&text=%23%E5%AE%87%E5%AE%99%E4%BA%BA%E3%81%AF%E3%83%80%E3%83%AC%EF%BC%9F%20%E3%82%92%E3%82%B7%E3%82%A7%E3%82%A2%E3%81%97%E3%82%88%E3%81%86%EF%BC%81%EF%BC%81&url=https%3A%2F%2Futyujinhadare.yonayonaramens.com%2F&via=YonayonaRamens"
             className={styles.twitterbtn}
+            target="_blank"
           >
             シェアする
           </a>
@@ -683,7 +789,7 @@ export default function Home() {
           <dd>
             <div>
               <Image
-                src="/twitter.png"
+                src="/aboutas_tanaka.avif"
                 alt="Nanaiの画像"
                 width={width < 700 ? `${100}` : `${120}`}
                 height={width < 700 ? `${100}` : `${120}`}
@@ -694,7 +800,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="/twitter.png"
+                src="/aboutas_nonaka.avif"
                 alt="Anriの画像"
                 width={width < 700 ? `${100}` : `${120}`}
                 height={width < 700 ? `${100}` : `${120}`}
@@ -706,47 +812,14 @@ export default function Home() {
           </dd>
         </dl>
       </section>
+      <section></section>
       <footer className={styles.footer}>
-        {/* <div className={styles.h1_bkfont_wrap}>
-            <div className={styles.h1_bkfont_flex}>
-              <Image
-                src="/footer_bkimage.svg"
-                alt="Game Logo"
-                width={width < 700 ? `${630}` : `${1088}`}
-                height={width < 700 ? `${90}` : `${41}`}
-                className={styles.h1_bkfont}
-              />
-              <Image
-                src="/footer_bkimage.svg"
-                alt="Game Logo"
-                width={width < 700 ? `${630}` : `${1088}`}
-                height={width < 700 ? `${90}` : `${41}`}
-                className={styles.h1_bkfont}
-              />
-            </div>
-            <div className={styles.h1_bkfont_flex}>
-              <Image
-                src="/footer_bkimage.svg"
-                alt="Game Logo"
-                width={width < 700 ? `${630}` : `${1088}`}
-                height={width < 700 ? `${90}` : `${41}`}
-                className={styles.h1_bkfont}
-              />
-              <Image
-                src="/footer_bkimage.svg"
-                alt="Game Logo"
-                width={width < 700 ? `${630}` : `${1088}`}
-                height={width < 700 ? `${90}` : `${41}`}
-                className={styles.h1_bkfont}
-              />
-            </div>
-          </div> */}
         <p className={styles.footer_logo}>宇宙人はダレ？</p>
         <p className={styles.footer_text}>最新情報や制作裏話を発信中！</p>
         <div className={styles.footer_flex}>
           <a href="https://twitter.com/YonayonaRamens" target="_blank">
             <Image
-              src="/footer_twitter.png"
+              src="/footer_twitter.avif"
               alt="宇宙人はダレ？Twitterアカウント"
               width={25.08}
               height={20.38}
@@ -755,7 +828,7 @@ export default function Home() {
           </a>
           <a href="https://note.com/yonayonaramens/" target="_blank">
             <Image
-              src="/footer_note.png"
+              src="/footer_note.avif"
               alt="宇宙人はダレ？noteサイト"
               width={100.4}
               height={37.1}
