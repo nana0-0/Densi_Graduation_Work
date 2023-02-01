@@ -317,7 +317,7 @@ export default function Home() {
       </Head>
       <Loading />
       <h1 className={styles.fv_h1}>宇宙人はダレ？</h1>
-      <a href="#" target="_blank" className={styles.fv_parchese}>
+      <a href="https://yona2ramen.base.shop/" target="_blank" className={styles.fv_parchese}>
         購入する
       </a>
       <div className={styles.fv}>
@@ -698,7 +698,7 @@ export default function Home() {
                 </div>
               </dl>
               <a
-                href="#"
+                href="https://yona2ramen.base.shop/"
                 className={styles.game_a_purchase}
                 target="_blank"
                 rel="noopener noreferrer"
