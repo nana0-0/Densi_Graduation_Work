@@ -8,6 +8,7 @@ import React, { useCallback, useState, Suspense, useEffect } from "react";
 import { GlitchText } from "../components/font";
 import { getWindowSize } from "../components/screensize.js";
 import { TwitterTweetEmbed, TwitterShareButton } from "react-twitter-embed";
+import Link from "next/link";
 
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
@@ -478,96 +479,144 @@ export default function Home() {
               style={{ marginTop: 70 }}
             />
           )}
-          {/* <div className={styles.slider_img_wrap}>
+          <div className={styles.slider_img_wrap}>
             <div className={styles.slider_img_flex}>
-              <Image
-                src="/slidertest3.gif"
-                alt="Game Logo"
+              <video
+                src="/slider0.webm"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
-              />
-              <Image
-                src="/slidertest3.gif"
-                alt="Game Logo"
+                loop
+                autoPlay
+                muted
+                playsInline
+                autoplay
+              ></video>
+              <video
+                src="/slider1.webm"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
-              />
-              <Image
-                src="/slidertest3.gif"
-                alt="Game Logo"
+                loop
+                autoPlay
+                muted
+                playsInline
+                autoplay
+              ></video>
+              <video
+                src="/slider2.webm"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
-              />
-              <Image
-                src="/slidertest3.gif"
-                alt="Game Logo"
+                loop
+                autoPlay
+                muted
+                playsInline
+                autoplay
+              ></video>
+             <video
+                src="/slider3.webm"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
-              />
-              <Image
-                src="/slidertest3.gif"
-                alt="Game Logo"
+                loop
+                autoPlay
+                muted
+                playsInline
+                autoplay
+              ></video>
+             <video
+                src="/slider4.webm"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
-              />
-              <Image
-                src="/slidertest3.gif"
-                alt="Game Logo"
+                loop
+                autoPlay
+                muted
+                playsInline
+                autoplay
+              ></video>
+              <video
+                src="/slider5.webm"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
-              />
+                loop
+                autoPlay
+                muted
+                playsInline
+                autoplay
+              ></video>
             </div>
             <div className={styles.slider_img_flex}>
-              <Image
-                src="/slidertest3.gif"
-                alt="Game Logo"
+              <video
+                src="/slider0.webm"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
-              />
-              <Image
-                src="/slidertest3.gif"
-                alt="Game Logo"
+                loop
+                autoPlay
+                muted
+                playsInline
+                autoplay
+              ></video>
+              <video
+                src="/slider1.webm"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
-              />
-              <Image
-                src="/slidertest3.gif"
-                alt="Game Logo"
+                loop
+                autoPlay
+                muted
+                playsInline
+                autoplay
+              ></video>
+              <video
+                src="/slider2.webm"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
-              />
-              <Image
-                src="/slidertest3.gif"
-                alt="Game Logo"
+                loop
+                autoPlay
+                muted
+                playsInline
+                autoplay
+              ></video>
+              <video
+                src="/slider3.webm"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
-              />
-              <Image
-                src="/slidertest3.gif"
-                alt="Game Logo"
+                loop
+                autoPlay
+                muted
+                playsInline
+                autoplay
+              ></video>
+              <video
+                src="/slider4.webm"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
-              />
-              <Image
-                src="/slidertest3.gif"
-                alt="Game Logo"
+                loop
+                autoPlay
+                muted
+                playsInline
+                autoplay
+              ></video>
+              <video
+                src="/slider5.webm"
                 width={width < 700 ? `${232}` : `${380}`}
                 height={width < 700 ? `${154}` : `${252}`}
                 className={styles.slider_img}
-              />
+                loop
+                autoPlay
+                muted
+                playsInline
+                autoplay
+              ></video>
             </div>
-          </div> */}
+          </div>
         </section>
         <section className={styles.set}>
           <span className={styles.h2_span}>セット内容</span>
@@ -695,13 +744,13 @@ export default function Home() {
                 中１プロブレムを解決するための対策として集団でのコミュニケーションに関心を持つきっかけづくりが必要とされています。
                 そこで、私たちは中１プロブレムという問題を解決するためのアプローチとして”遊び”を提供しようと考えました。
               </p>
-              <a
-                href="https://note.com/yonayonaramens/"
+              <Link
+                href="/coming"
                 target="_blank"
                 className={styles.section_production_background_a}
               >
                 座談会を読む
-              </a>
+              </Link>
             </div>
             <div className={styles.section_production_background_div_r}>
               <div className={styles.section_production_background_div_c}>
