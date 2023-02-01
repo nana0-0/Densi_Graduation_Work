@@ -482,7 +482,7 @@ export default function Home() {
           <div className={styles.slider_img_wrap}>
             <div className={styles.slider_img_flex}>
               <video
-                src="/slider0.webm"
+                src="/slider0_t.webm"
                 width={width < 700 ? `${280}` : `${280}`}
                 height={width < 700 ? `${280}` : `${280}`}
                 className={styles.slider_img}
@@ -493,7 +493,7 @@ export default function Home() {
                 autoplay
               ></video>
               <video
-                src="/slider1.webm"
+                src="/slider1_t.webm"
                 width={width < 700 ? `${150}` : `${150}`}
                 height={width < 700 ? `${150}` : `${150}`}
                 className={styles.slider_img}
@@ -504,7 +504,7 @@ export default function Home() {
                 autoplay
               ></video>
               <video
-                src="/slider2.webm"
+                src="/slider2_t.webm"
                 width={width < 700 ? `${150}` : `${150}`}
                 height={width < 700 ? `${150}` : `${150}`}
                 className={styles.slider_img}
@@ -514,8 +514,8 @@ export default function Home() {
                 playsInline
                 autoplay
               ></video>
-             <video
-                src="/slider3.webm"
+              <video
+                src="/slider3_t.webm"
                 width={width < 700 ? `${200}` : `${200}`}
                 height={width < 700 ? `${200}` : `${200}`}
                 className={styles.slider_img}
@@ -525,8 +525,8 @@ export default function Home() {
                 playsInline
                 autoplay
               ></video>
-             <video
-                src="/slider4.webm"
+              <video
+                src="/slider4_t.webm"
                 width={width < 700 ? `${150}` : `${150}`}
                 height={width < 700 ? `${150}` : `${150}`}
                 className={styles.slider_img}
@@ -537,7 +537,7 @@ export default function Home() {
                 autoplay
               ></video>
               <video
-                src="/slider5.webm"
+                src="/slider5_t.webm"
                 width={width < 700 ? `${280}` : `${280}`}
                 height={width < 700 ? `${280}` : `${280}`}
                 className={styles.slider_img}
@@ -550,7 +550,7 @@ export default function Home() {
             </div>
             <div className={styles.slider_img_flex}>
               <video
-                src="/slider0.webm"
+                src="/slider0_t.webm"
                 width={width < 700 ? `${280}` : `${280}`}
                 height={width < 700 ? `${280}` : `${280}`}
                 className={styles.slider_img}
@@ -561,7 +561,7 @@ export default function Home() {
                 autoplay
               ></video>
               <video
-                src="/slider1.webm"
+                src="/slider1_t.webm"
                 width={width < 700 ? `${150}` : `${150}`}
                 height={width < 700 ? `${150}` : `${150}`}
                 className={styles.slider_img}
@@ -572,7 +572,7 @@ export default function Home() {
                 autoplay
               ></video>
               <video
-                src="/slider2.webm"
+                src="/slider2_t.webm"
                 width={width < 700 ? `${150}` : `${150}`}
                 height={width < 700 ? `${150}` : `${150}`}
                 className={styles.slider_img}
@@ -583,7 +583,7 @@ export default function Home() {
                 autoplay
               ></video>
               <video
-                src="/slider3.webm"
+                src="/slider3_t.webm"
                 width={width < 700 ? `${200}` : `${200}`}
                 height={width < 700 ? `${200}` : `${200}`}
                 className={styles.slider_img}
@@ -594,7 +594,7 @@ export default function Home() {
                 autoplay
               ></video>
               <video
-                src="/slider4.webm"
+                src="/slider4_t.webm"
                 width={width < 700 ? `${150}` : `${150}`}
                 height={width < 700 ? `${150}` : `${150}`}
                 className={styles.slider_img}
@@ -605,7 +605,7 @@ export default function Home() {
                 autoplay
               ></video>
               <video
-                src="/slider5.webm"
+                src="/slider5_t.webm"
                 width={width < 700 ? `${280}` : `${280}`}
                 height={width < 700 ? `${280}` : `${280}`}
                 className={styles.slider_img}
@@ -738,11 +738,8 @@ export default function Home() {
             <div className={styles.section_production_background_div_l}>
               <h2>制作背景座談会</h2>
               <p>
-                このゲームは中１プロブレムという問題を未然に防ぐことを目標に制作しました。
-                中１プロブレムとは小学校から中学校に上がる際に自意識と客観的事実との違いに悩み、
-                周りの学生との人間関係をうまく構築できず集団生活になじめないという問題のことです。
-                中１プロブレムを解決するための対策として集団でのコミュニケーションに関心を持つきっかけづくりが必要とされています。
-                そこで、私たちは中１プロブレムという問題を解決するためのアプローチとして”遊び”を提供しようと考えました。
+                中１ギャップという小学校から中学校に上がる際に自意識と客観的事実との違いに悩み、
+                周りの学生との人間関係をうまく構築できず集団生活になじめないという問題を未然に防ぐことを目的に、今回ボードゲームを制作しました。そんな私たちの制作背景を座談会形式で紹介します。
               </p>
               <Link
                 href="/coming"
@@ -796,10 +793,14 @@ export default function Home() {
             #宇宙人はダレ？で<br className={styles.twitter_br}></br>
             シェアしよう！
           </h2>
-          {/* <p>
-            卒業制作展示会にて、ボードゲームの抽選会を開催します🎉<br></br>
-            2023/2/3(木)15時までにこのツイートをリツイートすることで参加できます
-          </p> */}
+          <p>
+            下記のツイートをシェアしてくれた人の中から
+            <br className={styles.twitter_br_phone}></br>抽選で1名様に
+            <br className={styles.twitter_br_pc}></br>
+            ボードゲーム<br className={styles.twitter_br_phone}></br>
+            『宇宙人はダレ？』をプレゼント！
+          </p>
+          <p>期間：2023年2月2日〜2023年3月1日まで</p>
           <TwitterTweetEmbed
             tweetId={"1610189188338679808"}
             className={styles.twitter_embed}
@@ -859,7 +860,6 @@ export default function Home() {
           </dd>
         </dl>
       </section>
-      <section></section>
       <footer className={styles.footer}>
         <p className={styles.footer_logo}>宇宙人はダレ？</p>
         <p className={styles.footer_text}>最新情報や制作裏話を発信中！</p>

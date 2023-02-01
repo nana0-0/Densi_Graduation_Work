@@ -4,16 +4,15 @@ $green: #00d861;
 
 $red: #f23030;
 
-
 // カミングスーン
 
-.coming{
+.coming {
   background: #0b0b0b;
   width: 100%;
   height: 100vh;
 }
 
-.coming p{
+.coming p {
   color: #fff;
   text-align: center;
   font-size: 20px;
@@ -1291,7 +1290,7 @@ $red: #f23030;
   font-size: 12px;
 }
 
-.section_production_background_div_r{
+.section_production_background_div_r {
   position: relative;
   z-index: 10;
   margin-left: 15px;
@@ -1337,16 +1336,16 @@ $red: #f23030;
     background: #fff;
     padding-bottom: 100px;
   }
-  
+
   .section_talk_background {
     padding-left: 50px;
   }
-  
+
   .section_production_background_flex {
     display: contents;
     justify-content: center;
   }
-  
+
   .section_production_background_div_l {
     margin-top: 70px;
     width: 80%;
@@ -1355,20 +1354,20 @@ $red: #f23030;
     position: relative;
     top: 550px;
   }
-  
+
   .section_production_background h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
   }
-  
+
   .section_production_background p {
     margin-bottom: 50px;
     font-size: 13px;
     font-weight: 500;
     line-height: 2.5;
   }
-  
+
   .section_production_background_a {
     background: #343434;
     color: #fff;
@@ -1376,19 +1375,19 @@ $red: #f23030;
     border-radius: 50px;
     font-size: 12px;
   }
-  
-  .section_production_background_div_r{
+
+  .section_production_background_div_r {
     position: relative;
     z-index: 10;
     margin-top: 40px;
     bottom: 260px;
   }
-  
+
   .section_production_background_div_r::after {
     content: "";
     position: absolute;
-    top:35%;
-    right:40%;
+    top: 35%;
+    right: 40%;
     padding: 80px 80px;
     background-image: url(/flex_background.svg);
     background-size: 55%;
@@ -1396,33 +1395,32 @@ $red: #f23030;
     background-position: center center;
     z-index: -1;
   }
-  
+
   .section_production_background_div_c {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
   }
-  
+
   .section_production_background_div_c img {
     margin-right: 20px;
   }
 
-  .section_production_background_div_c dl{
+  .section_production_background_div_c dl {
     margin-bottom: 10px;
   }
-  
+
   .section_production_background_div_c dl dt {
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 8px;
   }
-  
+
   .section_production_background_div_c dl dd {
     font-size: 12px;
     font-weight: 600;
     line-height: 2;
   }
-
 }
 
 @media (max-width: 1100px) {
@@ -1432,23 +1430,23 @@ $red: #f23030;
   }
 }
 
-
 @media (max-width: 700px) {
   .section_production_background {
     padding-top: 100px;
     background: #fff;
     padding-bottom: 100px;
   }
-  
+
   .section_talk_background {
     padding-left: 50px;
   }
-  
+
   .section_production_background_flex {
     display: contents;
     justify-content: center;
+    position: relative;
   }
-  
+
   .section_production_background_div_l {
     margin-top: 70px;
     width: 80%;
@@ -1457,20 +1455,20 @@ $red: #f23030;
     top: 340px;
     text-align: left;
   }
-  
+
   .section_production_background h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
   }
-  
+
   .section_production_background p {
     margin-bottom: 50px;
     font-size: 13px;
     font-weight: 500;
     line-height: 2.5;
   }
-  
+
   .section_production_background_a {
     background: #343434;
     color: #fff;
@@ -1479,18 +1477,18 @@ $red: #f23030;
     font-size: 12px;
   }
 
-  .section_production_background_div_r{
+  .section_production_background_div_r {
     position: relative;
     z-index: 10;
     margin-top: 40px;
-    bottom: 510px;
+    bottom: 390px;
   }
-  
+
   .section_production_background_div_r::after {
     content: "";
     position: absolute;
     top: 89px;
-    right:32%;
+    right: 32%;
     padding: 75px 75px;
     background-image: url(/flex_background.svg);
     background-size: 50%;
@@ -1498,27 +1496,27 @@ $red: #f23030;
     background-position: center center;
     z-index: -1;
   }
-  
+
   .section_production_background_div_c {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
   }
-  
+
   .section_production_background_div_c img {
     margin-right: 5px;
   }
 
-  .section_production_background_div_c dl{
+  .section_production_background_div_c dl {
     margin-bottom: 10px;
   }
-  
+
   .section_production_background_div_c dl dt {
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 8px;
   }
-  
+
   .section_production_background_div_c dl dd {
     font-size: 12px;
     font-weight: 600;
@@ -1526,17 +1524,29 @@ $red: #f23030;
   }
 }
 
-
 /* Twitterシェア */
+
+.twitter_br_phone {
+  display: none;
+}
 
 .section_twitter {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
   background: #141414;
+  background: url(/share_bk.webp) center center no-repeat;
 }
 
-.section_twitter p{
+.section_twitter p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.section_twitter p:first-of-type {
   color: #fff;
   font-size: 14px;
   line-height: 2;
@@ -1565,11 +1575,11 @@ $red: #f23030;
   margin-bottom: 10px;
 }
 
-.twitterbtn::before{
+.twitterbtn::before {
   content: "";
   position: absolute;
   top: 14px;
-  left:35px;
+  left: 35px;
   padding: 11px 11px;
   background-image: url(/footer_twitter.webp);
   background-size: 100%;
@@ -1578,7 +1588,7 @@ $red: #f23030;
 }
 
 .twitterbtn {
-  background-color: #50AFEF;
+  background-color: #50afef;
   color: #fff;
   padding: 14px 50px;
   padding-left: 70px;
@@ -1594,6 +1604,23 @@ $red: #f23030;
 }
 
 @media (max-width: 700px) {
+  .twitter_br_phone {
+    display: block;
+  }
+
+  .twitter_br_pc {
+    display: none;
+  }
+
+  .section_twitter {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #141414;
+    background: url(/share_bk_phone.webp) center center no-repeat;
+    background-size: 100%;
+  }
+
   .section_twitter div {
     margin: 0 auto;
     width: 75%;
@@ -1618,11 +1645,11 @@ $red: #f23030;
     margin-bottom: 50px;
   }
 
-  .twitterbtn::before{
+  .twitterbtn::before {
     content: "";
     position: absolute;
     top: 15px;
-    left:35px;
+    left: 35px;
     padding: 9px 9px;
     background-image: url(/footer_twitter.webp);
     background-size: 100%;
@@ -1631,7 +1658,7 @@ $red: #f23030;
   }
 
   .twitterbtn {
-    background-color: #50AFEF;
+    background-color: #50afef;
     color: #fff;
     padding: 12px 35px;
     padding-left: 63px;
