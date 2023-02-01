@@ -317,7 +317,11 @@ export default function Home() {
       </Head>
       {/* <Loading /> */}
       <h1 className={styles.fv_h1}>宇宙人はダレ？</h1>
-      <a href="https://yona2ramen.base.shop/" target="_blank" className={styles.fv_parchese}>
+      <a
+        href="https://yona2ramen.base.shop/"
+        target="_blank"
+        className={styles.fv_parchese}
+      >
         購入する
       </a>
       <div className={styles.fv}>
@@ -453,7 +457,49 @@ export default function Home() {
           )}
           <div className={styles.slider_img_wrap}>
             <div className={styles.slider_img_flex}>
-              <video
+              <Image
+                src="/slider0.gif"
+                alt="ゲームしている画像"
+                width={width < 700 ? `${280}` : `${280}`}
+                height={width < 700 ? `${280}` : `${280}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider1.gif"
+                alt="ゲームしている画像"
+                width={width < 700 ? `${150}` : `${150}`}
+                height={width < 700 ? `${150}` : `${150}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider2.gif"
+                alt="ゲームしている画像"
+                width={width < 700 ? `${150}` : `${150}`}
+                height={width < 700 ? `${150}` : `${150}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider3.gif"
+                alt="ゲームしている画像"
+                width={width < 700 ? `${200}` : `${200}`}
+                height={width < 700 ? `${200}` : `${200}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider4.gif"
+                alt="ゲームしている画像"
+                width={width < 700 ? `${150}` : `${150}`}
+                height={width < 700 ? `${150}` : `${150}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider5.gif"
+                alt="ゲームしている画像"
+                width={width < 700 ? `${280}` : `${280}`}
+                height={width < 700 ? `${280}` : `${280}`}
+                className={styles.slider_img}
+              />
+              {/* <video
                 src="/slider0_t.webm"
                 width={width < 700 ? `${280}` : `${280}`}
                 height={width < 700 ? `${280}` : `${280}`}
@@ -518,10 +564,10 @@ export default function Home() {
                 muted
                 playsInline
                 autoplay
-              ></video>
+              ></video> */}
             </div>
             <div className={styles.slider_img_flex}>
-              <video
+              {/* <video
                 src="/slider0_t.webm"
                 width={width < 700 ? `${280}` : `${280}`}
                 height={width < 700 ? `${280}` : `${280}`}
@@ -586,7 +632,49 @@ export default function Home() {
                 muted
                 playsInline
                 autoplay
-              ></video>
+              ></video> */}
+               <Image
+                src="/slider0.gif"
+                alt="ゲームしている画像"
+                width={width < 700 ? `${280}` : `${280}`}
+                height={width < 700 ? `${280}` : `${280}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider1.gif"
+                alt="ゲームしている画像"
+                width={width < 700 ? `${150}` : `${150}`}
+                height={width < 700 ? `${150}` : `${150}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider2.gif"
+                alt="ゲームしている画像"
+                width={width < 700 ? `${150}` : `${150}`}
+                height={width < 700 ? `${150}` : `${150}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider3.gif"
+                alt="ゲームしている画像"
+                width={width < 700 ? `${200}` : `${200}`}
+                height={width < 700 ? `${200}` : `${200}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider4.gif"
+                alt="ゲームしている画像"
+                width={width < 700 ? `${150}` : `${150}`}
+                height={width < 700 ? `${150}` : `${150}`}
+                className={styles.slider_img}
+              />
+              <Image
+                src="/slider5.gif"
+                alt="ゲームしている画像"
+                width={width < 700 ? `${280}` : `${280}`}
+                height={width < 700 ? `${280}` : `${280}`}
+                className={styles.slider_img}
+              />
             </div>
           </div>
         </section>
