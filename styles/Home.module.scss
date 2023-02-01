@@ -1261,6 +1261,7 @@ $red: #f23030;
 .section_production_background_flex {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .section_production_background_div_l {
@@ -1474,7 +1475,7 @@ $red: #f23030;
     position: relative;
     z-index: 10;
     margin-top: 40px;
-    bottom: 390px;
+    bottom: 370px;
   }
 
   .section_production_background_div_r::after {
