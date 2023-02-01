@@ -388,13 +388,6 @@ export default function Home() {
             <br />
             <GlitchText text="潜んでいる宇宙人を見つけ出して無事に惑星に辿り着けるのか!?" />
           </p>
-          {/* <Image
-            src="/goal.gif"
-            alt="ゴールカード"
-            width={width < 700 ? `${120}` : `${200}`}
-            height={width < 700 ? `${120}` : `${200}`}
-            className={styles.goal}
-          /> */}
           <video
             width={width < 700 ? `${120}` : `${200}`}
             height={width < 700 ? `${120}` : `${200}`}
@@ -417,13 +410,6 @@ export default function Home() {
             playsInline
             autoplay
           ></video>
-          {/* <Image
-            src="/start.gif"
-            alt="スタートカード"
-            width={width < 700 ? `${120}` : `${200}`}
-            height={width < 700 ? `${120}` : `${200}`}
-            className={styles.start}
-          /> */}
           <video
             width={width < 700 ? `${120}` : `${200}`}
             height={width < 700 ? `${120}` : `${200}`}
@@ -446,20 +432,6 @@ export default function Home() {
             playsInline
             autoplay
           ></video>
-          {/* <Image
-            src="/hosinokakera.gif"
-            alt="星のかけら"
-            width={width < 700 ? `${120}` : `${200}`}
-            height={width < 700 ? `${120}` : `${200}`}
-            className={styles.hosinokakera}
-          />
-          <Image
-            src="/trap.gif"
-            alt="トラップカード"
-            width={width < 700 ? `${120}` : `${200}`}
-            height={width < 700 ? `${120}` : `${200}`}
-            className={styles.trap}
-          /> */}
           {width < 700 ? (
             <Image
               src="/game_menu_phone.webp"
@@ -641,13 +613,6 @@ export default function Home() {
             />
           ) : (
             <div className={styles.spline_set}>
-              {/* <Image
-              src="/set_ipad.png"
-              alt="セット内容"
-              className={styles.set_phone}
-              width={809}
-              height={500}
-            /> */}
               <ResizeSpline
                 scene="https://prod.spline.design/X3VlyHt4jpTqn6jS/scene.splinecode"
                 threshhold={1200}
@@ -713,8 +678,8 @@ export default function Home() {
             <Image
               src="/section_talk_background_phone.svg"
               alt=""
-              width={286}
-              height={115}
+              width={325}
+              height={131}
               className={styles.section_talk_background}
             />
           ) : width < 1100 ? (
@@ -805,13 +770,6 @@ export default function Home() {
             tweetId={"1610189188338679808"}
             className={styles.twitter_embed}
           />
-          {/* <TwitterShareButton
-            url={"https://utyujinhadare.yonayonaramens.com/"}
-            options={{
-              text: "#宇宙人はダレ？ をシェアしよう！！",
-              via: "YonayonaRamens",
-            }}
-          /> */}
           <a
             href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flocalhost%3A3000%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Eshare%7Ctwgr%5E&text=%23%E5%AE%87%E5%AE%99%E4%BA%BA%E3%81%AF%E3%83%80%E3%83%AC%EF%BC%9F%20%E3%82%92%E3%82%B7%E3%82%A7%E3%82%A2%E3%81%97%E3%82%88%E3%81%86%EF%BC%81%EF%BC%81&url=https%3A%2F%2Futyujinhadare.yonayonaramens.com%2F&via=YonayonaRamens"
             className={styles.twitterbtn}
