@@ -315,7 +315,7 @@ export default function Home() {
           }}
         />
       </Head>
-      <Loading />
+      {/* <Loading /> */}
       <h1 className={styles.fv_h1}>宇宙人はダレ？</h1>
       <a href="https://yona2ramen.base.shop/" target="_blank" className={styles.fv_parchese}>
         購入する
