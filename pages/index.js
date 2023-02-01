@@ -483,8 +483,8 @@ export default function Home() {
             <div className={styles.slider_img_flex}>
               <video
                 src="/slider0.webm"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
+                width={width < 700 ? `${280}` : `${280}`}
+                height={width < 700 ? `${280}` : `${280}`}
                 className={styles.slider_img}
                 loop
                 autoPlay
@@ -494,8 +494,8 @@ export default function Home() {
               ></video>
               <video
                 src="/slider1.webm"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
+                width={width < 700 ? `${150}` : `${150}`}
+                height={width < 700 ? `${150}` : `${150}`}
                 className={styles.slider_img}
                 loop
                 autoPlay
@@ -505,8 +505,8 @@ export default function Home() {
               ></video>
               <video
                 src="/slider2.webm"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
+                width={width < 700 ? `${150}` : `${150}`}
+                height={width < 700 ? `${150}` : `${150}`}
                 className={styles.slider_img}
                 loop
                 autoPlay
@@ -516,8 +516,8 @@ export default function Home() {
               ></video>
              <video
                 src="/slider3.webm"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
+                width={width < 700 ? `${200}` : `${200}`}
+                height={width < 700 ? `${200}` : `${200}`}
                 className={styles.slider_img}
                 loop
                 autoPlay
@@ -527,8 +527,8 @@ export default function Home() {
               ></video>
              <video
                 src="/slider4.webm"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
+                width={width < 700 ? `${150}` : `${150}`}
+                height={width < 700 ? `${150}` : `${150}`}
                 className={styles.slider_img}
                 loop
                 autoPlay
@@ -538,8 +538,8 @@ export default function Home() {
               ></video>
               <video
                 src="/slider5.webm"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
+                width={width < 700 ? `${280}` : `${280}`}
+                height={width < 700 ? `${280}` : `${280}`}
                 className={styles.slider_img}
                 loop
                 autoPlay
@@ -551,8 +551,8 @@ export default function Home() {
             <div className={styles.slider_img_flex}>
               <video
                 src="/slider0.webm"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
+                width={width < 700 ? `${280}` : `${280}`}
+                height={width < 700 ? `${280}` : `${280}`}
                 className={styles.slider_img}
                 loop
                 autoPlay
@@ -562,8 +562,8 @@ export default function Home() {
               ></video>
               <video
                 src="/slider1.webm"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
+                width={width < 700 ? `${150}` : `${150}`}
+                height={width < 700 ? `${150}` : `${150}`}
                 className={styles.slider_img}
                 loop
                 autoPlay
@@ -573,8 +573,8 @@ export default function Home() {
               ></video>
               <video
                 src="/slider2.webm"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
+                width={width < 700 ? `${150}` : `${150}`}
+                height={width < 700 ? `${150}` : `${150}`}
                 className={styles.slider_img}
                 loop
                 autoPlay
@@ -584,8 +584,8 @@ export default function Home() {
               ></video>
               <video
                 src="/slider3.webm"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
+                width={width < 700 ? `${200}` : `${200}`}
+                height={width < 700 ? `${200}` : `${200}`}
                 className={styles.slider_img}
                 loop
                 autoPlay
@@ -595,8 +595,8 @@ export default function Home() {
               ></video>
               <video
                 src="/slider4.webm"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
+                width={width < 700 ? `${150}` : `${150}`}
+                height={width < 700 ? `${150}` : `${150}`}
                 className={styles.slider_img}
                 loop
                 autoPlay
@@ -606,8 +606,8 @@ export default function Home() {
               ></video>
               <video
                 src="/slider5.webm"
-                width={width < 700 ? `${232}` : `${380}`}
-                height={width < 700 ? `${154}` : `${252}`}
+                width={width < 700 ? `${280}` : `${280}`}
+                height={width < 700 ? `${280}` : `${280}`}
                 className={styles.slider_img}
                 loop
                 autoPlay
