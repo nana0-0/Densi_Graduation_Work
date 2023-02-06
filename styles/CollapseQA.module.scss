@@ -1,77 +1,202 @@
-
 .section_qa {
+  padding-top: 100px;
+  background-color: #fff;
+}
+
+.h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.h2 span {
+  font-family: futura-pt-bold, sans-serif;
+  font-size: 35px;
+}
+
+.h2_span {
+  color: #00c965;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.qa_p {
+  margin-top: 20px;
+  margin-bottom: 75px;
+  color: #0b0b0b;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.qa_dl_open {
+  margin: 0 auto;
+  display: block;
+  width: 43%;
+  border-radius: 16px;
+  border: 2px solid #103047;
+  margin-bottom: 40px;
+}
+
+.qa_button_open {
+  border: none;
+  border-bottom: #103047 2px dashed;
+  margin: 0 auto;
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 46px;
+  padding-right: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+  text-align: start;
+  background-color: #f7f7f7;
+  border-radius: 16px 16px 0px 0px;
+  position: relative;
+  color: #000;
+}
+
+.qa_button_open::first-letter {
+  font-size: 25px;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.qa_button_open::after {
+  content: "";
+  position: absolute;
+  right: 6.5%;
+  padding-left: 54px;
+  background-image: url(/qa_open.svg);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-bottom: 28px;
+  background-position: right center;
+  top: 20px;
+}
+
+.qa_dd_open {
+  padding: 30px 20px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.qa_dd_close {
+  display: none;
+}
+
+.qa_button_close {
+  margin: 0 auto;
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 46px;
+  padding-right: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 43%;
+  text-align: start;
+  background-color: #f7f7f7;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  border: #103047 2px solid;
+  position: relative;
+  color: #000;
+}
+
+.qa_button_close::first-letter {
+  font-size: 25px;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.qa_button_close::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 6.5%;
+  padding-left: 54px;
+  background-image: url(/qa_close.svg);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-bottom: 28px;
+  background-position: right center;
+}
+
+@media (max-width: 700px) {
+  .section_qa {
     padding-top: 100px;
-    background-color: #fff;
   }
-  
+
   .h2 {
     text-align: center;
-    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 900;
   }
 
-  .h2 span{
+  .h2 span {
     font-family: futura-pt-bold, sans-serif;
-    font-size: 35px;
+    font-size: 30px;
   }
-
-  .h2_span{
-    color: #00c965;
-    font-family: futura-pt-bold, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 15px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  
   .qa_p {
-    margin-top: 20px;
-    margin-bottom: 75px;
+    margin-top: 10px;
+    margin-bottom: 55px;
     color: #0b0b0b;
     font-size: 15px;
     text-align: center;
     font-weight: 700;
   }
-  
+
   .qa_dl_open {
     margin: 0 auto;
     display: block;
-    width: 43%;
+    width: 90%;
     border-radius: 16px;
     border: 2px solid #103047;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
-  
+
   .qa_button_open {
     border: none;
     border-bottom: #103047 2px dashed;
     margin: 0 auto;
     display: block;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 46px;
-    padding-right: 50px;
-    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 40px;
+    font-size: 14px;
     font-weight: 700;
     width: 100%;
     text-align: start;
     background-color: #f7f7f7;
     border-radius: 16px 16px 0px 0px;
     position: relative;
+    line-height: 2;
     color: #000;
   }
-  
+
   .qa_button_open::first-letter {
-    font-size: 25px;
+    font-size: 22px;
     font-family: futura-pt-bold, sans-serif;
     font-weight: 700;
     font-style: normal;
   }
-  
+
   .qa_button_open::after {
     content: "";
     position: absolute;
-    right: 6.5%;
+    position: absolute;
+    top: 20px;
+    right: 7%;
     padding-left: 54px;
     background-image: url(/qa_open.svg);
     background-size: 30%;
@@ -79,51 +204,48 @@
     padding-top: 20px;
     padding-bottom: 28px;
     background-position: right center;
-    top: 20px;
   }
-  
+
   .qa_dd_open {
     padding: 30px 20px;
     font-size: 12px;
     line-height: 1.8;
   }
-  
+
   .qa_dd_close {
     display: none;
   }
-  
+
   .qa_button_close {
     margin: 0 auto;
     display: block;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 46px;
-    padding-right: 50px;
-    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 40px;
+    font-size: 14px;
     font-weight: 700;
-    width: 43%;
+    width: 90%;
     text-align: start;
     background-color: #f7f7f7;
     border-radius: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     border: #103047 2px solid;
+    line-height: 2;
     position: relative;
     color: #000;
   }
-  
+
   .qa_button_close::first-letter {
-    font-size: 25px;
-    font-family: futura-pt-bold, sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-size: 22px;
   }
-  
+
   .qa_button_close::after {
     content: "";
     position: absolute;
     top: 20px;
-    right: 6.5%;
-    padding-left: 54px;
+    right: 7%;
+    padding-left: 50px;
     background-image: url(/qa_close.svg);
     background-size: 30%;
     background-repeat: no-repeat;
@@ -131,128 +253,4 @@
     padding-bottom: 28px;
     background-position: right center;
   }
-  
-  @media (max-width: 700px) {
-    .section_qa {
-      padding-top: 100px;
-    }
-  
-    .h2 {
-      text-align: center;
-      font-size: 28px;
-      font-weight: 900;
-    }
-
-    .h2 span{
-      font-family: futura-pt-bold, sans-serif;
-      font-size: 30px;
-    }
-    .qa_p {
-      margin-top: 10px;
-      margin-bottom: 55px;
-      color: #0b0b0b;
-      font-size: 15px;
-      text-align: center;
-      font-weight: 700;
-    }
-  
-    .qa_dl_open {
-      margin: 0 auto;
-      display: block;
-      width: 90%;
-      border-radius: 16px;
-      border: 2px solid #103047;
-      margin-bottom: 30px;
-    }
-  
-    .qa_button_open {
-      border: none;
-      border-bottom: #103047 2px dashed;
-      margin: 0 auto;
-      display: block;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 15px;
-      padding-right: 40px;
-      font-size: 14px;
-      font-weight: 700;
-      width: 100%;
-      text-align: start;
-      background-color: #f7f7f7;
-      border-radius: 16px 16px 0px 0px;
-      position: relative;
-      line-height: 2;
-      color: #000;
-    }
-  
-    .qa_button_open::first-letter {
-      font-size: 22px;
-      font-family: futura-pt-bold, sans-serif;
-      font-weight: 700;
-      font-style: normal;
-    }
-  
-    .qa_button_open::after {
-      content: "";
-      position: absolute;
-      position: absolute;
-      top: 20px;
-      right: 7%;
-      padding-left: 54px;
-      background-image: url(/qa_open.svg);
-      background-size: 30%;
-      background-repeat: no-repeat;
-      padding-top: 20px;
-      padding-bottom: 28px;
-      background-position: right center;
-    }
-  
-    .qa_dd_open {
-      padding: 30px 20px;
-      font-size: 12px;
-      line-height: 1.8;
-    }
-  
-    .qa_dd_close {
-      display: none;
-    }
-  
-    .qa_button_close {
-      margin: 0 auto;
-      display: block;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 15px;
-      padding-right: 40px;
-      font-size: 14px;
-      font-weight: 700;
-      width: 90%;
-      text-align: start;
-      background-color: #f7f7f7;
-      border-radius: 16px;
-      margin-bottom: 30px;
-      border: #103047 2px solid;
-      line-height: 2;
-      position: relative;
-      color: #000;
-    }
-  
-    .qa_button_close::first-letter {
-      font-size: 22px;
-    }
-  
-    .qa_button_close::after {
-      content: "";
-      position: absolute;
-      top: 20px;
-      right: 7%;
-      padding-left: 50px;
-      background-image: url(/qa_close.svg);
-      background-size: 30%;
-      background-repeat: no-repeat;
-      padding-top: 20px;
-      padding-bottom: 28px;
-      background-position: right center;
-    }
-  }
-  
+}

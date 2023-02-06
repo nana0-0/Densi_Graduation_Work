@@ -59,6 +59,12 @@ $green : #00c965;
   padding: 17px 90px;
 }
 
+.pdf a:hover{
+  background: #fff;
+  color: $green;
+  border: 2px solid $green;
+}
+
 .pdf_carousel_wrap {
   padding-top: 18px;
   width: 629px;

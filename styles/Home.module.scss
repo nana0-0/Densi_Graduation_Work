@@ -1159,6 +1159,12 @@ $red: #f23030;
   top: 30px;
 }
 
+.game_a_purchase:hover{
+  background: #fff;
+  color: $red;
+  border: 2px solid $red;
+}
+
 .game_a_purchase::after {
   content: "";
   position: absolute;
@@ -1171,6 +1177,17 @@ $red: #f23030;
   background-position: center center;
 }
 
+.game_a_purchase:hover::after{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 27px;
+  padding: 12px 12px;
+  background-image: url(/purchase_a_red.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 /* ipadサイズ */
 
 @media (max-width: 1000px) {
@@ -1289,6 +1306,12 @@ $red: #f23030;
   padding: 13px 52px;
   border-radius: 50px;
   font-size: 12px;
+}
+
+.section_production_background_a:hover{
+  color: #343434;
+  background: #fff;
+  border: 2px solid #343434;
 }
 
 .section_production_background_div_r {
@@ -1591,6 +1614,25 @@ $red: #f23030;
   border-radius: 0px;
   position: relative;
 }
+
+.twitterbtn:hover{
+  background: #fff;
+  border: #50afef 2px solid;
+  color: #50afef;
+}
+
+.twitterbtn:hover::before{
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 35px;
+  padding: 11px 11px;
+  background-image: url(/footer_twitter_blue.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .twitter-tweet .twitter-tweet-rendered {
   margin: 0 auto;
   text-align: center;
