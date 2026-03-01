@@ -761,7 +761,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.section_production_background}>
+        {/* <section className={styles.section_production_background}>
           {width < 700 ? (
             <Image
               src="/section_talk_background_phone.svg"
@@ -833,7 +833,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className={styles.section_twitter}>
           <Image
             src="/share.svg"
@@ -868,7 +868,7 @@ export default function Home() {
         </section>
         <QASection />
       </main>
-      <section className={styles.section_aboutas}>
+      {/* <section className={styles.section_aboutas}>
         <h2>ABOUT US</h2>
         <dl className={styles.section_aboutas_dl1}>
           <dt>
@@ -905,7 +905,7 @@ export default function Home() {
             </div>
           </dd>
         </dl>
-      </section>
+      </section> */}
       <footer className={styles.footer}>
         <p className={styles.footer_logo}>宇宙人はダレ？</p>
         <p className={styles.footer_text}>最新情報や制作裏話を発信中！</p>
