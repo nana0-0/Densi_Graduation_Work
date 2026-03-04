@@ -741,10 +741,10 @@ export default function Home() {
                 </em>
               </p>
               <dl className={styles.section_purchase_author}>
-                <div>
+                {/* <div>
                   <dt>企画/制作</dt>
                   <dd>田中楠乃 ・野中杏莉</dd>
-                </div>
+                </div> */}
                 <div>
                   <dt>制作年 {"　"}</dt>
                   <dd>2022年</dd>
